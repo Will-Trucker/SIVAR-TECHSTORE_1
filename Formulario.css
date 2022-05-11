@@ -1,0 +1,177 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background:url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3f702099-f1b8-44c2-ab39-f6504f0af40c/d6gqisd-939d5e2e-8f06-45ff-a09e-22a13aa91df9.jpg/v1/fill/w_1600,h_900,q_75,strp/razer_wallpaper_by_simontehg33k_d6gqisd-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvM2Y3MDIwOTktZjFiOC00NGMyLWFiMzktZjY1MDRmMGFmNDBjXC9kNmdxaXNkLTkzOWQ1ZTJlLThmMDYtNDVmZi1hMDllLTIyYTEzYWE5MWRmOS5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.R_u_ydG6_EBFx2j74ps9MBpVhRDR8GxBPMpvWDt2xoE");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+	float: left;
+	margin-left: 260px;
+	margin-top: -20%;
+}
+
+.form-register{
+	width: 400px;
+    background: #000000 ;
+	border-radius: 13%;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+	border: 1px solid;
+	border-color: #00e022;
+	box-shadow: 0 0 10px #00e022, 0 0 40px #00e022, 0 0 80px #00e022;
+}
+
+.form-register h5{
+	font-size: 40px;
+	margin-bottom: 30px;
+	color: rgb(5, 173, 17);
+	margin: center;
+	text-align: center;
+}
+
+
+.controls{
+	width: 100%;
+	background: #ffffff;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid #006400;
+	font-family: 'calibri';
+	font-size: 18px;
+	color: white;
+	margin-top: 3%;
+}
+
+.form-register p{
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+	padding: 4px;
+}
+
+.form-register a{
+	color: #00e022;
+	text-decoration: none;
+
+}
+
+
+.form-register a:hover{
+	text-decoration: underline;
+	
+}
+
+.form-register .botons{
+    width: 100%;
+    color: rgb(226, 12, 12);
+    font-size: 20px;
+    background:  #000000;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+	border-style: solid;
+	border-color: #ffffff;
+
+}
+
+.botons{
+	padding: 40px;
+	text-align: center;
+}
+
+footer{
+	background: #3d3c3c;
+	margin-top: 100px;
+	position: relative;
+
+
+}
+
+.btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn-neon:hover{
+    background: #000000;
+    box-shadow: 0 0 10px #00e022, 0 0 40px #00e022, 0 0 80px #00e022;
+    transition-delay: 1s;
+ }
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#05b127);
+ }
+ .btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent #00e022);
+}
+ .btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#00e022);
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#00e022);
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.logo{
+    display: block;
+    margin: 0px auto;
+    width: 200px;
+    margin-left: 4.5rem;
+}    
