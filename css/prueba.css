@@ -1,0 +1,173 @@
+:root{
+	--white: #ffffff;
+    --negro: black;
+    --red: #de1313;
+    --verde: rgb(17, 205, 17);
+    --font: 'Poppins', sans-serif;
+    --grisn: #1c1c1c;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: var(--font);
+}
+
+a{
+  text-decoration: none;
+  color: currentColor;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding: 18px 10%;
+    box-shadow: 5px 10px 18px #0a0a0a;
+}
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo{
+    height: 100px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0px 20px;    
+	
+}
+
+.header .nav-links li:hover,
+/**/.overlay a:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: var(--negro);
+}
+
+.header .nav-links a:hover{
+    color: var(--red)
+}
+
+/**/.menu {
+    display:none;
+}
+
+.header .btn button,
+/**/.header .menu button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.opcionesCentradas{
+	height: auto;
+	width: auto;
+	margin-left: -200px;
+}
+
+.header .btn button:hover,
+/**/.header .menu button:hover{
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+
+
+/**/@media screen and (max-width: 800px){
+    .nav-links, .btn {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+}
+
+
+
+/*Nav Mobile*/
+
+.header a{
+    text-decoration: none;  
+    /*borramos el que teniamos en .header .nav-links a*/ 
+}
+
+.header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 49, 63, .95);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	margin-right: 100px;    
+}
+
+.header .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #eceff1;
+}
+
+.header .overlay a:hover, 
+.header .overlay a:focus{
+    color: #ffbc0e;
+}
+
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+	cursor: pointer;
+}
+
+
+
+@media screen and (max-height:450px) {
+    .header .overlay a{
+        font-size: 20px;
+    }
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
