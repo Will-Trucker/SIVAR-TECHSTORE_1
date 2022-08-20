@@ -1,3 +1,27 @@
+# SIVAR-TECHSTORE
+Somos una tienda e-commerce dedicada a la venta de equipos y componentes informaticos para el pueblo salvadoreño debido a la gran demanda existen para la resolucion de tareas de manera eficaz y reducir el nivel de brecha digital existente.
+
+![Logo](https://user-images.githubusercontent.com/83888568/185729208-ec97980b-4f02-47cc-8ccc-84fc23694003.jpeg)
+
+___________________________________________________________________________________________________________________________________
+
+INTEGRANTES:
+
+WILLIAM MAZARIEGO - CEO DE LA EMPRESA
+
+CARLOS LLANES - DESAROOLLADOR 
+
+KENNARD PINEDA - DESARROLLADOR
+
+CARLOS OSTORGA - DISEÑADOR
+
+DIEGO RUIZ - DISEÑADOR
+
+___________________________________________________________________________________________________________________________________
+AUN FALTA POR HACER, SEGUIMOS CONSTRUYENDO PARA DARTE UN BUEN SERVICIO 😀😉
+<center>
+![logw](https://user-images.githubusercontent.com/83888568/185729236-10a63141-7555-4381-b826-0b714f026673.png)</center>
+___________________________________________________________________________________________________________________________________
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
