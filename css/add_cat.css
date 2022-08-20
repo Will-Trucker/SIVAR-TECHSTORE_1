@@ -1,0 +1,205 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(rgba(5,7,12, 0.75), rgba(5,7,12, 0.75)), url("../img/add-p.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-form{
+    text-align: center;
+    font-size: 30px;
+}
+
+.form-register{
+	width: 450px;
+    background: #000000 ;
+	border-radius: 13%;
+    padding: 30px;
+    margin: auto;
+    margin-top: 6.4%;
+    border-radius: 10px;
+    font-family: var(--font);
+    color: white;
+   
+	
+	box-shadow: 0 0 5px        #f7040e    , 0 0 30px         #f7040e     , 0 0 50px     #f7040e    ;
+    
+}
+
+.controls{
+	width: 100%;
+	background: #000000;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid   #d80405  ;
+	font-family: 'poppins';
+	font-size: 18px;
+	color: white;
+	margin-top: 3%;
+}
+
+/*Efecto boton*/
+
+input[type="text"]{
+    right: 20px;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-width: 0.3rem;
+    border-bottom: #f7040e solid;
+    background-color: #000;
+    color: white;
+}
+input:focus{
+    outline: none;
+    
+}
+
+.form-register a{
+	color:  #f7040e ;
+	text-decoration: none;
+
+}
+
+
+.form-register a:hover{
+	text-decoration: underline;
+	
+}
+
+button{
+    cursor: pointer;
+}
+.btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    outline: none;
+    background: #000000;
+    border: none;
+    margin-top: 3%;
+}
+
+
+.btn-neon:hover{
+    background: #000000;
+    box-shadow: 0 0 3px  #d80405 , 0 0 30px  #d80405 , 0 0 40px  #d80405 ;
+    transition-delay: 1s;
+ }
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,  #d80405);
+ }
+ .btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent  #d80405 );
+}
+ .btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent, #d80405);
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent, #d80405);
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.logo{
+    width:350px;
+    height:145px;
+}
+
+.formulario__campo {
+border: none;
+border-width: 0.3rem;
+border-bottom: #f7040e solid;
+background-color: #000;
+color: gray;
+background-color: black;
+font-size: 1rem;
+padding: 1rem;
+appearance: none;
+text-align: left;
+font-size: 1.3rem;
+width: 100%;
+}
+
+option{
+    color: white;
+}
+
+
+/* boton archivos */
+.archivo input{
+    display: none;
+}
+
+.archivo label{
+    display: block;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 6px;
+    background-color:  #f7040e ;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 2%;
+    font-size: 1rem;
+    color: white;
+}
+
+
+
+.archivo i{
+    font-size: 1.2rem;
+    margin-right: 7%;
+    color: black;
+}
