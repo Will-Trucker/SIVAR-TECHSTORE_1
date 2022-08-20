@@ -2,7 +2,7 @@
 Somos una tienda e-commerce dedicada a la venta de equipos y componentes informaticos para el pueblo salvadoreño debido a la gran demanda existen para la resolucion de tareas de manera eficaz y reducir el nivel de brecha digital existente..
 
 
-https://camo.githubusercontent.com/5da63d6c4b0056e3dc243827d10e1d70ea67deb836e68097e9fd7df11b73315f/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f636f6e7472696275746f72732f4d61744d542f41706f6c6c6f732d762e313f636f6c6f723d696e666f726d6174696f6e616c267374796c653d666c61742d737175617265
+contributors: 5
 
 ![Logo](https://user-images.githubusercontent.com/83888568/185729208-ec97980b-4f02-47cc-8ccc-84fc23694003.jpeg)
 
