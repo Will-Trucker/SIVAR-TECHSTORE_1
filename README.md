@@ -19,8 +19,8 @@ DIEGO RUIZ - DISEÑADOR
 
 ___________________________________________________________________________________________________________________________________
 AUN FALTA POR HACER, SEGUIMOS CONSTRUYENDO PARA DARTE UN BUEN SERVICIO 😀😉
-<center>
-![logw](https://user-images.githubusercontent.com/83888568/185729236-10a63141-7555-4381-b826-0b714f026673.png)</center>
+
+![logw](https://user-images.githubusercontent.com/83888568/185729236-10a63141-7555-4381-b826-0b714f026673.png)
 ___________________________________________________________________________________________________________________________________
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
