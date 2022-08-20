@@ -8,10 +8,14 @@ ________________________________________________________________________________
 INTEGRANTES:
 
 WILLIAM MAZARIEGO - CEO DE LA EMPRESA
+
 CARLOS LLANES - DESARROLLADOR
+
 KENNARD PINEDA - DESARROLLADOR
+
 DIEGO RUIZ - DISEÑADOR
-CARLOS OSTORGA - DISENÑADO
+
+CARLOS OSTORGA - DISEÑADOR
 ______________________________________________________________________________________________________________
 
 DESARROLLADO POR SIVAR-TECHSTORE CO.
