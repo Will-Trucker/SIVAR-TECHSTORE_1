@@ -16,10 +16,11 @@
 	font-family: var(--font);
   outline: none;
   text-decoration: none;
+
 }
 
 a{
- color: currentColor;
+  text-decoration: none;
 }
 
 html, body{
@@ -40,8 +41,33 @@ html, body{
 .bienvenido{
   color: #000000;
   text-overflow: initial;
+  font-size: 1.3rem;
+  
+}
+@media (max-width:428px){
+  .bienvenido{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 1rem;
+  }
 }
 
+
+@media (max-width:424px){
+  .bienvenido{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: -1rem;
+  }
+}
+
+@media (max-width:380px){
+  .bienvenido{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 0.5rem;
+  }
+}
 
 
 header {
@@ -53,7 +79,7 @@ header {
     box-shadow: 5px 10px 18px #0a0a0a;
     position: fixed;
     width: 100%;
-   background: #fff;
+    background: #fff;
   }
   
   .logo {
@@ -62,11 +88,11 @@ header {
   }
 
   .logotipo{
-    height: 110px;
+    height: 100px;
     width: auto;
   }
   
-  @media (min-height: 480px){
+  @media (max-width: 480px){
     .logotipo{
       height: 90px;
     }
@@ -74,10 +100,10 @@ header {
   
       }
 
-      @media (min-height: 414px){
+      @media (max-width: 414px){
         .logotipo{
           height: 90px;
-    
+          margin-left: -15%;
         }
          
         .logo:hover{
@@ -88,10 +114,10 @@ header {
     
       }
 
-  @media (min-height: 375px){
+  @media (max-width: 375px){
     .logotipo{
-      height: 100px;
-      
+      height: 80px;
+      margin-left: -2rem;
     }
      
     .logo:hover{
@@ -107,6 +133,7 @@ header {
     font-family: var(--font);
     font-weight: 500;
     text-decoration: none;
+    
   }
   
   .nav__links {
@@ -122,6 +149,7 @@ header {
   .nav__links li a {
     transition: color 0.3s ease 0s;
     font-size: 26px;
+    color: var(--negro);
   }
   
   .nav__links li a:hover {
@@ -136,10 +164,13 @@ header {
     cursor: pointer;  
     font-size: 22px;
     transition: all 0.3s;
+    margin-left: 2rem;
+    color: var(--negro);
   }
   
   .cta:hover {
     background-color: var(--verde);
+    color: var(--negro);
    /*  transform: scale(1.2);*/
   }
   
@@ -162,7 +193,7 @@ header {
   
   .menu {
     display: none;
-
+    color: currentColor;
   }
   
   .overlay {
@@ -175,7 +206,7 @@ header {
     background-color: var(--grisn);
     overflow-x: hidden;
     transition: width 0.5s ease 0s;
-    color: var(--white);
+    color: currentColor;
     z-index: 4;
   }
   
@@ -197,6 +228,7 @@ header {
     font-size: 36px;
     display: block;
     transition: color 0.3s ease 0s;
+    color: var(--white);
   }
   
   .overlay a:hover,
@@ -210,6 +242,7 @@ header {
     font-size: 60px;
     color: #edf0f1;
     cursor: pointer;
+    text-decoration: none;
   }
 
   .icono{
@@ -284,13 +317,22 @@ header {
 .pie-pagina .grupo-1 .box button{
 margin-bottom: 10px;
 margin-left: 0.9rem;
-color: var(--white);
 background: #314258;
 cursor: pointer;
 border: none;
 height: 2rem;
 width: 10rem;
 border-radius: 10px;
+}
+
+.pie-pagina .grupo-1 .box button a{
+  color: var(--white);
+  text-decoration: none;
+}
+
+.pie-pagina .grupo-1 .box button a:hover{
+  color: var(--negro);
+  text-decoration: none;
 }
 
 .pie-pagina .grupo-1 .box button:hover{
@@ -303,7 +345,7 @@ color: var(--negro);
   text-decoration: none;
   width: 45px;
   height: 45px;
-  line-height: 60px;
+  line-height: 2.8rem;
   margin-right: 2px;
   background-color: #314258;
   text-align: center;
@@ -365,7 +407,7 @@ color: orange;
   }
   
   .pie-pagina{
-    margin-top: 50%;
+    margin-top: 10%;
   }
 }
 
@@ -465,7 +507,7 @@ label{
   }
 
   .contenedor{
-    padding-top: 65%;
+    padding-top: 45%;
     padding-bottom: 20%;
   }
 
@@ -536,7 +578,10 @@ label{
 }
 
 
-
+/* Paginacion */ 
+.d-flex{
+  margin-left: -9rem;
+}
 
 /*-------------------------------------------------------------*/
  @media screen and (max-width:800px){
@@ -544,14 +589,40 @@ label{
        grid-template-columns: repeat(1,3fr);
        display: grid;
        margin-top: 12%;
-       margin-left: 15%;  
+       margin-left: -1.5%;  
     }
     
     .producto{
         background-color: rgb(255, 255, 255);;
         margin: 2rem;
         padding: 2rem;
-        width: 23rem;
+        width: 20rem;
     }
+}
 
+
+@media (min-width:375px){
+  .productos{
+    margin-left: -1.5%;
+  }
+}
+
+
+
+@media (min-width:412px){
+  .productos{
+    margin-left: 3%
+  }
+}
+
+@media (min-width:414px){
+  .productos{
+    margin-left: 3%
+  }
+}
+
+@media (min-width:428px){
+  .productos{
+    margin-left: 5%
+  }
 }

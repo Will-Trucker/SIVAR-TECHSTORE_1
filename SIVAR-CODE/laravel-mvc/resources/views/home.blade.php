@@ -311,7 +311,7 @@
             <div class="box">
                 <h2>SOBRE NOSOTROS</h2>
                 <p>Somos una tienda dedicada a la venta de Equipos y componentes informaticos...</p>
-                <button class="boton-us"><a href="about-1.html">Más informacion</a></button>
+                <button class="boton-us"><a href="{{route('acerca')}}">Más informacion</a></button>
             </div>
             <div class="box">
                 <div class="box">

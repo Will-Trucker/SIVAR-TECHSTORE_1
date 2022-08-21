@@ -1,3 +1,4 @@
+@extends('layouts.app')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +18,7 @@
 <body>
     <div class="navegacion">
         <header class="header">
-           <a class="logo" href="/" style="outline: none;">
+           <a class="logo" href="/home" style="outline: none;">
             <img class="logotipo" src="img/Asset 7.png" alt="logo">
         </a>
             <nav>
@@ -43,7 +44,11 @@
                 <a href="">Catalogo</a>
                 <a href=""></a>
                 <a href="">Compras</a> 
-                <a class="cta" href="{{route('login')}}">Iniciar Sesion</a>
+                <a  class="cta" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                       {{ __('SALIR') }}   
+                                    </a>
             </div>
         </div>
         <script text="text/javascript" src="{{asset('js/menu.js')}}"></script>

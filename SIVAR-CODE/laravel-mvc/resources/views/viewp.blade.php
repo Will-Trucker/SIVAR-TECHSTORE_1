@@ -45,8 +45,14 @@
         <a class="close">&times;</a>
         <div class="overlay__content">
             <a href="/home">Inicio</a>
+            <a href="{{route('categorias')}}">Categorias</a>
             <a href="#">Compras</a> 
             <a href="{{route('acerca')}}">Nosotros</a>
+            <a  class="cta" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                       {{ __('Salir') }}   
+                                    </a>
         </div>
     </div>
     <script text="text/javascript" src="{{asset('js/menu.js')}}"></script>

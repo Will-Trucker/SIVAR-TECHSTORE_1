@@ -14,7 +14,7 @@ class VistapController extends Controller
         if (isset($category) &&  $category != '') {
             $prod = Product::where('categoria', $category)->paginate(2);
         }else {
-            $prod = Product::paginate(5);
+            $prod = Product::paginate(6);
         }
         return view('viewp', ['datos'=>$prod]);
     }

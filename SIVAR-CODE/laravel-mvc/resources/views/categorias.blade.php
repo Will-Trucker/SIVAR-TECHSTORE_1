@@ -45,7 +45,6 @@
         <a class="close">&times;</a>
         <div class="overlay__content">
             <a href="/home">Inicio</a>
-            <a href="#">Carrito</a>
             <a href="#">Compras</a> 
             <a href="{{asset('acerca')}}">Nosotros</a>
             <a  class="cta" href="{{ route('logout') }}"
