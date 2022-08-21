@@ -1,0 +1,221 @@
+:root{
+    --font: 'Poppins', sans-serif;
+}
+
+
+*{
+    font-family: var(--font);
+    text-decoration: none;
+}
+
+body{
+    background:linear-gradient(rgba(5,7,12, 0.75), rgba(5,7,12, 0.75)),url('../img/Tarjeta.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    position: absolute;
+    width: 100%;
+    height: 99.2%;
+
+}
+
+.img{
+    margin-top: 20px;
+}
+*{
+    box-sizing: border-box;
+}
+
+.form-log{
+    background: #000000;
+    padding: 3px;
+    margin: auto;
+    width: 450px;
+    height: 600px;
+    border-radius: 10px;
+    margin-top: 2%;
+    border: 1px solid;
+    border-color: rgb(0, 0, 0);
+    background: #000000 ;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    border: 1px solid;
+    border-color: #00e022;
+    box-shadow: 0 0 10px #00e022, 0 0 40px #00e022, 0 0 80px #00e022;
+}
+
+
+
+h1{
+    color:  #00e022;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 48px;
+}
+
+.log-form{
+    width: 100%;
+    padding: 0px;
+    margin-top: -5%;
+}
+
+input[type="email"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+    border-bottom: #00e022 solid;
+    background-color: #000;
+    color: white;
+}
+input:focus{
+    outline: none;
+    
+}
+
+.campos{
+    margin-bottom: 15px;
+    margin-top: 44px;
+    text-align: center;
+    width: 100%;
+  
+}
+
+.regist{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 1.2rem;
+}
+
+.link{
+    color: #00e022;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #00e022;
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    text-decoration: none;
+    background: none;
+    color: #fff;
+}
+
+.btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    outline: none;
+    cursor: pointer;
+}
+.btn-neon:hover{
+    background: #000000;
+    box-shadow: 0 0 10px #00e022, 0 0 40px #00e022, 0 0 80px #00e022;
+    transition-delay: 1s;
+    border: none;
+ }
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#05b127);
+ }
+ .btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent #00e022);
+}
+ .btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#00e022);
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#00e022);
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.titl-f{
+    text-transform: uppercase;
+}
+
+.invalid-feedback{
+  margin-top: 5%;
+}
+
+/* Responsive */
+@media (max-width: 1080px){
+    body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .form-log{
+        max-width: 100%;
+        margin-top: -2%;
+    }
+}
+
+@media (max-width: 428px){
+    .form-log{
+        width: 100%;
+        margin-top: 5%;
+    }
+}
+
+@media(max-width: 390px){
+    .form-log{
+       
+        margin-top: -15%;
+    }
+
+    .logo-form{
+        width: 350px;
+    }
+}
+
