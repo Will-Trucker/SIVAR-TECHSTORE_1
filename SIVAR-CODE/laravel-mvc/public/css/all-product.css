@@ -37,6 +37,11 @@ html, body{
 .navegacion{
     z-index: 4;
 }
+.bienvenido{
+  color: #000000;
+  text-overflow: initial;
+}
+
 
 
 header {
