@@ -601,7 +601,7 @@ label{
 }
 
 
-@media (min-width:375px){
+@media (max-height:375px){
   .productos{
     margin-left: -1.5%;
   }
@@ -609,19 +609,19 @@ label{
 
 
 
-@media (min-width:412px){
+@media (max-width:412px){
   .productos{
     margin-left: 3%
   }
 }
 
-@media (min-width:414px){
+@media (max-width:414px){
   .productos{
     margin-left: 3%
   }
 }
 
-@media (min-width:428px){
+@media (max-width:428px){
   .productos{
     margin-left: 5%
   }

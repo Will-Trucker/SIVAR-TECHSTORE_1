@@ -48,7 +48,7 @@
             <a href="{{route('categorias')}}">Categorias</a>
             <a href="#">Compras</a> 
             <a href="{{route('acerca')}}">Nosotros</a>
-            <a  class="cta" href="{{ route('logout') }}"
+                <a  class="cta" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                        {{ __('Salir') }}   
@@ -129,7 +129,9 @@
  <!--Tarjetas-->
     <div class="productos">  
     @foreach ($datos as $productos)
- <div class="producto"><img src="/productos/{{$productos->foto}}" height="180px" width="200px" alt="tarjeta grafica"> 
+ <div class="producto">
+    <a href="/productos/{{$datos->id}}">
+    <img src="/productos/{{$productos->foto}}" height="180px" width="200px" alt="tarjeta grafica"> 
      <div class="informacion">
     
         <span class="precio"> ${{$productos->precio}}</span>
@@ -137,6 +139,7 @@
 
         <span class="precio-envio">{{$productos->categoria}}</span>
     </div>
+</a>
   </div>
   @endforeach
  </div>

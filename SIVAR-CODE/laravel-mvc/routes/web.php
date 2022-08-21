@@ -7,7 +7,7 @@ use App\Http\Controller\VistapController;
 use App\Http\Controller\CategoriesController;
 use App\Http\Controller\AgregarController;
 use App\Http\Controllers\AboutController;
-
+use App\Http\Controllers\DetalleController;
 //Para Modelos
 
 
@@ -45,9 +45,12 @@ Route::post('/update/{id}',[ProductController::class,'update']);
 Route::get('/delete/{id}',[ListadoController::class, 'delete']);
 
 Auth::routes();
+
 Route::get('/todos/{category?}', [App\Http\Controllers\VistapController::class, 'productos'])->name('productos');
 
 Route::get('/cat', [App\Http\Controllers\CategoriesController::class, 'categorias'])->name('categorias');
+
+Route::get('/todos/{category?}/{product?}', [App\Http\Controllers\VistapController::class, 'detalle'])->name('detalle');
 
 Route::get('/add', function () {
   return view('agregar');

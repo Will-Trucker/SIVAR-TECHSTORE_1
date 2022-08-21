@@ -1,3 +1,4 @@
+@extends('layouts.app')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,5 +9,7 @@
 </head>
 <body>
     <h1>Prueba </h1>
+
+    
 </body>
 </html>

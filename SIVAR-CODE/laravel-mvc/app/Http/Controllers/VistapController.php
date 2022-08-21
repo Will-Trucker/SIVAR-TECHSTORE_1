@@ -19,5 +19,12 @@ class VistapController extends Controller
         return view('viewp', ['datos'=>$prod]);
     }
 
+    public function detalle($id = null){
+    
+        $id = Product::where('id', $id)->first();
+        dd($id);
+        
+    }
+
 
 }
