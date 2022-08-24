@@ -8,6 +8,7 @@ use App\Http\Controller\CategoriesController;
 use App\Http\Controller\AgregarController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\DetalleController;
+use App\Http\Controllers\CarritoController;
 //Para Modelos
 
 
@@ -57,3 +58,4 @@ Route::get('/add', function () {
 });
 
 Route::post('EnvioCat', [App\Http\Controllers\AgregarController::class, 'add']);
+

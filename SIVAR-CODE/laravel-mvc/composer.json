@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
+        "darryldecode/cart": "^4.2",
         "encore/laravel-admin": "^1.8",
         "guzzlehttp/guzzle": "^7.2",
         "laradevs/spanish": "^2.3",
