@@ -8,7 +8,7 @@ use App\Http\Controller\CategoriesController;
 use App\Http\Controller\AgregarController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\DetalleController;
-use App\Http\Controllers\CarritoController;
+use App\Http\Controllers\CartController;
 //Para Modelos
 
 
