@@ -411,16 +411,16 @@ header {
 /*Agregar a corrito---------------------------------*/
 .agregar-carrito, p{
   margin-left: 20%;
-  font-size: 20px;
+  font-size: 21px;
   position: relative;
-  margin-top: 5%;
+  margin-top: 7%;
 }
 .agregar-carrito{
   display: inline-block;
   width: 300px;
   height: 65px;
   color: white;
-  background-color: black;
+  background-color: red;
   border-radius: 20px;
   transition: ease 1s;
   margin-left: 30px;
@@ -429,7 +429,7 @@ header {
 }
 .agregar-carrito:hover{
   color: black;
-  background-color: white;
+  background-color: var(--verde);
   border-radius: 20px;
 }
 .PrecioYCarro{
@@ -556,7 +556,7 @@ li {
   text-align: center;
 }
 .page-title{
-  margin-top: .5%;
+  margin-top: 5%;
 }
 .container {
   width: 800px;
@@ -571,24 +571,25 @@ li {
 .container .img_container{
     width: 450px;
     height: 350px;
-    margin-bottom: 20px;
-    background-color: white;
-    margin-left: 13%;
-    padding-top: 5%;
+    margin-bottom: 90px;
+    margin-left: 20%;
+    
+    margin-top: 1%;
 }
 
 .container .img_container .main_img{
-    width: 450px;
-    height: 100%;
+    margin-left: -17%;
+    height: 140%;
     border-radius: 5px;
     object-fit: cover;
+    margin-top: -3%;
 }
 /*Imgenes para cambiar*/
 .container .thumbnail_container{
     height: 95px;
     justify-content: space-between;
-    margin-top: 10%;
-    margin-left: 13%;
+    margin-top: 15%;
+    margin-left: 28%;
 }
 
 .container .thumbnail_container .thumbnail{
