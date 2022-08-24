@@ -50,7 +50,7 @@ Route::get('/todos/{category?}', [App\Http\Controllers\VistapController::class, 
 
 Route::get('/cat', [App\Http\Controllers\CategoriesController::class, 'categorias'])->name('categorias');
 
-Route::get('/todos/{category?}/{product?}', [App\Http\Controllers\VistapController::class, 'detalle'])->name('detalle');
+Route::get('/todos/detalle/{id}', [App\Http\Controllers\VistapController::class, 'detalle'])->name('detalle');
 
 Route::get('/add', function () {
   return view('agregar');

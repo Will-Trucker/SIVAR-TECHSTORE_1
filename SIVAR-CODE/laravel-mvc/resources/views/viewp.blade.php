@@ -130,8 +130,8 @@
     <div class="productos">  
     @foreach ($datos as $productos)
  <div class="producto">
-    <a href="/productos/{{$datos->id}}">
-    <img src="/productos/{{$productos->foto}}" height="180px" width="200px" alt="tarjeta grafica"> 
+    <a href="/todos/detalle/{{$productos->id}}">
+    <img src="/productos/{{$productos->foto}}" height="180px" width="200px" alt="tarjeta grafica"> </a>
      <div class="informacion">
     
         <span class="precio"> ${{$productos->precio}}</span>
@@ -139,7 +139,7 @@
 
         <span class="precio-envio">{{$productos->categoria}}</span>
     </div>
-</a>
+
   </div>
   @endforeach
  </div>

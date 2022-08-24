@@ -630,7 +630,9 @@ header {
 .product {
   position: relative;
   overflow: hidden;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 90%;
   margin-left: 5%;
   margin-top: 5%;
@@ -645,11 +647,12 @@ header {
 }
 
 .product-container {
-  padding: 0 10vw;
+  width: 1145px;
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
   height: 500px;
+  margin-left: 0.8%;
 }
 
 .product-container::-webkit-scrollbar {
@@ -666,6 +669,9 @@ header {
   text-align: center;
 }
 
+.card1{
+  margin-right: 0;
+}
 .product-image {
   position: relative;
   width: 100%;
@@ -759,16 +765,15 @@ header {
   justify-content: center;
   align-items: center;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
-  cursor: pointer;
   z-index: 1;
 }
 .degIz {
-  left: 0;
+  left: 100px;
   transform: rotate(180deg);
 }
 
 .degDe {
-  right: 0;
+  right: 110px;
 }
 .pre-btn,
 .nxt-btn {
@@ -776,7 +781,7 @@ header {
   width: 60px;
   height: 60px;
   position: absolute;
-  top: 45%;
+  top: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -785,15 +790,16 @@ header {
   border-radius: 100%;
   z-index: 2;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 4rem;
 }
 
 .pre-btn {
-  left: 3%;
+  left: 7.8%;
   transform: rotate(180deg);
 }
 
 .nxt-btn {
-  right: 3%;
+  right: 7.8%;
 }
 
 .pre-btn img,
@@ -838,6 +844,7 @@ header {
   grid-column: span 2;
   margin-bottom: 10px;
 }
+
 
  /* footer */
 .pie-pagina{

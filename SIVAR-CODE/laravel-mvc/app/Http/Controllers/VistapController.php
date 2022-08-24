@@ -12,7 +12,7 @@ class VistapController extends Controller
 {
     public function productos($category = null){
         if (isset($category) &&  $category != '') {
-            $prod = Product::where('categoria', $category)->paginate(2);
+            $prod = Product::where('categoria', $category)->paginate(5);
         }else {
             $prod = Product::paginate(6);
         }
@@ -20,10 +20,12 @@ class VistapController extends Controller
     }
 
     public function detalle($id = null){
-    
-        $id = Product::where('id', $id)->first();
-        dd($id);
-        
+      if (isset($id) && $id !=''){
+        $prod = Product::where('id', $id)->get();
+      }else{
+        $prod = Product::show();
+      }
+      return view('detalle', ['producto'=>$prod]);
     }
 
 

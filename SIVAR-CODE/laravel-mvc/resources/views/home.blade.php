@@ -175,7 +175,6 @@
 </section>
 
 <!-- Carrusel -->
-
 <section class="product">
         <button class="pre-btn"><img src="images/arrow.png" alt="">></button>
         <button class="nxt-btn"><img src="images/arrow.png" alt="">></button>
@@ -185,15 +184,15 @@
             <div class="product-card">
                 <div class="product-image">
 
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
                 </div>
                 <div class="product-info">
-                    <h2 class="product-brand">producto</h2>
+                <h2 class="product-brand">producto</h2>
                     <p class="product-short-description">descripción del prodcto...</p>
                     <span class="price">$0</span><span class="actual-price"></span>
                 </div>
             </div>
-            <div class="product-card">
+        <div class="product-card">
                 <div class="product-image">
 
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
@@ -281,7 +280,7 @@
                     <span class="price">$0</span><span class="actual-price"></span>
                 </div>
             </div>
-            <div class="product-card">
+            <div class="product-card card1">
                 <div class="product-image">
 
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
@@ -293,11 +292,10 @@
                 </div>
             </div>
         </div>
+        
     </section>
 
     <script src="{{asset('js/Carrousel.js')}}"></script>
-  <script src="js/app.js"></script>
-
 <!-- Footer -->
     <footer class="pie-pagina">
         <div class="grupo-1">

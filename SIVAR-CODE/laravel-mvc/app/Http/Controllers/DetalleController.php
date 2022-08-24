@@ -10,8 +10,8 @@ use DB;
 class DetalleController extends Controller
 {
     //
-    public function detalle($id){
-       $prod = Product::find($id);
+    public function detalle($prod = null){
+       $prod = Product::find($prod);
         return view('detalle', compact('prod'));
     }
 }

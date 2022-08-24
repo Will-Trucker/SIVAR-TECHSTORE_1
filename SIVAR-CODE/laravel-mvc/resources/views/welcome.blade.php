@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,7 +60,7 @@
         <div class="content text">
             <h3>Bienvenidos a SIVAR-TECHSTORE</h3>
           
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quibusdam. Ab officia fugit accusamus optio tempora earum placeat quos sit aut magni, in voluptatem repudiandae sunt, tenetur iste, dicta molestiae.</p>
+            <p>Somos una empresa dedicada a vender productos relacionados al ambito tecnológico</p>
 
             <a href="{{ route('acerca') }}" class="btn">Sobre Nosotros</a>
 
@@ -73,7 +74,7 @@
     <div class="slide">
         <div class="content text">
             <h3>Equipos para cualquier uso</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quibusdam. Ab officia fugit accusamus optio tempora earum placeat quos sit aut magni, in voluptatem repudiandae sunt, tenetur iste, dicta molestiae.</p>
+            <p>No importa el entorno que sea, todos nuestros equipos son 100% adaptables</p>
             <a href="{{route('register')}}" class="btn">Ver Catalogo</a>
             <video src="{{asset('img/Video Card - 15793.mp4')}}" muted autoplay loop></video>
         </div>
@@ -86,7 +87,7 @@
     <div class="slide">
         <div class="content text">
             <h3>100% calidad garantizada</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quibusdam. Ab officia fugit accusamus optio tempora earum placeat quos sit aut magni, in voluptatem repudiandae sunt, tenetur iste, dicta molestiae.</p>
+            <p>Equipos con componentes de marcas reconocidas mundialmente</p>
             <a href="{{route('register')}}" class="btn">Registrarme</a>
             <video src="{{asset('img/Cpu - 18031.mp4')}}" muted autoplay loop></video>
         </div> 
@@ -99,7 +100,7 @@
     <div class="slide">
         <div class="content text">
             <h3>Contactanos</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quibusdam. Ab officia fugit accusamus optio tempora earum placeat quos sit aut magni, in voluptatem repudiandae sunt, tenetur iste, dicta molestiae.</p>
+            <p>¿Tienes alguna consulta? Visita Nuestras redes sociales</p>
             <a href="https://linktr.ee/sivar_techstore" class="btn">¡CONTACTANOS!</a>
             <video src="{{asset('img/Laptop - 63.mp4')}}" muted autoplay loop></video>
         </div>
@@ -128,9 +129,10 @@
         <div class="info__description">
             <center><h3>MONITORES</h3></center>
              <p>Diferentes pantallas adaptables para cualquier entorno favorito.</p>
-
+            <a href="{{route('register')}}">
             <input type="button" value="Leer Más">
-            </div>
+            </a> 
+           </div>
       </div>
       
       <div class="card c2">
@@ -140,7 +142,9 @@
         <div class="info__description">
              <center><h3>ALMACENAMIENTO</h3></center>
              <p>Memorias de cualquier capacidad para guardar cualquier archivo.</p>
-            <input type="button" value="Leer Más">
+             <a href="{{route('register')}}">
+             <input type="button" value="Leer Más">
+             </a>
             </div>
       </div>
       <div class="card c3">
@@ -150,7 +154,9 @@
         <div class="info__description">
             <center><h3>PERIFERICOS</h3></center>
              <p>Dispositivos adaptables a cualquier tipo de trabajo.</p>
-            <input type="button" value="Leer Más">
+             <a href="{{route('register')}}">
+             <input type="button" value="Leer Más">
+             </a>
             </div>
       </div>
 
@@ -167,6 +173,8 @@
     
 </section>
 
+
+
 <!-- Carrusel -->
 
 <section class="product">
@@ -178,7 +186,7 @@
             <div class="product-card">
                 <div class="product-image">
 
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">producto</h2>
@@ -186,7 +194,7 @@
                     <span class="price">$0</span><span class="actual-price"></span>
                 </div>
             </div>
-            <div class="product-card">
+        <div class="product-card">
                 <div class="product-image">
 
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
@@ -274,7 +282,7 @@
                     <span class="price">$0</span><span class="actual-price"></span>
                 </div>
             </div>
-            <div class="product-card">
+            <div class="product-card card1">
                 <div class="product-image">
 
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
@@ -286,10 +294,11 @@
                 </div>
             </div>
         </div>
+        
     </section>
 
     <script src="{{asset('js/Carrousel.js')}}"></script>
-
+   
 <!-- Footer -->
     <footer class="pie-pagina">
         <div class="grupo-1">
