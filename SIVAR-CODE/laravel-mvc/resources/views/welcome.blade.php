@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +43,7 @@
             <a href="{{ route('register') }}">Catalogo</a>
             <a href="{{ route('register') }}">Cotizá</a>
             <a href="{{ route('register') }}">Compras</a> 
-            <a href="{{ route('acerca') }}">Nosotros</a>
+            <a href="{{ route('register') }}">Nosotros</a>
             <a  href="{{ route('register') }}">¡REGISTRATE!</a> 
         </div>
     </div>
@@ -62,7 +61,7 @@
           
             <p>Somos una empresa dedicada a vender productos relacionados al ambito tecnológico</p>
 
-            <a href="{{ route('acerca') }}" class="btn">Sobre Nosotros</a>
+            <a href="{{ route('register') }}" class="btn">Sobre Nosotros</a>
 
             <video src="{{asset('img/Fan - 8064.mp4')}}" muted autoplay loop></video>
         </div>

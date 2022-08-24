@@ -12,9 +12,9 @@ class VistapController extends Controller
 {
     public function productos($category = null){
         if (isset($category) &&  $category != '') {
-            $prod = Product::where('categoria', $category)->paginate(5);
+            $prod = Product::where('categoria', $category)->paginate(5); //Producto por categoria
         }else {
-            $prod = Product::paginate(6);
+            $prod = Product::paginate(6); //Todos los productos
         }
         return view('viewp', ['datos'=>$prod]);
     }
