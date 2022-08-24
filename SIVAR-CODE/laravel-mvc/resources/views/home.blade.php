@@ -67,7 +67,7 @@
         <div class="content text">
             <h3>Bienvenidos a SIVAR-TECHSTORE</h3>
           
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quibusdam. Ab officia fugit accusamus optio tempora earum placeat quos sit aut magni, in voluptatem repudiandae sunt, tenetur iste, dicta molestiae.</p>
+            <p>Somos una empresa dedicada a vender productos relacionados al ambito tecnológico</p>
 
             <a href="{{ route('acerca') }}" class="btn">Sobre Nosotros</a>
 
@@ -81,7 +81,7 @@
     <div class="slide">
         <div class="content text">
             <h3>Equipos para cualquier uso</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quibusdam. Ab officia fugit accusamus optio tempora earum placeat quos sit aut magni, in voluptatem repudiandae sunt, tenetur iste, dicta molestiae.</p>
+            <p>No importa el entorno que sea, todos nuestros equipos son 100% adaptables</p>
             <a href="{{route('categorias')}}" class="btn">Ver Catalogo</a>
             <video src="{{asset('img/Video Card - 15793.mp4')}}" muted autoplay loop></video>
         </div>
@@ -94,7 +94,7 @@
     <div class="slide">
         <div class="content text">
             <h3>100% calidad garantizada</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quibusdam. Ab officia fugit accusamus optio tempora earum placeat quos sit aut magni, in voluptatem repudiandae sunt, tenetur iste, dicta molestiae.</p>
+            <p>Equipos con componentes de marcas reconocidas mundialmente</p>
             <a href="/todos" class="btn">Nuestros Productos</a>
             <video src="{{asset('img/Cpu - 18031.mp4')}}" muted autoplay loop></video>
         </div> 
@@ -107,7 +107,7 @@
     <div class="slide">
         <div class="content text">
             <h3>Contactanos</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quibusdam. Ab officia fugit accusamus optio tempora earum placeat quos sit aut magni, in voluptatem repudiandae sunt, tenetur iste, dicta molestiae.</p>
+            <p>¿Tienes alguna consulta? Visita Nuestras redes sociales</p>
             <a href="https://linktr.ee/sivar_techstore" class="btn">Seguinos</a>
             <video src="{{asset('img/Laptop - 63.mp4')}}" muted autoplay loop></video>
         </div>
@@ -326,7 +326,17 @@
         </div>
         <div class="grupo-2">
             <small>&copy; 2022 <b>SIVAR-TECHSTORE</b> | Todos los Derechos Reservados</small>
-            
+            <div id="google_translate_element" class="google">
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+	new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+        }
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+</div>
         </div>
     </footer>
 

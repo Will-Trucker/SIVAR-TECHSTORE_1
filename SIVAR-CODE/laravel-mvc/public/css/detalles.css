@@ -133,7 +133,7 @@ header {
     font-family: var(--font);
     font-weight: 500;
     text-decoration: none;
-    
+    text-transform: capitalize;
   }
   
   .nav__links {
@@ -221,6 +221,7 @@ header {
     align-items: center;
     justify-content: center;
     z-index: 4;
+    text-transform: capitalize;
   }
   
   .overlay a {
@@ -890,5 +891,33 @@ color: orange;
   
   .pie-pagina{
     margin-top: 10%;
+  }
+}
+
+.goog-te-gadget-simple{
+  background-color: #314258 !important;
+  color: white !important;
+  
+  padding: 10px !important;
+  margin-top: -15px !important;
+}
+.goog-te-gadget-icon{
+  display: none;
+}
+
+.goog-te-gadget-simple span{
+  color: white !important;
+}
+
+
+.google{
+  margin-left: 60%;
+  margin-top: -0.8%;
+}
+
+@media (max-width:480px){
+  .google{
+    margin-top: 8%;
+    margin-left: -2%;
   }
 }

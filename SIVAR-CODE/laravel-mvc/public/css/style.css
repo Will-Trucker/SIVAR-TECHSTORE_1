@@ -507,3 +507,31 @@ color: rgb(30, 152, 228);
    word-spacing: 0.4rem;
    line-height: 3rem;
   }
+
+  .goog-te-gadget-simple{
+    background-color: #314258 !important;
+    color: white !important;
+    
+    padding: 10px !important;
+    margin-top: -15px !important;
+  }
+  .goog-te-gadget-icon{
+    display: none;
+  }
+  
+  .goog-te-gadget-simple span{
+    color: white !important;
+  }
+  
+  
+  .google{
+    margin-left: 60%;
+    margin-top: -0.8%;
+  }
+  
+  @media (max-width:480px){
+    .google{
+      margin-top: 8%;
+      margin-left: -2%;
+    }
+  }
