@@ -59,9 +59,11 @@ Route::get('/add', function () {
 
 Route::post('EnvioCat', [App\Http\Controllers\AgregarController::class, 'add']);
 
-//Rutas del carritos
-Route::get('cart', [CartController::class, 'cartList'])->name('cart.list');
-Route::post('cart', [CartController::class, 'addToCart'])->name('cart.store');
-Route::post('update-cart', [CartController::class, 'updateCart'])->name('cart.update');
-Route::post('remove', [CartController::class, 'removeCart'])->name('cart.remove');
-Route::post('clear', [CartController::class, 'clearAllCart'])->name('cart.clear');
+//Rutas del carrito
+Route::post('/store/cart-add', [App\Http\Controllers\CartController::class, 'adde'])->name('cart.adde');
+
+Route::get('/store/cart-checkout', [App\Http\Controllers\CartController::class, 'cart'])->name('cart.checkout');
+
+Route::post('/store/cart-clear', [App\Http\Controllers\CartController::class, 'clear'])->name('cart.clear');
+
+Route::post('/store/cart-removeitem', [App\Http\Controllers\CartController::class, 'removeitem'])->name('cart.removeitem');

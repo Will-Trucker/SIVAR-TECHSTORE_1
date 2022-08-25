@@ -3,64 +3,47 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-/* use App\Models\Product;
-use Cart;*/
+use App\Models\Product;
+use Cart;
+
 class CartController extends Controller
 {
     //
-    public function cartList(){
-        $cartItems = \Cart::getContent();
-        // dd($cartItems);
-        return view('cart', compact('cartItems'));
+    public function adde(Request $request){
+        $producto = Product::find($request->id);
+        Cart::add(array(
+            "id" => $producto->id,
+            "name" => $producto->nombre,
+            "price" => $producto->precio,
+            "quantity" => 1,  //Cantidad
+            "attributes" => array(
+                "image" => $producto->precio,
+                "slug" => $producto->slugs
+            ) 
+            ));
+            return redirect()->back()->with("success_message", "Producto $producto->name agregado");
     }
 
- 
-    public function addToCart(Request $request)
-    {
-        \Cart::add([
-            'id' => $request->id,
-            'nombre' => $request->nombre,
-            'precio' => $request->precio,
-            'attributes' => array(
-                'foto' => $request->foto,
-            )
-        ]);
-        session()->flash('success', 'Producto Agregado Satisfactoriamente !');
-
-        return redirect()->route('cart.list');
+   //Vista Carrito
+    public function cart(){
+      return view('cart');
     }
 
-    public function updateCart(Request $request)
-    {
-        \Cart::update(
-            $request->id,
-            [
-                'quantity' => [
-                    'relative' => false,
-                    'value' => $request->quantity
-                ],
-            ]
-        );
-
-        session()->flash('success', '¡Productos Actualizados!');
-
-        return redirect()->route('cart.list');
+    //Quitar un producto del carrito
+    public function removeitem(Request $request){
+      Cart::remove([
+        'id' => $request->id,
+      ]);
+      return back()->with('success', "Producto Eliminado Satisfactoriamente");
     }
 
-    public function removeCart(Request $request)
-    {
-        \Cart::remove($request->id);
-        session()->flash('success', 'Producto Eliminado !');
-
-        return redirect()->route('cart.list');
+    //Limpiar el  carrito
+    public function clear(){
+        Cart::clear();
+        return back()->with('success', "Carrito de Compras Vacio");
     }
+    
+    
 
-    public function clearAllCart()
-    {
-        \Cart::clear();
-
-        session()->flash('success', 'No tienes Productos !');
-
-        return redirect()->route('cart.list');
-    }
+    
 }
