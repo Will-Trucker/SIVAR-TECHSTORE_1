@@ -5,23 +5,24 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use Cart;
+use DB;
 
 class CartController extends Controller
 {
     //
     public function adde(Request $request){
-        $producto = Product::find($request->id);
+        $p = Product::find($request->id);
         Cart::add(array(
-            "id" => $producto->id,
-            "name" => $producto->nombre,
-            "price" => $producto->precio,
-            "quantity" => 1,  //Cantidad
+            "id" => $p->id,
+            "name" => $p->nombre,
+            "price" => $p->precio,
+            "quantity" => 1, 
             "attributes" => array(
-                "image" => $producto->precio,
-                "slug" => $producto->slugs
+                "image" => $p->foto,
+                "slug" => $p->slug
             ) 
             ));
-            return redirect()->back()->with("success_message", "Producto $producto->name agregado");
+            return redirect()->back()->with("success_message","Producto $p->nombre agregado");
     }
 
    //Vista Carrito
