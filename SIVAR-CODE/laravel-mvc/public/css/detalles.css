@@ -824,7 +824,7 @@ color: var(--negro);
 }
 
 .pie-pagina .grupo-1 .contactos a{
-   display: inline-block; /* agrega un salto de linea */
+  display: inline-block; /* agrega un salto de linea */
   text-decoration: none;
   width: 45px;
   height: 45px;
@@ -836,8 +836,6 @@ color: var(--negro);
   transition: all 300ms ease; /* efecto al pasar el mouse en el boton*/
   margin-left: 0.9rem;
 }
-
-
 
 .facebook{
 color: var(--white);
@@ -920,4 +918,16 @@ color: orange;
     margin-top: 8%;
     margin-left: -2%;
   }
+}
+
+.boton-add{
+  margin-left: -50%;
+  margin-top: 15%;
+  width: 30rem;
+  height: 3rem;
+  text-transform: capitalize;
+}
+
+.cate{
+  margin-top: 30%;
 }

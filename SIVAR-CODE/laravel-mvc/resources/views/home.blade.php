@@ -30,13 +30,14 @@
         <nav>
             <ul class="nav__links">
               <li><a href="{{route('categorias')}}" class="opciones bars-solid"><svg class="bars-solid"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="40px"><path  fill=currentcolor d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg> Catalogo</a></li>
-              <li><a href="#" class="opciones cotizar"><svg class="cotizacion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30px" height="40px">><path fill="currentcolor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z"/></svg> Preguntas Frecuentes</a></li>
+              <li><a href="{{route('pregunta')}}" class="opciones cotizar"><svg class="cotizacion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30px" height="40px">><path fill="currentcolor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z"/></svg> Preguntas Frecuentes</a></li>
               <li><a href="/store/cart-checkout" class="position-relative opciones carretilla">
               <svg class="carretilla"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentcolor" d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"/></svg> Carrito
   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
    {{Cart::getContent()->count()}}
     <span class="visually-hidden"></span>
   </span>
+</a>
 </li>
             </ul>
         </nav>
@@ -51,9 +52,9 @@
     <div class="overlay" id="mobile-menu">
         <a class="close">&times;</a>
         <div class="overlay__content">
-            <a href="{{route('categorias')}}">Catalogo</a>
-            <a href="#">Preguntas Frecuentes</a>
-            <a href="#">Compras</a> 
+            <a href="{{route('categorias')}}">Categorias</a>
+           <center> <a href="{{route('pregunta')}}">Preguntas Frecuentes</a> </center>
+            <a href="/store/cart-checkout">Compras</a> 
             <a href="{{route('acerca')}}">Nosotros</a>
             <a  href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -64,10 +65,9 @@
     <script text="text/javascript" src="{{asset('js/menu.js')}}"></script>
    
 </div>
-<br><br><br><br><br><br><br>
-
+<br><br><br><br><br>
 <!-- Slider -->
-<div class="container">
+<div class="contenedor">
     <div class="slide-container active">
         <div class="slide">
         <div class="content text">
@@ -129,7 +129,7 @@
 <br><br>
 <!-- categorias principales -->
 <center><h1 class="cat">PRODUCTOS DESTACADOS</h1>
-    <hr class="cat-" style="background: red; width: 430px; height: 7px; border: none; margin-top: -23px;"></center>
+    <hr class=" border-3 opacity-75" style="background: red; width: 430px; height: 7px; border: none; margin-top: -23px;"></center>
 <div class="body__page">
      <div class="container__card">
       <div class="card c1">
@@ -175,30 +175,32 @@
 <!-- Ofertas -->
 <section class="ofertas">
     <center><h1>OFERTAS</h1>
-        <hr style="background: red; width: 150px; height: 7px; border: none; margin-top: -23px;"></center>
+    <hr class=" border-3 opacity-75" style="margin-top: -1.5%"></center>
 
     
 </section>
 
 <!-- Carrusel -->
+<!-- Carrusel -->
+
 <section class="product">
+  <div class="Details">
         <button class="pre-btn"><img src="images/arrow.png" alt="">></button>
         <button class="nxt-btn"><img src="images/arrow.png" alt="">></button>
-        <div class="degIz"></div>
-        <div class="degDe"></div>
+  </div>
         <div class="product-container">
             <div class="product-card">
                 <div class="product-image">
 
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
                 </div>
                 <div class="product-info">
-                <h2 class="product-brand">producto</h2>
+                    <h2 class="product-brand">producto</h2>
                     <p class="product-short-description">descripción del prodcto...</p>
                     <span class="price">$0</span><span class="actual-price"></span>
                 </div>
             </div>
-        <div class="product-card">
+            <div class="product-card">
                 <div class="product-image">
 
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
@@ -298,7 +300,6 @@
                 </div>
             </div>
         </div>
-        
     </section>
 
     <script src="{{asset('js/Carrousel.js')}}"></script>

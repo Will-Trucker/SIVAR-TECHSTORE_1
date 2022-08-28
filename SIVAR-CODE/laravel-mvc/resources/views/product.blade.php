@@ -27,6 +27,7 @@
                 <br>
                 <h2 class="title-form">AGREGAR PRODUCTOS</h2>
                 <input class="controls" type="text" name="nombre" id="nombre" placeholder="Producto" required>
+                <input class="controls" type="text" name="slug" id="slug" placeholder="Slug" required>
                <!-- <input type="text" name="categoria" id="categoria" class="controls" placeholder="Categoria" required> -->
                 <select name="categoria" id="categoria" class="formulario__campo controls">
                     <option disabled selected > SELECCIONAR LA CATEGORIA </option> <br>

@@ -1,31 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-  :root{
-      --white: #ffffff;
-      --negro: black;
-      --red: #de1313;
-      --verde: rgb(17, 205, 17);
-      --font: 'Poppins', sans-serif;
-      --grisn: #1c1c1c;
+
+:root{
+	--white: #ffffff;
+    --negro: black;
+    --red: #de1313;
+    --verde: rgb(17, 205, 17);
+    --font: 'Poppins', sans-serif;
+    --grisn: #1c1c1c;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: var(--font);
+  outline: none;
+  text-decoration: none;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+@media (max-width: 1080px){
+  body{
+    max-width: 100%;
+    overflow-x: hidden;
   }
+}
+.navegacion{
+    z-index: 4;
+}
+.bienvenido{
+  color: #000000;
+  text-overflow: initial;
+  font-size: 1.3rem;
   
-  *{
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: var(--font);
-      text-decoration: none;
+}
+@media (max-width:428px){
+  .bienvenido{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 1rem;
   }
-  
-  a{
-    text-decoration: none;
-    color: currentColor;
+}
+
+
+@media (max-width:424px){
+  .bienvenido{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: -1rem;
   }
-  
-  .navegacion{
-      z-index: 4;
+}
+
+@media (max-width:380px){
+  .bienvenido{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 0.5rem;
   }
-  
-  header {
+}
+
+
+header {
     z-index: 4;
     display: flex;
     justify-content: space-between;
@@ -34,43 +79,45 @@
     box-shadow: 5px 10px 18px #0a0a0a;
     position: fixed;
     width: 100%;
-   background: #fff;
-   outline: none;
+    background: #fff;
   }
   
-  .logotipo{
-    height: 10px;
-    width: auto;
-    border: none;
+  .logo {
     cursor: pointer;
-    outline: none;
+    transition: all 0.3s;
+  }
+
+  .logotipo{
+    height: 100px;
+    width: auto;
   }
   
-
-  @media (min-height: 480px){
+  @media (max-width: 480px){
     .logotipo{
       height: 90px;
-
     }
      
   
       }
 
-      @media (min-height: 414px){
+      @media (max-width: 414px){
         .logotipo{
           height: 90px;
-    
+          margin-left: -15%;
         }
          
         .logo:hover{
           transform: none;
         }
+      
+        
+    
       }
 
-  @media (min-height: 375px){
+  @media (max-width: 375px){
     .logotipo{
-      height: 100px;
-      
+      height: 80px;
+      margin-left: -2rem;
     }
      
     .logo:hover{
@@ -79,12 +126,14 @@
   
   }
   
+ 
   .nav__links a,
   .cta,
   .overlay__content a {
     font-family: var(--font);
     font-weight: 500;
     text-decoration: none;
+    text-transform: capitalize;
   }
   
   .nav__links {
@@ -100,6 +149,7 @@
   .nav__links li a {
     transition: color 0.3s ease 0s;
     font-size: 26px;
+    color: var(--negro);
   }
   
   .nav__links li a:hover {
@@ -107,17 +157,20 @@
   }
   
   .cta {
-    padding: 2px 20px;
+    padding: 5px 19px;
     background-color: var(--red);
     border: none;
     border-radius: 50px;
     cursor: pointer;  
-    font-size: 25px;
-    transition: all 0.3s;   
+    font-size: 22px;
+    transition: all 0.3s;
+    margin-left: 2rem;
+    color: var(--negro);
   }
   
   .cta:hover {
     background-color: var(--verde);
+    color: var(--negro);
    /*  transform: scale(1.2);*/
   }
   
@@ -140,7 +193,7 @@
   
   .menu {
     display: none;
-
+    color: currentColor;
   }
   
   .overlay {
@@ -153,7 +206,7 @@
     background-color: var(--grisn);
     overflow-x: hidden;
     transition: width 0.5s ease 0s;
-    color: var(--white);
+    color: currentColor;
     z-index: 4;
   }
   
@@ -168,6 +221,7 @@
     align-items: center;
     justify-content: center;
     z-index: 4;
+    text-transform: capitalize;
   }
   
   .overlay a {
@@ -175,6 +229,7 @@
     font-size: 36px;
     display: block;
     transition: color 0.3s ease 0s;
+    color: var(--white);
   }
   
   .overlay a:hover,
@@ -188,11 +243,12 @@
     font-size: 60px;
     color: #edf0f1;
     cursor: pointer;
+    text-decoration: none;
   }
 
   .icono{
       font-weight: bold;
-      font-size: 28px;
+      font-size: 20px;
   }
   
   @media screen and (max-height: 450px) {
@@ -216,82 +272,109 @@
     }
   }
   
-  body{
-      width: 100%;
-      height: 100%;
-      letter-spacing: 0.03em;
-      line-height: 1.6;
-  }
-  
-  /* footer */
+ 
+ 
+/* footer */
 .pie-pagina{
-    width: 100%;
-    background-color: #232f3a;
-    margin-top: 30%;
+  width: 100%;
+  background-color: #232f3a;
+  margin-top: 40%;
 }
 .pie-pagina .grupo-1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap:50px;
-    padding: 45px 0px;
-    z-index: 1;
-}
-.pie-pagina .grupo-1 .box figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.pie-pagina .grupo-1 .box figure img{
-    width: 300px;
-}
-.pie-pagina .grupo-1 .box h2{
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
-    margin-left: 0.9rem;
-}
-.pie-pagina .grupo-1 .box p{
-    color: #efefef;
-    margin-bottom: 10px;
-    margin-left: 0.9rem;
-}
-.pie-pagina .grupo-1 .contactos a{
-     display: inline-block; /* agrega un salto de linea */
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 60px;
-    margin-right: 2px;
-    background-color: #314258;
-    text-align: center;
-    border-radius: 10%; 
-    transition: all 300ms ease; /* efecto al pasar el mouse en el boton*/
-    margin-left: 0.9rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:50px;
+  padding: 45px 0px;
+  z-index: 1;
 }
 
-.facebook{
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+  width: 300px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+  margin-left: 0.9rem;
+}
+.pie-pagina .grupo-1 .box p{
+  color: #efefef;
+  margin-bottom: 10px;
+  margin-left: 0.9rem;
+}
+
+.pie-pagina .grupo-1 .box button{
+margin-bottom: 10px;
+margin-left: 0.9rem;
+background: #314258;
+cursor: pointer;
+border: none;
+height: 2rem;
+width: 10rem;
+border-radius: 10px;
+}
+
+.pie-pagina .grupo-1 .box button a{
   color: var(--white);
+  text-decoration: none;
+}
+
+.pie-pagina .grupo-1 .box button a:hover{
+  color: var(--negro);
+  text-decoration: none;
+}
+
+.pie-pagina .grupo-1 .box button:hover{
+background: var(--white);
+color: var(--negro);
+}
+
+.pie-pagina .grupo-1 .contactos a{
+   display: inline-block; /* agrega un salto de linea */
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 2.8rem;
+  margin-right: 2px;
+  background-color: #314258;
+  text-align: center;
+  border-radius: 10%; 
+  transition: all 300ms ease; /* efecto al pasar el mouse en el boton*/
+  margin-left: 0.9rem;
+}
+
+
+
+.facebook{
+color: var(--white);
 }
 
 .facebook:hover{
-  color: rgb(38, 141, 231);
+color: rgb(38, 141, 231);
 }
 
 .instagram{
-  color: var(--white);
+color: var(--white);
 }
 
 .instagram:hover{
-  color: orangered;
+color: orangered;
 }
 
 .twitter{
-  color: var(--white);
+color: var(--white);
 }
 
 .twitter:hover{
@@ -299,89 +382,43 @@ color: rgb(30, 152, 228);
 }
 
 .mail{
-  color: var(--white);
+color: var(--white);
 }
 
 .mail:hover{
-  color: orange;
+color: orange;
 }
 
 .pie-pagina .grupo-2{
-    background-color: #0a1a2a;
-    padding: 15px 10px;
-    text-align: center;
-    color: #fff;
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
 }
 .pie-pagina .grupo-2 small{
-    font-size: 15px;
+  font-size: 15px;
 }
 
 @media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
-        width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
-        padding: 35px 0px;
-    }
-    
-    .pie-pagina{
-      margin-top: 600%;
-    }
+  .pie-pagina .grupo-1{
+      width: 100%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+  }
+  
+  .pie-pagina{
+    margin-top: 150%;
+  }
 }
 
-@media (max-width: 412px){
-    .pie-pagina{
-      margin-top: 100%;
-    }
-  }
 
-
-  @media (max-width: 390px){
-    .pie-pagina{
-      margin-top: 560%;
-    }
+@media (width:1080px){
+  .pie-pagina{
+    margin-top: 125%;
   }
+}
 
-  @media (max-width: 384px){
-    .pie-pagina{
-      margin-top: 540%;
-    }
-  }
-
- 
-
-  @media (max-width: 414px){
-    .pie-pagina{
-      margin-top: 430%;
-    }
-  }
-
-
-  @media (max-width: 400px){
-    .pie-pagina{
-      margin-top: 510%;
-    }
-  }
-
-  @media (max-width: 428px){
-    .pie-pagina{
-      margin-top: 470%;
-    }
-  }
-  
-  
-  @media (max-width: 360px){
-    .pie-pagina{
-      margin-top: 520%;
-    }
-  }
-  
-  
-  @media (max-width: 1080px){
-    .pie-pagina{
-      margin-top: 95%;
-    }
-  }
 
   #general{
       width: 100%;
@@ -395,6 +432,7 @@ color: rgb(30, 152, 228);
       padding-top: 30px;
       background-color: gray;
       border-radius: 20px;
+      color: var(--negro);
   }
 
   #general img{
@@ -467,7 +505,7 @@ color: rgb(30, 152, 228);
       border-radius: 8px;
       box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
       overflow: hidden;
-      margin: 20px;
+      margin: 50px;
       text-align: center;
       transition: all 0.25s;
   }
@@ -485,12 +523,14 @@ color: rgb(30, 152, 228);
   
   .container .card h4{
       font-weight: 600;
+      margin-top: 5%;
   }
   
   .container .card p{
-      padding: 0 1rem;
+   /*   padding: 0 1rem;*/
       font-size: 16px;
       font-weight: 300;
+      margin-top: 5%;
   }
   
   .container .card a {

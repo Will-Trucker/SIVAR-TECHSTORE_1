@@ -1,37 +1,39 @@
 @extends('layouts.app')
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Carretilla</title>
-    <link rel="stylesheet" href="css/Check.css">
-    <link rel="preload" type="text/css" href="{{asset('css/normalize.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/normalize.css')}}">
-    <link rel="icon" type="picture" href="{{asset('img/Icono.png')}}">
-    <link rel="preload" type="text/css" href="{{asset('css/carrito.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/carrito.css')}}">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes</title>
+    <link rel="preload" href="{{asset('css/normalize.css')}}">
+    <link rel="stylesheet" href="{{asset('css/normalize.css')}}">
+    <link rel="preload" href="{{asset('css/frecuent.css')}}">
+    <link rel="stylesheet" href="{{asset('css/frecuent.css')}}">
+    <link rel="icon" href="{{asset('img/Icono.png')}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  </head>
-  <body>
+</head>
+<body>
+<main>
     <div class="navegacion"> <!-- Menu -->
     <header class="header">
-       <a class="logo" href="/home"><img class="logotipo" src="{{asset('img/Asset 7.webp')}}" alt="logo"></a>
+       <a class="logo" href="/home"><img class="logotipo" src="img/Asset 7.webp" alt="logo"></a>
         <nav>
             <ul class="nav__links">
-              <li><a href="/cat" class="opciones bars-solid"><svg class="bars-solid"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="40px"><path  fill=currentcolor d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg> Catalogo</a></li>
-              <li><a href="{{ route('acerca') }}" class="opciones bars-solid"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30px" height="40px"><path fill="currentColor" d="M256 288c79.53 0 144-64.47 144-144s-64.47-144-144-144c-79.52 0-144 64.47-144 144S176.5 288 256 288zM351.1 320H160c-88.36 0-160 71.63-160 160c0 17.67 14.33 32 31.1 32H480c17.67 0 31.1-14.33 31.1-32C512 391.6 440.4 320 351.1 320z"/></svg> Conócenos</a></li>
-              <li><a href="#" class="position-relative opciones carretilla">
+            <li><a href="{{ route('acerca') }}" class="opciones bars-solid"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30px" height="40px"><path fill="currentColor" d="M256 288c79.53 0 144-64.47 144-144s-64.47-144-144-144c-79.52 0-144 64.47-144 144S176.5 288 256 288zM351.1 320H160c-88.36 0-160 71.63-160 160c0 17.67 14.33 32 31.1 32H480c17.67 0 31.1-14.33 31.1-32C512 391.6 440.4 320 351.1 320z"/></svg> Conócenos</a></li>
+              <li><a href="#" class="opciones cotizar"><svg class="cotizacion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30px" height="40px">><path fill="currentcolor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z"/></svg> Preguntas Frecuentes</a></li>
+              <li><a href="/store/cart-checkout" class="position-relative opciones carretilla">
               <svg class="carretilla"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentcolor" d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"/></svg> Carrito
   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
    {{Cart::getContent()->count()}}
     <span class="visually-hidden"></span>
   </span>
-</a></li>
-            </ul>
+</a>
+</li>
+
         </nav>
         <h3 class="bienvenido">Hola {{ Auth::user()->name }} <br><br> <a  class="cta" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -39,14 +41,15 @@
                                        {{ __('SALIR') }}   
                                     </a></h3>
 
-    <a alt="#" class="menu cta icono">≡</a>
+
+    <a alt="#" class="menu cta icono">≡</a> 
 
     <div class="overlay" id="mobile-menu">
         <a class="close">&times;</a>
         <div class="overlay__content">
             <a href="/home">Inicio</a>
-            <a href="{{route('categorias')}}">Categorias</a>
-            <a href="{{route('acerca')}}">Conecenos</a>
+            <a href="#">Compras</a> 
+            <a href="{{asset('acerca')}}">Nosotros</a>
             <a  class="cta" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -55,162 +58,80 @@
         </div>
     </div>
     <script text="text/javascript" src="{{asset('js/menu.js')}}"></script>
-
+   
 </div>
-
 </header>
-<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br> 
+    <center> 
+    <div class="contenedor">
+        <div class="row">
+            <div class="container-faq">
+                <div class="title-faq">
+                    <h3>Preguntas Frecuentes</h3>
+                </div>
 
+                <div class="item-faq">
+                    <div class="question">
+                        <h3>¿Como puedes contactarnos? <span>1.</span></h3>
+                        <div class="more"><i>+</i></div>
+                    </div>
+                    <div class="answer">
+                        <p>Puedes hacerlo por medio de nuestras redes sociales, dando click <a href="https://linktr.ee/sivar_techstore" style="text-decoration:none; color:blue;" target="self">Aquí</a></p>
+                    </div>
+                </div>
+                <br>
+                <div class="item-faq">
+                    <div class="question">
+                        <h3>¿Cuales son los metodos de pago? <span>2.</span></h3>
+                        <div class="more"><i>+</i></div>
+                    </div>
+                    <div class="answer">
+                        <p>Solamente pagos con tarjeta de credito y debito</p>
+                    </div>
+                </div>
+                <br>
+                <div class="item-faq">
+                    <div class="question">
+                        <h3>¿En cuanto tiempo estara listo el producto? <span>3.</span></h3>
+                        <div class="more"><i>+</i></div>
+                    </div>
+                    <div class="answer">
+                        <p>El producto puede dar estar listo alrededor de 2 días como minimo, dependiendo existencias</p>
+                    </div>
+                </div>
+                <br>
+                <div class="item-faq">
+                    <div class="question">
+                        <h3>¿Como puedo comprar un producto? <span>4.</span></h3>
+                        <div class="more"><i>+</i></div>
+                    </div>
+                    <div class="answer">
+                        <p>Debes de crear una cuenta con cualquier extension de correo que ocupes y poseer tarjeta de credito o debito para comprar</p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="item-faq">
+                    <div class="question">
+                        <h3>¿Como puedo registrarme/Iniciar Sesion <span>5.</span></h3>
+                        <div class="more"><i>+</i></div>
+                    </div>
+                    <div class="answer">
+                        <p>Para <a href="{{route('register')}}" style="color:blue; text-decoration:none;">Crear una Cuenta</a> o <a href="{{route('login')}}" style="color:blue; text-decoration:none;">Iniciar Sesion</a></p>
+                    </div>
+                </div>
 
-<div class="container">
-<h1 class="text-center h4 pt-3 pb-3">Tu Carrito tiene</h5>
-@if (count(Cart::getContent()))
-<table class="table table-striped">
-<thead class="table-dark">
-  <tr>
-    <th scope="col"><p class="text-center m-0">PRODUCTOS</p></td>
-    <th scope="col"><p class="text-center m-0">NOMBRE</p></td>
-    <th scope="col"><p class="text-center m-0">CANTIDAD</p></td>
-    <th scope="col"><p class="text-center m-0">PRECIO</p></td>
-    <th scope="col"><p class="text-center m-0">TOTAL</p></td>
-    <th></th>
-  </tr>
-</thead>
-<tbody>
-  @foreach(Cart::getContent() as $p)
-  <tr>
-  <td>
-  
-  <img src="/productos/{{$p->attributes->image}}" width="200" class="img-thumbnail mx-auto d-block rounded-lg">
-  </td>
-  <td>
-    {{$p->name}}
-  </td>
-  <td>
-    {{$p->quantity}}
-  </td>
-  <td>
-    ${{$p->price}}
-  </td>
-  <td>
-    ${{$p->price * $p->quantity}}
-  </td>
-  <td></td>
-  </tr>
-  @endforeach
-   <tr>
-    <td colspan="3"></td>
-    <td class="font-weight-bolder">SUBTOTAL</td>
-    <td class="font-weight-bolder">USD {{number_format(Cart::getSubTotal(),2)}}</td>
-    <td></td>
-</tr>
-  <tr>
-    <td colspan="3"></td>
-    <td class="font-weight-bolder">TOTAL</td>
-    <td class="font-weight-bolder">USD {{number_format(Cart::getTotal(),2)}}</td>
-    <td></td>
-</tr>
-  </tbody>
-    
-</table>  
-@else
-
-@endif
-</div>
-   <!-- <section class="CheC">
-    
-      <div class="CaD">
-        <h1>Mi Carrito</h1>
-      </div>
-      <div class="DG">
-      <div class="DT">
-      <div class="Tabla">
-        <div class="TCab">
-          <div class="TTCab">
-            <h4>Nombre</h4>
-            <hr class="LS">
-          </div>
-          <hr class="BT">
-          <div class="TTCab1">
-            <img src="" alt="">
-            <p class="DPT"> <b>Producto</b><br>Especificaciones</p>
-          </div>
+            </div>
         </div>
-        <div class="TCab">
-          <div class="TTCab">
-            <h4>Precio</h4>
-            <hr class="LS">
-          </div>
-          <hr class="BT">
-          <div class="TTCab1">
-            <p class="PC">$ </p>
-          </div>
-        </div>
-        <div class="TCab">
-          <div class="TTCab">
-            <h4>Cantidad</h4>
-            <hr class="LS">
-          </div>
-          <hr class="BT">
-          <div class="TTCab1">
-            <input class="ContTabla" type="number" name="tentacles" min="1" max="100">
-          </div>
-        </div>
-        <div class="TCab">
-          <div class="TTCab">
-            <h4>Subtotal</h4>
-            <hr class="LS">
-          </div>
-          <hr class="BT">
-          <div class="TTCab1">
-            <p class="PC">$0.00 </p>
-          </div>
-        </div>
-      </div>
     </div>
--->
-     <!-- <div class="DYF">
-        <div class="DP">
-          <div class="DEn">
-            <p>Contenido de la canasta</p>
-          </div>
-          <div class="DCu">
-            <div class="NP">
-              <p>Producto 1 -</p>
-              <p>Producto 2 -</p>
-              <p>Servicio total -</p>
-            </div>
-            <div class="PP">
-              <p>$0.00</p>
-              <p>$00.00</p>
-              <p>$00.00</p>
-            </div>
-          </div>
-          <div class="DPie">
-            <hr class="BArri">
-            <div class="CTCP">
-            <div class="CT">
-              <h4>Total</h4>
-            </div>
-            <div class="CP">
-              <h4>$0.00</h4>
-            </div>
-          </div>
-            <hr class="BAba">
-          </div>
-        </div>
-        <div class="ARP">
-          <a class="RP" href="#">Realizar pago</a>
-        </div>
-      </div>
-    </div>
-    </section> -->
+    </center>
+    <br><br><br>
+    <script src="{{asset('js/preguntas.js')}}"></script>
     <footer class="pie-pagina">
             <div class="grupo-1">
                 <div class="box">
                     <figure>
                         <a href="/home">
-                            <img src="{{asset('img/Asset 7.png')}}" alt="Logo de Sivar Techstore">
+                            <img src="img/Asset 7.png" alt="Logo de Sivar Techstore">
                         </a>
                     </figure>
                 </div>
@@ -245,5 +166,4 @@ function googleTranslateElementInit() {
         </div>                
             </div>
         </footer>
-  </body>
-</html>
+</body>

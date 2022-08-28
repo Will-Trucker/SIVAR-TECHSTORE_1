@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 :root{
 	--white: #ffffff;
     --negro: black;
@@ -8,6 +10,10 @@
     --grisn: #1c1c1c;
 }
 
+hr{
+  background-color: var(--red);
+}
+
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -15,10 +21,13 @@
 	font-family: var(--font);
   outline: none;
   text-decoration: none;
+  
+
 }
 
 a{
- color: currentColor;
+  text-decoration: none;
+  
 }
 
 html, body{
@@ -36,12 +45,36 @@ html, body{
 .navegacion{
     z-index: 4;
 }
-
 .bienvenido{
-  color: #000000;
+  color: black;
   text-overflow: initial;
+  font-size: 1.3rem;
+  
+}
+@media (max-width:428px){
+  .bienvenido{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 1rem;
+  }
 }
 
+
+@media (max-width:424px){
+  .bienvenido{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: -1rem;
+  }
+}
+
+@media (max-width:380px){
+  .bienvenido{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 0.5rem;
+  }
+}
 
 
 header {
@@ -53,17 +86,20 @@ header {
     box-shadow: 5px 10px 18px #0a0a0a;
     position: fixed;
     width: 100%;
-   background: #fff;
+    background: #fff;
   }
   
-  .logotipo{
-    height: 10px;
-    width: auto;
+  .logo {
     cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .logotipo{
+    height: 100px;
+    width: auto;
   }
   
-
-  @media (min-height: 480px){
+  @media (max-width: 480px){
     .logotipo{
       height: 90px;
     }
@@ -71,10 +107,10 @@ header {
   
       }
 
-      @media (min-height: 414px){
+      @media (max-width: 414px){
         .logotipo{
           height: 90px;
-    
+          margin-left: -15%;
         }
          
         .logo:hover{
@@ -85,10 +121,10 @@ header {
     
       }
 
-  @media (min-height: 375px){
+  @media (max-width: 375px){
     .logotipo{
-      height: 100px;
-      
+      height: 80px;
+      margin-left: -2rem;
     }
      
     .logo:hover{
@@ -104,6 +140,7 @@ header {
     font-family: var(--font);
     font-weight: 500;
     text-decoration: none;
+    
   }
   
   .nav__links {
@@ -119,6 +156,7 @@ header {
   .nav__links li a {
     transition: color 0.3s ease 0s;
     font-size: 26px;
+    color: var(--negro);
   }
   
   .nav__links li a:hover {
@@ -133,16 +171,19 @@ header {
     cursor: pointer;  
     font-size: 22px;
     transition: all 0.3s;
+    margin-left: 2rem;
+    color: var(--negro);
   }
   
   .cta:hover {
     background-color: var(--verde);
+    color: var(--negro);
    /*  transform: scale(1.2);*/
   }
   
 /* iconos menu*/
 .carretilla{
-    text-transform: capitalize;
+
 		width: 30px;
 		height: 40px;
 
@@ -159,7 +200,7 @@ header {
   
   .menu {
     display: none;
-
+    color: currentColor;
   }
   
   .overlay {
@@ -172,7 +213,7 @@ header {
     background-color: var(--grisn);
     overflow-x: hidden;
     transition: width 0.5s ease 0s;
-    color: var(--white);
+    color: currentColor;
     z-index: 4;
   }
   
@@ -187,8 +228,6 @@ header {
     align-items: center;
     justify-content: center;
     z-index: 4;
-    text-align: center;
-    text-transform: capitalize;
   }
   
   .overlay a {
@@ -196,6 +235,7 @@ header {
     font-size: 36px;
     display: block;
     transition: color 0.3s ease 0s;
+    color: var(--white);
   }
   
   .overlay a:hover,
@@ -209,11 +249,12 @@ header {
     font-size: 60px;
     color: #edf0f1;
     cursor: pointer;
+    text-decoration: none;
   }
 
   .icono{
       font-weight: bold;
-      font-size: 30px;
+      font-size: 20px;
   }
   
   @media screen and (max-height: 450px) {
@@ -237,19 +278,20 @@ header {
     }
   }
   
+  
 /* slider */ 
 
 .text{
   text-transform: uppercase;
 }
 
-.container{
+.contenedor{
   position: relative;
   
 }
 
-.container .slide-container .slide{
-  min-height: 85vh;
+.contenedor .slide-container .slide{
+  min-height: 89vh;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -257,7 +299,7 @@ header {
 }
 
 
-.container .slide-container .slide video{
+.contenedor .slide-container .slide video{
   position: absolute;
   top: 0;
   left: 0;
@@ -274,8 +316,8 @@ header {
   }
 }
 
-.container .slide-container .slide .content{
-  min-height: 87vh;
+.contenedor .slide-container .slide .content{
+  min-height: 89vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -286,7 +328,7 @@ header {
   text-align: center;
 }
 
-.container .slide-container .slide .content h3{
+.contenedor .slide-container .slide .content h3{
   margin-top: 50px;
   font-size: 5vw;
   color: var(--white);
@@ -295,7 +337,7 @@ header {
 
 }
 
-.container .slide-container .slide .content p{
+.contenedor .slide-container .slide .content p{
   font-size: 1.2rem;
   color: var(--white);
   padding: 20px 0;
@@ -307,14 +349,14 @@ header {
 }
 
 @media (max-width: 428px){
-  .container .slide-container .slide .content p{
+  .contenedor .slide-container .slide .content p{
     font-size: 1rem;
     max-width: 300px;
     margin-top: 5px;
   }
   
 }
-.container .slide-container .slide .content .btn{
+.contenedor .slide-container .slide .content .btn{
   display: inline-block;
   padding: 12px 30px;
   background: #fff;
@@ -329,7 +371,7 @@ header {
   animation: animate .4s linear 1s backwards;
 }
 
-.container .slide-container .slide .content .btn:hover{
+.contenedor .slide-container .slide .content .btn:hover{
   letter-spacing: 2px;
 }
 
@@ -340,17 +382,17 @@ header {
   }
 }
 
-.container .slide-container{
+.contenedor .slide-container{
   display: none;
 }
 
-.container .slide-container.active{
+.contenedor .slide-container.active{
   display: block;
 }
 
 
-.container #next,
-.container #prev{
+.contenedor #next,
+.contenedor #prev{
  position: absolute;
  top: 50%;
  transform: translateY(-50%);
@@ -368,18 +410,18 @@ header {
 
 
 
-.container #next:hover,
-.container #prev:hover{
+.contenedor #next:hover,
+.contenedor #prev:hover{
   background: rgb(0, 0, 0);
 }
 
 
-.container #next{ 
+.contenedor #next{ 
  right: 0;
  z-index: 1;
 }
 
-.container #prev{ 
+.contenedor #prev{ 
   left: 0;
   z-index: 1;
  }
@@ -426,6 +468,7 @@ header {
   font-family: var(--font);
   transition: all 300ms;
   border-radius: 20px;
+  border: none;
 }
 
 .card:hover{
@@ -612,7 +655,7 @@ header {
 
 .prod-Dest hr{
   background: red; 
-  width: 350px; 
+ 
   height: 7px; 
   border: none; 
   margin-top: -1%;
@@ -652,14 +695,11 @@ header {
   width: 1145px;
   display: flex;
   overflow-x: auto;
-  scroll-behavior: smooth;
+ /* scroll-behavior: smooth;*/
   height: 500px;
   margin-left: 0.8%;
 }
 
-.product-container::-webkit-scrollbar {
-  display: none;
-}
 
 .product-card {
   flex: 0 0 auto;
@@ -728,7 +768,7 @@ header {
 .product-info {
   width: 100%;
   height: 100px;
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 .product-brand {
@@ -788,7 +828,6 @@ header {
   justify-content: center;
   align-items: center;
   background-color: white;
-  cursor: pointer;
   border-radius: 100%;
   z-index: 2;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -849,94 +888,107 @@ header {
 
 
  /* footer */
+/* footer */
 .pie-pagina{
-    width: 100%;
-    background-color: #232f3a;
-    margin-top: 10%;
+  width: 100%;
+  background-color: #232f3a;
+  margin-top: 7%;
 }
 .pie-pagina .grupo-1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap:50px;
-    padding: 45px 0px;
-    z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:50px;
+  padding: 45px 0px;
+  z-index: 1;
 }
+
 .pie-pagina .grupo-1 .box figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .pie-pagina .grupo-1 .box figure img{
-    width: 300px;
+  width: 300px;
 }
+
 .pie-pagina .grupo-1 .box h2{
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
-    margin-left: 0.9rem;
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+  margin-left: 0.9rem;
 }
 .pie-pagina .grupo-1 .box p{
-    color: #efefef;
-    margin-bottom: 10px;
-    margin-left: 0.9rem;
+  color: #efefef;
+  margin-bottom: 10px;
+  margin-left: 0.9rem;
 }
 
 .pie-pagina .grupo-1 .box button{
-  margin-bottom: 10px;
-  margin-left: 0.9rem;
+margin-bottom: 10px;
+margin-left: 0.9rem;
+background: #314258;
+cursor: pointer;
+border: none;
+height: 2rem;
+width: 10rem;
+border-radius: 10px;
+}
+
+.pie-pagina .grupo-1 .box button a{
   color: var(--white);
-  background: #314258;
-  cursor: pointer;
-  border: none;
-  height: 2rem;
-  width: 10rem;
-  border-radius: 10px;
+  text-decoration: none;
+}
+
+.pie-pagina .grupo-1 .box button a:hover{
+  color: var(--negro);
+  text-decoration: none;
 }
 
 .pie-pagina .grupo-1 .box button:hover{
-  background: var(--white);
-  color: var(--negro);
+background: var(--white);
+color: var(--negro);
 }
 
 .pie-pagina .grupo-1 .contactos a{
-     display: inline-block; /* agrega un salto de linea */
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 60px;
-    margin-right: 2px;
-    background-color: #314258;
-    text-align: center;
-    border-radius: 10%; 
-    transition: all 300ms ease; /* efecto al pasar el mouse en el boton*/
-    margin-left: 0.9rem;
+   display: inline-block; /* agrega un salto de linea */
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 2.8rem;
+  margin-right: 2px;
+  background-color: #314258;
+  text-align: center;
+  border-radius: 10%; 
+  transition: all 300ms ease; /* efecto al pasar el mouse en el boton*/
+  margin-left: 0.9rem;
 }
 
 
 
 .facebook{
-  color: var(--white);
+color: var(--white);
 }
 
 .facebook:hover{
-  color: rgb(38, 141, 231);
+color: rgb(38, 141, 231);
 }
 
 .instagram{
-  color: var(--white);
+color: var(--white);
 }
 
 .instagram:hover{
-  color: orangered;
+color: orangered;
 }
 
 .twitter{
-  color: var(--white);
+color: var(--white);
 }
 
 .twitter:hover{
@@ -944,35 +996,39 @@ color: rgb(30, 152, 228);
 }
 
 .mail{
-  color: var(--white);
+color: var(--white);
 }
 
 .mail:hover{
-  color: orange;
+color: orange;
 }
 
 .pie-pagina .grupo-2{
-    background-color: #0a1a2a;
-    padding: 15px 10px;
-    text-align: center;
-    color: #fff;
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
 }
 .pie-pagina .grupo-2 small{
-    font-size: 15px;
+  font-size: 15px;
 }
 
 @media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
-        width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
-        padding: 35px 0px;
-    }
-    
-    .pie-pagina{
-      margin-top: 10%;
-    }
+  .pie-pagina .grupo-1{
+      width: 100%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+  }
+  
+  .pie-pagina{
+    margin-top: 10%;
+  }
 }
+
+
+
+
 
 .goog-te-gadget-simple{
   background-color: #314258 !important;

@@ -13,6 +13,7 @@ class ProductController extends Controller
         DB::beginTransaction(); //Iniciar transaccion
         $prod = new Product;
       $prod->nombre=$request->get('nombre');
+      $prod->slug=$request->get('slug');
       $prod->categoria=$request->get('categoria');
       $prod->proveedor=$request->get('proveedor');
       $prod->precio=$request->get('precio');
@@ -20,7 +21,7 @@ class ProductController extends Controller
       if ($request->hasFile('archivo')){ //hace referencia al name del input file
             $imagen = $request->file('archivo');
             $imagen->move(public_path().'/productos/',$imagen->getClientOriginalName()); //donde guardara la imagen
-            $prod->foto=$imagen->getClientOriginalName();
+            $prod->image_path=$imagen->getClientOriginalName();
         }
       $prod -> save();
       DB::commit(); //enviar transaccion
@@ -38,7 +39,7 @@ class ProductController extends Controller
       if ($request->hasFile('archivo')){ //hace referencia al name del input file
         $imagen = $request->file('archivo');
         $imagen->move(public_path().'/productos/',$imagen->getClientOriginalName()); //donde guardara la imagen
-        $datos->foto=$imagen->getClientOriginalName();
+        $datos->image_path=$imagen->getClientOriginalName();
     }
 
     $datos->nombre=$request->nombre;
@@ -47,7 +48,7 @@ class ProductController extends Controller
     $datos->precio=$request->precio;
     $datos->save();
 
-    return redirect('Listado')->with('Mensaje', 'Gracias');  
+    return redirect('Listado')->with('message', 'Gracias');  
 
    }
 }

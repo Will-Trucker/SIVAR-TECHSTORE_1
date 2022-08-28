@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
 
     <!-- -->
     <link rel="preload" type="text/css" href="{{asset('css/normalize.css')}}">
@@ -50,10 +51,11 @@
     <script text="text/javascript" src="{{asset('js/menu.js')}}"></script>
    
 </div>
-<br><br><br><br><br><br><br>
+<br><br><br><br><br>
 
 <!-- Slider -->
-<div class="container">
+<!-- Slider -->
+<div class="contenedor">
     <div class="slide-container active">
         <div class="slide">
         <div class="content text">
@@ -61,7 +63,7 @@
           
             <p>Somos una empresa dedicada a vender productos relacionados al ambito tecnológico</p>
 
-            <a href="{{ route('register') }}" class="btn">Sobre Nosotros</a>
+            <a href="{{ route('acerca') }}" class="btn">Sobre Nosotros</a>
 
             <video src="{{asset('img/Fan - 8064.mp4')}}" muted autoplay loop></video>
         </div>
@@ -74,7 +76,7 @@
         <div class="content text">
             <h3>Equipos para cualquier uso</h3>
             <p>No importa el entorno que sea, todos nuestros equipos son 100% adaptables</p>
-            <a href="{{route('register')}}" class="btn">Ver Catalogo</a>
+            <a href="{{route('categorias')}}" class="btn">Ver Catalogo</a>
             <video src="{{asset('img/Video Card - 15793.mp4')}}" muted autoplay loop></video>
         </div>
         </div>
@@ -87,7 +89,7 @@
         <div class="content text">
             <h3>100% calidad garantizada</h3>
             <p>Equipos con componentes de marcas reconocidas mundialmente</p>
-            <a href="{{route('register')}}" class="btn">Registrarme</a>
+            <a href="/todos" class="btn">Nuestros Productos</a>
             <video src="{{asset('img/Cpu - 18031.mp4')}}" muted autoplay loop></video>
         </div> 
         </div>
@@ -100,7 +102,7 @@
         <div class="content text">
             <h3>Contactanos</h3>
             <p>¿Tienes alguna consulta? Visita Nuestras redes sociales</p>
-            <a href="https://linktr.ee/sivar_techstore" class="btn">¡CONTACTANOS!</a>
+            <a href="https://linktr.ee/sivar_techstore" class="btn">Seguinos</a>
             <video src="{{asset('img/Laptop - 63.mp4')}}" muted autoplay loop></video>
         </div>
         </div>
@@ -116,7 +118,7 @@
 <!-- categorias principales -->
 <section class="prod-Dest">
     <center><h1>PRODUCTOS DESTACADOS</h1>
-        <hr></center>
+    <hr class=" border-3 opacity-75" style="background: red; width: 430px; height: 7px; border: none; margin-top: -23px;"></center>
 </sectio>
 <div class="body__page">
      <div class="container__card">
@@ -167,11 +169,10 @@
 <!-- Ofertas -->
 <section class="ofertas">
     <center><h1>OFERTAS</h1>
-        <hr style="background: red; width: 150px; height: 7px; border: none; margin-top: -23px;"></center>
+    <hr class=" border-3 opacity-75" style="margin-top: -1.2%"></center>
 
     
 </section>
-
 
 
 <!-- Carrusel -->

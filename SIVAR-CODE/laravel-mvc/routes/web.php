@@ -9,6 +9,7 @@ use App\Http\Controller\AgregarController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\DetalleController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\FrecuentController;
 //Para Modelos
 
 
@@ -53,6 +54,10 @@ Route::get('/cat', [App\Http\Controllers\CategoriesController::class, 'categoria
 
 Route::get('/todos/detalle/{id}', [App\Http\Controllers\VistapController::class, 'detalle'])->name('detalle');
 
+Route::get('/preguntas',[App\Http\Controllers\FrecuentController::class, 'frecuente'])->name('pregunta');
+
+//Agregar Categorias
+
 Route::get('/add', function () {
   return view('agregar');
 });
@@ -60,7 +65,7 @@ Route::get('/add', function () {
 Route::post('EnvioCat', [App\Http\Controllers\AgregarController::class, 'add']);
 
 //Rutas del carrito
-Route::post('/store/cart-add', [App\Http\Controllers\CartController::class, 'adde'])->name('cart.adde');
+Route::post('/store/cart-add', [App\Http\Controllers\CartController::class, 'add'])->name('cart.add');
 
 Route::get('/store/cart-checkout', [App\Http\Controllers\CartController::class, 'cart'])->name('cart.checkout');
 

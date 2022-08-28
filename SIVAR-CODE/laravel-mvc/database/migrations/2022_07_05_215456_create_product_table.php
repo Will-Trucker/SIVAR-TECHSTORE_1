@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('categoria');
             $table->text('proveedor');
             $table->decimal('precio')->nullable();
-            $table->string('foto');
+            $table->string('image_path');
             $table->timestamps();
 
         });

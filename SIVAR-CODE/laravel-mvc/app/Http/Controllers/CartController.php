@@ -10,7 +10,7 @@ use DB;
 class CartController extends Controller
 {
     //
-    public function adde(Request $request){
+    public function add(Request $request){
         $p = Product::find($request->id);
         Cart::add(array(
             "id" => $p->id,
@@ -18,7 +18,7 @@ class CartController extends Controller
             "price" => $p->precio,
             "quantity" => 1, 
             "attributes" => array(
-                "image" => $p->foto,
+                "image" => $p->image_path,
                 "slug" => $p->slug
             ) 
             ));

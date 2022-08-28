@@ -45,7 +45,7 @@
                        <td>${{$campos->precio}} </td>
                        <td>
                        <center>  
-                        <a class="btn btn-primary" href="productos/{{$campos->foto}}" target="blank_">Ver Foto</a> 
+                        <a class="btn btn-primary" href="productos/{{$campos->image_path}}" target="blank_">Ver Foto</a> 
                        
                         <a class="btn btn-success" href="{{url('/editarp',$campos->id)}}">Editar</a> 
                         

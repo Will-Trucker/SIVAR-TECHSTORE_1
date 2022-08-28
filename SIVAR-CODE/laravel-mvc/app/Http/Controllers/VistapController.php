@@ -24,6 +24,6 @@ class VistapController extends Controller
       }else{
         $prod = Product::show();
       }
-      return view('detalle', ['producto'=>$prod]);
+      return view('cart', ['producto'=>$prod]);
     }
 }

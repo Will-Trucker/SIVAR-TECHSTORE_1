@@ -46,7 +46,7 @@
                 <input class="controls" type="number" name="precio" id="precio" placeholder="$ Precio" required step="0.01" value="{{$campos->precio}}" min="0">
                 
              <div class="archivo">
-          <center> <img src="/productos/{{$campos->foto}}" height="80px" width="100px"> </center>
+          <center> <img src="/productos/{{$campos->image_path}}" height="80px" width="100px"> </center>
                 
                 <label for="archivo"><i class="fa-solid fa-file-image"></i> Agregar Imagen</label>
                 <input type="file" id="archivo" name="archivo"  required>
