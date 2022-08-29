@@ -48,13 +48,22 @@ Route::get('/delete/{id}',[ListadoController::class, 'delete']);
 
 Auth::routes();
 
+//Vista Productos por Categoria y Todos
+
 Route::get('/todos/{category?}', [App\Http\Controllers\VistapController::class, 'productos'])->name('productos');
+
+
 
 Route::get('/cat', [App\Http\Controllers\CategoriesController::class, 'categorias'])->name('categorias');
 
 Route::get('/todos/detalle/{id}', [App\Http\Controllers\VistapController::class, 'detalle'])->name('detalle');
 
+//Filtros
+
+
+//Preguntas Frecuentes
 Route::get('/preguntas',[App\Http\Controllers\FrecuentController::class, 'frecuente'])->name('pregunta');
+
 
 //Agregar Categorias
 
@@ -72,3 +81,6 @@ Route::get('/store/cart-checkout', [App\Http\Controllers\CartController::class, 
 Route::post('/store/cart-clear', [App\Http\Controllers\CartController::class, 'clear'])->name('cart.clear');
 
 Route::post('/store/cart-removeitem', [App\Http\Controllers\CartController::class, 'removeitem'])->name('cart.removeitem');
+
+Route::post('/store/cart-plus', [App\Http\Controllers\CartController::class, 'addQty'])->name('cart.addqty');
+Route::post('/store/cart-minus', [App\Http\Controllers\CartController::class, 'removeQty'])->name('cart.removeqty');

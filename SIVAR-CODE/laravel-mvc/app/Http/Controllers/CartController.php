@@ -32,10 +32,24 @@ class CartController extends Controller
 
     //Quitar un producto del carrito
     public function removeitem(Request $request){
-      Cart::remove([
-        'id' => $request->id,
-      ]);
+      if (isset($request->id)) {
+        Cart::remove($request->id);
+      }
       return back()->with('success', "Producto Eliminado Satisfactoriamente");
+    }
+
+    public function addQty(Request $request){
+      if (isset($request->id)) {
+        Cart::update($request->id, array("quantity" => +1));
+      }
+      return back()->with('success', "Producto Actualizado Satisfactoriamente");
+    }
+
+    public function removeQty(Request $request){
+      if (isset($request->id)) {
+        Cart::update($request->id, array("quantity" => -1));
+      }
+      return back()->with('success', "Producto Actualizado Satisfactoriamente");
     }
 
     //Limpiar el  carrito

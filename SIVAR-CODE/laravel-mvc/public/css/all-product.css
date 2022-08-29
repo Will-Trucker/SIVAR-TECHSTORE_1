@@ -471,12 +471,17 @@ h1{ /* Titulo */
   font-size: 15px;
   cursor: pointer;
   user-select: none;
+  list-style: none;
 }
 
 /* Efecto para enlaces */
 .cont-menu .cont-enlace .enlace{
   height: 0;
   overflow: hidden;
+}
+
+.enlace li{
+  list-style: none;
 }
 
 .cont-menu .cont-enlace .animation{
@@ -491,6 +496,7 @@ h1{ /* Titulo */
   font-size: 20px;
   color: rgba(0,0,0,.8);
   background-color: white;
+  
 }
 
 /* Estilos para texto de los enlaces */

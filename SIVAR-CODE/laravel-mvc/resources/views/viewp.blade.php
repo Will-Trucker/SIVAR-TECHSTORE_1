@@ -63,75 +63,17 @@
     </div>
     <script text="text/javascript" src="{{asset('js/menu.js')}}"></script>
     </header>
+    
 </div>
-
+<br>
             <main class="contenedor">
-                <h1>Todos los productos</h1>
- <div class="contenedor-menu">
-     <div class="acordeon">
-        <div class="cont-menu">
-            <div class="titulo-ca">
-                <P>Categorias</P>
-            </div>
-            <div class="cont-enlace">
-                <div class="opcion">
-                    <p><i class="icono1 fa-brands fa-r-project"></i> > Marcas </p>
-                    <i class="icono1 fa-solid fa-angle-down"></i>
-                </div>
-                <div class="enlace">
-                    <ul>
-                        <li><a><input type="checkbox" name="" id="caja"><label for="caja">Nvidia</label></a></li> 
-                        <li><a><input type="checkbox" name="" id="caja"><label for="caja">Corsair</label></a></li>
-                        <li><a><input type="checkbox" name="" id="caja"><label for="caja">Intel</label></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="cont-enlace">
-                <div class="opcion">
-                    <p> <i class="icono1 izquierda fa-solid fa-microchip"></i> > Componentes </p>
-                    <p> <i class="icono1 fa-solid fa-angle-down"></i></p>
-                </div>
-                <div class="enlace">
-                    <ul>
-                        <li><a><input type="checkbox" name="" id="caja"><label for="caja">Tarjetas</label></a></li>
-                        <li><a><input type="checkbox" name="" id="caja"><label for="caja">Memorias</label></a></li>
-                        <li><a><input type="checkbox" name="" id="caja"><label for="caja">Almacenamiento</label></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="cont-enlace">
-                <div class="opcion">
-                    <p> <i class="icono1  fa-solid fa-desktop"></i> > Perifericos </p>
-                    <p> <i class="icono1 fa-solid fa-angle-down"></i> </p>
-                </div>
-                <div class="enlace">
-                    <ul>
-                        <li><a><input type="checkbox" name="" id="caja"><label for="caja">Webcams</label></a></li>
-                        <li><a><input type="checkbox" name="" id="caja"><label for="caja">Teclados</label></a></li>
-                        <li><a><input type="checkbox" name="" id="caja"><label for="caja">Mouses</label></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="cont-enlace">
-                <div class="opcion">
-                    <p> <i class="fa-solid fa-thumbs-up"></i> > Mas destacado </p>
-                </div>
-            </div> 
-            <div class="cont-enlace">
-                <div class="opcion">
-                    <p><i class="icono1 izquierda fa-solid fa-star-half-stroke"></i> > Mas reciente </p>
-                </div>
-            </div>
-            <div class="cont-enlace">
-                <div class="opcion">
-                    <p> <i class="icono1 izquierda fa-solid fa-dollar-sign"></i> > Ofertas </p>
-                </div>
-            </div>
-        </div>
-    </div>
+             
 </div>
-<script src="{{asset('js/opciones.js')}}"></script> <!-- efecto de bajar menu (no se porque solo agarra aqui)-->
 
+</form>
+                </div>
+                <h1>Todos los productos</h1>
+           
  <!--Tarjetas-->
     <div class="productos">  
     @foreach ($datos as $productos)

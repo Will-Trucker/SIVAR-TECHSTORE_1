@@ -14,4 +14,10 @@ class CategoriesController extends Controller
         return view('categorias', ['categorias' => $categorias]);
     }
 
+    public function filtro(){
+          $categorias = Category::all();
+        return view('viewp',['categorias' => $categorias]);
+    }
+
+
 }

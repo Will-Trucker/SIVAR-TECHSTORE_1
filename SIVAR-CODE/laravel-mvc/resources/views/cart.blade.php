@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="navegacion"> <!-- Menu -->
@@ -61,10 +62,17 @@
 </header>
 <br><br><br><br><br><br><br>
 
-
+@if (count(Cart::getContent()))
 <div class="container">
 <h1 class="text-center h4 pt-3 pb-3">Tu Carrito tiene</h5>
-@if (count(Cart::getContent()))
+<div class="d-flex justify-content-center mb-2">
+<form method="POST" action="{{route('cart.clear')}}" enctype="multipart/form-data">
+  @csrf  
+  <input name="id" type="hidden" value="">
+  <button type="submit" class="btn btn-warning" title=""><i class="fas fa-ban"></i> Limpiar carrito</button>
+</form>
+</div>
+
 <table class="table table-striped">
 <thead class="table-dark">
   <tr>
@@ -73,6 +81,7 @@
     <th scope="col"><p class="text-center m-0">CANTIDAD</p></td>
     <th scope="col"><p class="text-center m-0">PRECIO</p></td>
     <th scope="col"><p class="text-center m-0">TOTAL</p></td>
+    <th scope="col"><p class="text-center m-0"></p></td>
     <th></th>
   </tr>
 </thead>
@@ -87,13 +96,32 @@
     {{$p->name}}
   </td>
   <td>
-    {{$p->quantity}}
+    <div class="d-flex justify-content-center">
+      <form method="POST" action="{{route('cart.removeqty')}}" enctype="multipart/form-data">
+        @csrf  
+        <input name="id" type="hidden" value="{{$p->id}}">
+        <button type="submit" class="btn btn-primary" title=""><i class="fas fa-minus-circle"></i></button>
+      </form>
+      <input name="quantity" type="number" value="{{$p->quantity}}" min="1" max="999" readonly>
+      <form method="POST" action="{{route('cart.addqty')}}" enctype="multipart/form-data">
+        @csrf  
+        <input name="id" type="hidden" value="{{$p->id}}">
+        <button type="submit" class="btn btn-primary" title=""><i class="fas fa-plus-circle"></i></button>
+      </form>
+    </div>
   </td>
   <td>
     ${{$p->price}}
   </td>
   <td>
     ${{$p->price * $p->quantity}}
+  </td>
+  <td>
+  <form method="POST" action="{{route('cart.removeitem')}}" enctype="multipart/form-data">
+    @csrf
+    <input name="id" type="hidden" value="{{$p->id}}">
+    <button type="submit" class="btn btn-danger" title="Eliminar producto del carrito"><i class="fas fa-trash"></i></button>
+  </form>
   </td>
   <td></td>
   </tr>
@@ -114,7 +142,8 @@
     
 </table>  
 @else
-
+<div class="container">
+<h1 class="text-center h4 pt-3 pb-3">No tienes ningún producto en el carrito</h5>
 @endif
 </div>
    <!-- <section class="CheC">
