@@ -39,4 +39,7 @@ class PagoController extends Controller
         
       return redirect('home')->with('status', 'Order con Exito');  //mensaje de confirmacion
     }
+
+
+    
 }

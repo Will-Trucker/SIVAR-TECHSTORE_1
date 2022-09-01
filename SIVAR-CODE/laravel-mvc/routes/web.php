@@ -12,6 +12,7 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\FrecuentController;
 use App\Http\Controllers\PagoController;
 use App\Http\Controllers\OfertaController;
+use App\Http\Controllers\SaleController;
 //Para Modelos
 
 
@@ -36,6 +37,7 @@ Route::get('/product', function () {
     return view('product');
 });
 
+//Vista Lista de Productos Registrados
 Route::get('/about', [AboutController::class, 'nosotros'])->name('acerca');
 
 Route::post('EnvioProducto', [ProductController::class, 'Insertar']);
@@ -47,6 +49,13 @@ Route::get('/editarp/{id}',[ListadoController::class,'editarp']);
 Route::post('/update/{id}',[ProductController::class,'update']);
 
 Route::get('/delete/{id}',[ListadoController::class, 'delete']);
+
+//Vista Ventas
+Route::get('/sale', [SaleController::class, 'compras']);
+
+Route::get('/paga', [PagoController::class, 'pagos'])->name('pagas');
+
+Route::post('EnvioPago', [PagoController::class, 'agregar']);
 
 Auth::routes();
 
@@ -88,9 +97,6 @@ Route::post('/store/cart-plus', [App\Http\Controllers\CartController::class, 'ad
 
 Route::post('/store/cart-minus', [App\Http\Controllers\CartController::class, 'removeQty'])->name('cart.removeqty');
 
-//Pagos
-Route::get('/paga', [PagoController::class, 'pagos'])->name('pagas');
-Route::post('EnvioPago', [PagoController::class, 'agregar']);
 
 
 //Oferta
