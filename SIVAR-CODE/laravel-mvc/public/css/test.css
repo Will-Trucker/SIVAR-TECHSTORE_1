@@ -173,6 +173,8 @@ header {
     transition: all 0.3s;
     margin-left: 2rem;
     color: var(--negro);
+    margin-top: -1%;
+    font-weight: 500;
   }
   
   .cta:hover {
@@ -653,68 +655,47 @@ header {
   margin-top: -1%;
 }
 
-.prod-Dest hr{
-  background: red; 
- 
-  height: 7px; 
-  border: none; 
-  margin-top: -1%;
-}
-
-@media (max-width: 380px){
-  .prod-Dest hr{
-    background: red; 
-    width: 230px; 
-    height: 7px; 
-    border: none; 
-    margin-top: -5%;
-  }
-}
-
 /* PRODUCTS */
-.product {
+.SectionCarrusel{
   position: relative;
   overflow: hidden;
+  padding: 20px;
+  width: 90%;
+  margin-left: 4%;
+  /*margin-top: 20%;*/
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 5%;
 }
 
-.product-category {
-  padding: 0 10vw;
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 40px;
-  text-transform: capitalize;
-}
-
-.product-container {
+.SectionCarrusel-Contenedor{
   width: 1145px;
   display: flex;
   overflow-x: auto;
- /* scroll-behavior: smooth;*/
-  height: 500px;
-  margin-left: 0.8%;
+  scroll-behavior: smooth;
+  height: 550px;
+  margin-left: 7%;
+
 }
 
+.SectionCarrusel-Contenedor::-webkit-scrollbar {
+  display: none;
+}
 
-.product-card {
+.CartaCarrusel{
   flex: 0 0 auto;
   width: 250px;
   height: 450px;
-  margin-right: 40px;
+  margin:18.5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 5%;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .card1{
-  margin-right: 0;
+  margin-right: 1%;
 }
-.product-image {
+.CartaImagen{
   position: relative;
   width: 100%;
   height: 350px;
@@ -723,9 +704,8 @@ header {
 }
 
 .product-thumb {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 60%;
+  object-fit:unset;
 }
 
 .discount-tag {
@@ -756,6 +736,11 @@ header {
   opacity: 0;
 }
 
+.BotonesCarrusel{
+  justify-content: center;
+  align-items: center;
+}
+
 .product-card:hover .card-btn {
   opacity: 1;
 }
@@ -765,17 +750,20 @@ header {
   color: #fff;
 }
 
-.product-info {
+.SectionCarrusel-informacion{
   width: 100%;
   height: 100px;
-  padding-top: 0px;
+  margin-top: -10%;
 }
 
-.product-brand {
+.CarruselTitulo{
   text-transform: uppercase;
+  font-size: 25px;
+  margin-top: -20%;
+  text-align: center;
 }
 
-.product-short-description {
+/*.product-short-description {
   width: 100%;
   height: 20px;
   line-height: 20px;
@@ -783,11 +771,18 @@ header {
   opacity: 0.5;
   text-transform: capitalize;
   margin: 5px 0;
-}
+}*/
 
 .price {
   font-weight: 900;
   font-size: 20px;
+  text-align: center;
+  margin-left: -8px;
+  color: red;
+}
+
+.title-carro{
+  margin-top: -40%;
 }
 
 .actual-price {
@@ -796,27 +791,6 @@ header {
   text-decoration: line-through;
 }
 
-.degDe,
-.degIz {
-  border: none;
-  width: 10vw;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
-  z-index: 1;
-}
-.degIz {
-  left: 100px;
-  transform: rotate(180deg);
-}
-
-.degDe {
-  right: 110px;
-}
 .pre-btn,
 .nxt-btn {
   border: none;
@@ -828,19 +802,22 @@ header {
   justify-content: center;
   align-items: center;
   background-color: white;
+  cursor: pointer;
   border-radius: 100%;
   z-index: 2;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  font-size: 4rem;
+  
 }
 
 .pre-btn {
-  left: 7.8%;
+  /*left: 5%;*/
   transform: rotate(180deg);
+  font-size: 4rem;
 }
 
 .nxt-btn {
-  right: 7.8%;
+  right: 6%;
+  font-size: 4rem;
 }
 
 .pre-btn img,
@@ -885,7 +862,6 @@ header {
   grid-column: span 2;
   margin-bottom: 10px;
 }
-
 
  /* footer */
 /* footer */

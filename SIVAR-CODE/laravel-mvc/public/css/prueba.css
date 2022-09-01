@@ -1,0 +1,93 @@
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 13px;
+    margin: auto;
+}
+
+.space {
+    padding-top: 10px;
+}
+
+.bg-cdb {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.bg-cdb-i {
+    color: #064D9A;
+    background-color: #000000;
+}
+
+.blue-cdb-text {
+    color: #064D9A;
+}
+
+.bg-cdb-inverso {
+    color: black;
+    background-color: white;
+}
+
+.menu {
+    color: #e0e0e0;
+}
+
+.menu:hover {
+    background-color: #000000;
+    color: #064D9A;
+}
+
+.space-cards {
+    padding-top: 18%;
+    padding-left: 10%;
+}
+
+.info-alumno {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.info-alumno-extra {
+    padding-top: 4px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.icon {
+    font-size: 5em;
+}
+
+.logout {
+    color: #e0e0e0;
+}
+
+.enlace-principal {
+    color: white;
+}
+
+.enlace-principal:hover {
+    color: white;
+}
+
+.tab {
+    background-color: #bdbdbd;
+    color: #064D9A;
+    font-weight: 600;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #064D9A;
+    font-weight: 600;
+}
+
+.boton-stepper {
+    color: white;
+    border-color: #064D9A;
+}
+
+.boton-stepper:hover {
+    color: white !important;
+    background-color: #064D9A;
+}

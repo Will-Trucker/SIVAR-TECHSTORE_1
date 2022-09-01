@@ -278,7 +278,7 @@ header {
 .pie-pagina{
   width: 100%;
   background-color: #232f3a;
-  margin-top: 30%;
+  margin-top: 50% ;
 }
 .pie-pagina .grupo-1{
   width: 100%;
@@ -453,9 +453,62 @@ input[type=number] {
     margin-top: -0.8%;
   }
   
-  @media (max-width:480px){
-    .google{
-      margin-top: 8%;
-      margin-left: -2%;
-    }
-  }
+table{
+  margin-left:-20%;
+  margin-top: 5%;
+}
+
+.d-flex{
+  margin-left: 3rem;
+  
+}
+
+
+.detail__section{
+  background: var(--grisn);
+  margin-left: 88%;
+  width:30%;
+  border-radius: 50px;
+  margin-top: -80%;
+}
+
+.detail__section-title{
+  text-align: center;
+  color: var(--white);
+}
+
+.detail__section-backg{
+  background: var(--white);
+  border-radius: 50px;
+  margin-top: 20%;
+  margin-left: 88%;
+  text-align: justify;
+}
+
+.title-total{
+  margin-left: 70rem;
+  
+}
+
+.title-n{
+  margin-left: 105%;
+  margin-top: -3.1%;
+}
+
+.card{
+  margin-left: 92%;
+  margin-top: -70%;
+}
+
+.card-head{
+  background: var(--grisn);
+  color: var(--white);
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.list-group-item{
+  text-align: justify;
+  font-size: 1.2rem;
+}

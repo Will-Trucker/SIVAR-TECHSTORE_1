@@ -177,124 +177,116 @@
 
 <!-- Carrusel -->
 
-<section class="product">
+<!-- Carrusel -->
+
+<section class="SectionCarrusel">
+  <div class="BotonesCarrusel">
         <button class="pre-btn"><img src="images/arrow.png" alt="">></button>
         <button class="nxt-btn"><img src="images/arrow.png" alt="">></button>
-        <div class="degIz"></div>
-        <div class="degDe"></div>
-        <div class="product-container">
-            <div class="product-card">
-                <div class="product-image">
+  </div>
+        <div class="SectionCarrusel-Contenedor">
+            <div class="CartaCarrusel">
+                <div class="CartaImagen">
 
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
                 </div>
-                <div class="product-info">
-                    <h2 class="product-brand">producto</h2>
+                <div class="SectionCarrusel-informacion">
+                    <h3 class="CarruselTitulo">AMD CPU RYZEN 5 1600 AM4</h3>
+                    <span class="price">$210.21</span>
+                </div>
+            </div>
+            <div class="CartaCarrusel">
+                <div class="CartaImagen">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
+                </div>
+                <div class="SectionCarrusel-informacion">
+                    <h3 class="CarruselTitulo">Intel Core i5-12600K</h3>
+                    <span class="price">$215.74</span>
+                </div>
+            </div>
+            <div class="CartaCarrusel">
+                <div class="CartaImagen">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
+                </div>
+                <div class="SectionCarrusel-informacion">
+                    <h3 class="CarruselTitulo">Kingston Fury Beast</h2>
+                    <span class="price">$254.00</span>
+                </div>
+            </div>
+            <div class="CartaCarrusel">
+                <div class="CartaImagen">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
+                </div>
+                <div class="SectionCarrusel-informacion">
+                    <h3 class="title-carro">Corsair Dominator Platinium RGB DDR4</h3>
+                    <span class="price">$339.99</span>
+                </div>
+            </div>
+            <div class="CartaCarrusel">
+                <div class="CartaImagen">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
+                </div>
+                <div class="SectionCarrusel-informacion">
+                    <h3 class="CarruselTitulo">WD My Passport - Disco Duro Portátil, 5TB</h3>
+                    <span class="price">$61.99</span>
+                </div>
+            </div>
+            <div class="CartaCarrusel">
+                <div class="CartaImagen">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
+                </div>
+                <div class="SectionCarrusel-informacion">
+                    <h3 class="CarruselTitulo"></h3>
+                    <span class="price">$0</span>
+                </div>
+            </div>
+            <div class="CartaCarrusel">
+                <div class="CartaImagen">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
+                </div>
+                <div class="SectionCarrusel-informacion">
+                    <h3 class="CarruselTitulo"></h3>
+                    <span class="price">$0</span>
+                </div>
+            </div>
+            <div class="CartaCarrusel">
+                <div class="CartaImagen">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
+                </div>
+                <div class="SectionCarrusel-informacion">
+                    <h2 class="CarruselTitulo">producto</h2>
                     <p class="product-short-description">descripción del prodcto...</p>
                     <span class="price">$0</span><span class="actual-price"></span>
                 </div>
             </div>
-        <div class="product-card">
-                <div class="product-image">
+            <div class="CartaCarrusel">
+                <div class="CartaImagen">
 
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
                 </div>
-                <div class="product-info">
-                    <h2 class="product-brand">producto</h2>
+                <div class="SectionCarrusel-informacion">
+                    <h2 class="CarruselTitulo">producto</h2>
                     <p class="product-short-description">descripción del prodcto...</p>
                     <span class="price">$0</span><span class="actual-price"></span>
                 </div>
             </div>
-            <div class="product-card">
-                <div class="product-image">
+            <div class="CartaCarrusel card1">
+                <div class="CartaImagen">
 
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
                 </div>
-                <div class="product-info">
-                    <h2 class="product-brand">producto</h2>
-                    <p class="product-short-description">descripción del prodcto...</p>
-                    <span class="price">$0</span><span class="actual-price"></span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">producto</h2>
-                    <p class="product-short-description">descripción del prodcto...</p>
-                    <span class="price">$0</span><span class="actual-price"></span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">producto</h2>
-                    <p class="product-short-description">descripción del prodcto...</p>
-                    <span class="price">$0</span><span class="actual-price"></span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">producto</h2>
-                    <p class="product-short-description">descripción del prodcto...</p>
-                    <span class="price">$0</span><span class="actual-price"></span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">producto</h2>
-                    <p class="product-short-description">descripción del prodcto...</p>
-                    <span class="price">$0</span><span class="actual-price"></span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">producto</h2>
-                    <p class="product-short-description">descripción del prodcto...</p>
-                    <span class="price">$0</span><span class="actual-price"></span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">producto</h2>
-                    <p class="product-short-description">descripción del prodcto...</p>
-                    <span class="price">$0</span><span class="actual-price"></span>
-                </div>
-            </div>
-            <div class="product-card card1">
-                <div class="product-image">
-
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">producto</h2>
+                <div class="SectionCarrusel-informacion">
+                    <h2 class="CarruselTitulo">producto</h2>
                     <p class="product-short-description">descripción del prodcto...</p>
                     <span class="price">$0</span><span class="actual-price"></span>
                 </div>
             </div>
         </div>
-        
     </section>
 
     <script src="{{asset('js/Carrousel.js')}}"></script>
@@ -312,7 +304,7 @@
             <div class="box">
                 <h2>SOBRE NOSOTROS</h2>
                 <p>Somos una tienda dedicada a la venta de Equipos y componentes informaticos...</p>
-                <button class="boton-us"><a href="{{route('acerca')}}">Más informacion</a></button>
+                <button class="boton-us"><a href="{{route('register')}}">Más informacion</a></button>
             </div>
             <div class="box">
                 <div class="box">

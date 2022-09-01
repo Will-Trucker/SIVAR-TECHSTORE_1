@@ -1,4 +1,4 @@
-const productContainers = [...document.querySelectorAll('.product-container')];
+const productContainers = [...document.querySelectorAll('.SectionCarrusel-Contenedor')];
 const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
 const preBtn = [...document.querySelectorAll('.pre-btn')];
 

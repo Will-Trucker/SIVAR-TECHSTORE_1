@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root{
+	--white: #ffffff;
+    --negro: black;
+    --red: #de1313;
+    --verde: rgb(17, 205, 17);
+    --font: 'Poppins', sans-serif;
+    --grisn: #1c1c1c;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: var(--font);
+  outline: none;
+  text-decoration: none;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+@media (max-width: 1080px){
+  body{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+.navegacion{
+    z-index: 4;
+}
+.bienvenido{
+  color: #000000;
+  text-overflow: initial;
+  font-size: 1.3rem;
+  
+}
+@media (max-width:428px){
+  .bienvenido{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 1rem;
+  }
+}
+
+
+@media (max-width:424px){
+  .bienvenido{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: -1rem;
+  }
+}
+
+@media (max-width:380px){
+  .bienvenido{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 0.5rem;
+  }
+}
+
+
+header {
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    box-shadow: 5px 10px 18px #0a0a0a;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+  }
+  
+  .logo {
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .logotipo{
+    height: 100px;
+    width: auto;
+  }
+  
+  @media (max-width: 480px){
+    .logotipo{
+      height: 90px;
+    }
+     
+  
+      }
+
+      @media (max-width: 414px){
+        .logotipo{
+          height: 90px;
+          margin-left: -15%;
+        }
+         
+        .logo:hover{
+          transform: none;
+        }
+      
+        
+    
+      }
+
+  @media (max-width: 375px){
+    .logotipo{
+      height: 80px;
+      margin-left: -2rem;
+    }
+     
+    .logo:hover{
+      transform: none;
+    }
+  
+  }
+  
+ 
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: var(--font);
+    font-weight: 500;
+    text-decoration: none;
+    
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+    color: var(--negro);
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: color 0.3s ease 0s;
+    font-size: 26px;
+    color: var(--negro);
+  }
+  
+  .nav__links li a:hover {
+    color: var(--red);
+  }
+  
+  .cta {
+    padding: 5px 19px;
+    background-color: var(--red);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;  
+    font-size: 22px;
+    transition: all 0.3s;
+    margin-left: 2rem;
+    color: var(--negro);
+  }
+  
+  .cta:hover {
+    background-color: var(--verde);
+    color: var(--negro);
+   /*  transform: scale(1.2);*/
+  }
+  
+/* iconos menu*/
+.carretilla{
+
+		width: 30px;
+		height: 40px;
+
+}
+
+.cotizacion{
+
+		width: 30px;
+		height: 40px;
+		
+}
+
+  /* responsive nav */
+  
+  .menu {
+    display: none;
+    color: currentColor;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+
+    left: 0;
+    top: 0;
+    background-color: var(--grisn);
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+    color: currentColor;
+    z-index: 4;
+  }
+  
+  .overlay--active {
+    width: 100%;
+  }
+  
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+    color: var(--white);
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: var(--red);
+  }
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .icono{
+      font-weight: bold;
+      font-size: 20px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .nav__links,
+    .cta {
+      display: none;
+    }
+    .menu {
+      display: initial;
+    }
+  }
+  
+ 
+ 
+/* footer */
+.pie-pagina{
+  width: 100%;
+  background-color: #232f3a;
+  margin-top: -2%;
+}
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:50px;
+  padding: 45px 0px;
+  z-index: 1;
+}
+
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+  width: 300px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+  margin-left: 0.9rem;
+}
+.pie-pagina .grupo-1 .box p{
+  color: #efefef;
+  margin-bottom: 10px;
+  margin-left: 0.9rem;
+}
+
+.pie-pagina .grupo-1 .box button{
+margin-bottom: 10px;
+margin-left: 0.9rem;
+background: #314258;
+cursor: pointer;
+border: none;
+height: 2rem;
+width: 10rem;
+border-radius: 10px;
+}
+
+.pie-pagina .grupo-1 .box button a{
+  color: var(--white);
+  text-decoration: none;
+}
+
+.pie-pagina .grupo-1 .box button a:hover{
+  color: var(--negro);
+  text-decoration: none;
+}
+
+.pie-pagina .grupo-1 .box button:hover{
+background: var(--white);
+color: var(--negro);
+}
+
+.pie-pagina .grupo-1 .contactos a{
+   display: inline-block; /* agrega un salto de linea */
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 2.8rem;
+  margin-right: 2px;
+  background-color: #314258;
+  text-align: center;
+  border-radius: 10%; 
+  transition: all 300ms ease; /* efecto al pasar el mouse en el boton*/
+  margin-left: 0.9rem;
+}
+
+
+
+.facebook{
+color: var(--white);
+}
+
+.facebook:hover{
+color: rgb(38, 141, 231);
+}
+
+.instagram{
+color: var(--white);
+}
+
+.instagram:hover{
+color: orangered;
+}
+
+.twitter{
+color: var(--white);
+}
+
+.twitter:hover{
+color: rgb(30, 152, 228);
+}
+
+.mail{
+color: var(--white);
+}
+
+.mail:hover{
+color: orange;
+}
+
+.pie-pagina .grupo-2{
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small{
+  font-size: 15px;
+}
+
+@media screen and (max-width:800px){
+  .pie-pagina .grupo-1{
+      width: 100%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+  }
+  
+  .pie-pagina{
+    margin-top: 10%;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+}
+
+.contenedor form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.contenedor form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.contenedor form .row .col{
+  flex:1 1 250px;
+}
+
+.contenedor form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.contenedor form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.contenedor form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.contenedor form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.contenedor form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.contenedor form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.contenedor form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.contenedor form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.contenedor form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #000;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.contenedor form .submit-btn:hover{
+  background: red;
+}
+
+.goog-te-gadget-simple{
+    background-color: #314258 !important;
+    color: white !important;
+    
+    padding: 10px !important;
+    margin-top: -15px !important;
+  }
+  .goog-te-gadget-icon{
+    display: none;
+  }
+  
+  .goog-te-gadget-simple span{
+    color: white !important;
+  }
+  
+  
+  .google{
+    margin-left: 60%;
+    margin-top: -0.8%;
+  }
+  
+  @media (max-width:480px){
+    .google{
+      margin-top: 8%;
+      margin-left: -2%;
+    }
+  }

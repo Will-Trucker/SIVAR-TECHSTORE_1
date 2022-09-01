@@ -10,6 +10,8 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\DetalleController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\FrecuentController;
+use App\Http\Controllers\PagoController;
+use App\Http\Controllers\OfertaController;
 //Para Modelos
 
 
@@ -83,4 +85,16 @@ Route::post('/store/cart-clear', [App\Http\Controllers\CartController::class, 'c
 Route::post('/store/cart-removeitem', [App\Http\Controllers\CartController::class, 'removeitem'])->name('cart.removeitem');
 
 Route::post('/store/cart-plus', [App\Http\Controllers\CartController::class, 'addQty'])->name('cart.addqty');
+
 Route::post('/store/cart-minus', [App\Http\Controllers\CartController::class, 'removeQty'])->name('cart.removeqty');
+
+//Pagos
+Route::get('/paga', [PagoController::class, 'pagos'])->name('pagas');
+Route::post('EnvioPago', [PagoController::class, 'agregar']);
+
+
+//Oferta
+Route::get('/oferta', function () {
+  return view('oferta');
+});
+Route::post('EnvioF', [OfertaController::class, 'addf']);
