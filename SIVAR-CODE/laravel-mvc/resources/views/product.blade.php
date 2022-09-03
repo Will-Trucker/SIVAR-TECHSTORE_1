@@ -1,6 +1,8 @@
 @if(Session::has('Mensaje')) {{
    Session::get('Mensaje') }}
 @endif
+@extends('layouts.app')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,19 +19,38 @@
     <link rel="preload" href="{{asset('css/add_product.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/add_product.css')}}" type="text/css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+      <!-- CSS only -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
     <center>
+        <br>
 
         <form action="EnvioProducto" method="post" class="form-register" enctype="multipart/form-data">
             @csrf
                 <img src="{{asset('img/Logo.jpeg')}}" width="350px" height="145px" class="logo">
                 <br>
                 <h2 class="title-form">AGREGAR PRODUCTOS</h2>
-                <input class="controls" type="text" name="nombre" id="nombre" placeholder="Producto" required>
-                <input class="controls" type="text" name="slug" id="slug" placeholder="Slug" required>
+                <input class="controls" type="text" name="nombre" id="nombre" placeholder="Producto" value="{{ old('nombre') }}">
+                @error('nombre')
+                <br>
+                  <span role="alert" style="color: white;"> 
+                    <strong>
+                    {{ $message }} 
+                    </strong>
+                  </span>
+                @enderror
+                <input class="controls" type="text" name="slug" id="slug" placeholder="Slug" value="{{ old('slug') }}">
+                @error('slug')
+                <br>
+                <small role="alert" style="color: white;">
+                  <strong>
+                   {{ $message }} 
+                  </strong>
+                  </small>
+                @enderror
                <!-- <input type="text" name="categoria" id="categoria" class="controls" placeholder="Categoria" required> -->
-                <select name="categoria" id="categoria" class="formulario__campo controls">
+                <select name="categoria" id="categoria" class="formulario__campo controls" value="{{old('categoria')}}">
                     <option disabled selected > SELECCIONAR LA CATEGORIA </option> <br>
                      
                     <option value="Motherboard">Motherboard</option>
@@ -40,11 +61,18 @@
                     <option value="Monitores">Monitores</option>
                     <option value="Case">Case</option>
                 </select> 
-               <br> 
+                @error('categoria')
+                <br>
+                <span role="alert" style="color: white;"> 
+                  <strong>
+                  {{ $message }} 
+                  </strong>
+                </span>
+                @enderror
                <br>
              <!--  <input type="text" name="proveedor" id="proveedor" class="controls" placeholder="Proveedor" required> -->
-               <select name="proveedor" id="proveedor" class="formulario__proveedor" required>
-                  <option disabled  placehoder="Proveedor" class="proveedor"> Proveedor </option> <br>
+               <select name="proveedor" id="proveedor" class="formulario__proveedor" value="{{old('proveedor')}}">
+                  <option disabled  placehoder="Proveedor" class="provedor" selected> Proveedor </option> <br>
                      
                      <option value="MSI">MSI</option>
                      <option value="RAZER">RAZER</option>
@@ -73,12 +101,30 @@
                      <option value="AOC">AOC</option>
                      <option value="FRACTAL DESIGN">FRACTAL DESIGN</option>
                   </select>
+                  @error('proveedor')
+                  <br>
+                  <span role="alert" style="color: white;"> 
+                    <strong>  {{ $message }} </strong>
+                  </span>
+                  @enderror
                 <br>
+                <input class="controls" type="number" name="precio" id="precio" placeholder="$ Precio"  step="0.01" min="0" value="{{old('precio')}}"> 
+                @error('precio')
                 <br>
-                <input class="controls" type="number" name="precio" id="precio" placeholder="$ Precio" required step="0.01" min="0"> 
-             <div class="archivo">
+                <span role="alert" style="color: white;"> 
+                <strong>  {{ $message }} </strong>
+                
+                </span>
+                @enderror
+                <div class="archivo">
                 <label for="archivo"><i class="fa-solid fa-file-image"></i> Agregar Imagen</label>
-                <input type="file" id="archivo" name="archivo"   required>
+                <input type="file" id="archivo" name="archivo">
+                @error('archivo')
+                <br>
+                <span role="alert" style="color: white;"> 
+                <strong>  {{ $message }} </strong>
+                </span>
+                @enderror
                 <br>
                 <h4 id="nombre-a"></h4>
                 <script src="{{asset('./js/agregar.js')}}" type="text/javascript"></script>

@@ -73,17 +73,29 @@
                     </a>
                 </div>
                 <div class="col-sm-12 col-xl-6 d-flex justify-content-center">
-                    <a href="">
                         <div class="card text-white bg-cdb mb-3" style="max-width: 22rem;">
                             <div class="card-body">
+                                <a href="/sale">
                                 <img src="{{asset('img/ventas.png')}}"  alt="" width="60%">
                                 <div class="pt-2"></div>
-                                <h5 class="card-title">Ver ventas</h5>
+                                <h5 class="card-title">Ver ventas</h5></a>
                                 <p class="card-text">Apartado para ver las ventas totales que se realicen en la tienda</p>
                             </div>
                         </div>
                     </a>
                 </div>
+                <div class="col-sm-12 col-xl-6 d-flex justify-content-center">
+                    <div class="card text-white bg-cdb mb-3" style="max-width: 22rem;">
+                        <div class="card-body">
+                            <a href="/user">
+                            <img src="{{asset('img/ventas.png')}}"  alt="" width="60%">
+                            <div class="pt-2"></div>
+                            <h5 class="card-title">Ver Usuarios</h5></a>
+                            <p class="card-text">Apartado para ver Clientes Registrados</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
             </div>
         </div>
     </div>
@@ -97,4 +109,5 @@
         </div>
     </div>
 </nav>
-</body></html>
+</body>
+</html>

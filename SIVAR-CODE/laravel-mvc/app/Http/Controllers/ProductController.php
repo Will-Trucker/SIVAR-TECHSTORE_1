@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use App\Models\Product;
+use Illuminate\Support\Facades\Validator;
+use App\Providers\RouteServiceProvider;
+
 class ProductController extends Controller
 {
     //
@@ -11,8 +14,19 @@ class ProductController extends Controller
       // dd($request);
       try {
         DB::beginTransaction(); //Iniciar transaccion
-        $prod = new Product;
-      $prod->nombre=$request->get('nombre');
+       
+        //Validacion de Campos
+        $request->validate([
+        'nombre' => 'required | unique:product' ,
+        'slug' => 'required' ,
+        'categoria' => 'required' , 
+        'proveedor' => 'required' ,
+        'precio' => 'required | numeric' , 
+        'archivo' => 'required | image | mimes: jpeg, jpg, png, webp | unique:product'
+       ]);
+
+      $prod = new Product;
+      $prod->nombre=$request->get('nombre');      
       $prod->slug=$request->get('slug');
       $prod->categoria=$request->get('categoria');
       $prod->proveedor=$request->get('proveedor');
@@ -23,6 +37,8 @@ class ProductController extends Controller
             $imagen->move(public_path().'/productos/',$imagen->getClientOriginalName()); //donde guardara la imagen
             $prod->image_path=$imagen->getClientOriginalName();
         }
+
+      
       $prod -> save();
       DB::commit(); //enviar transaccion
     }
@@ -30,7 +46,7 @@ class ProductController extends Controller
         DB::rollback(); //no ejecutar nada si falla
         
       }     
-      return back()->with('message',  '<br> Gracias');  //mensaje de confirmacion
+      return view('Listado')->with('message',  '<br> Gracias');  //mensaje de confirmacion
    }
 
    public function update(Request $request, $id){

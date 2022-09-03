@@ -192,7 +192,7 @@
 
             <div class="CartaCarrusel">
                 <div class="CartaImagen">
-<a href="/todos/detalle/{id}">
+<a href="{{route('detalle',$carro->id)}}">
                     <img src="/ofertas/{{$carro->imagen}}" class="product-thumb" alt="">
 </a>
                 </div>

@@ -13,6 +13,7 @@ use App\Http\Controllers\FrecuentController;
 use App\Http\Controllers\PagoController;
 use App\Http\Controllers\OfertaController;
 use App\Http\Controllers\SaleController;
+use App\Http\Controllers\UserController;
 //Para Modelos
 
 
@@ -33,6 +34,8 @@ Route::get('/', function () {
   return view('welcome');
 });
 
+
+//Agregar Productos
 Route::get('/product', function () {
     return view('product');
 });
@@ -53,6 +56,10 @@ Route::get('/delete/{id}',[ListadoController::class, 'delete']);
 //Vista Ventas
 Route::get('/sale', [SaleController::class, 'compras']);
 
+//Vista Usuarios Registrados
+Route::get('/user', [UserController::class, 'usuarios']);
+
+//Acciones del Pago
 Route::get('/paga', [PagoController::class, 'pagos'])->name('pagas');
 
 Route::post('EnvioPago', [PagoController::class, 'agregar']);
@@ -62,8 +69,6 @@ Auth::routes();
 //Vista Productos por Categoria y Todos
 
 Route::get('/todos/{category?}', [App\Http\Controllers\VistapController::class, 'productos'])->name('productos');
-
-
 
 Route::get('/cat', [App\Http\Controllers\CategoriesController::class, 'categorias'])->name('categorias');
 
@@ -97,10 +102,9 @@ Route::post('/store/cart-plus', [App\Http\Controllers\CartController::class, 'ad
 
 Route::post('/store/cart-minus', [App\Http\Controllers\CartController::class, 'removeQty'])->name('cart.removeqty');
 
-
-
 //Oferta
 Route::get('/oferta', function () {
   return view('oferta');
 });
+
 Route::post('EnvioF', [OfertaController::class, 'addf']);
