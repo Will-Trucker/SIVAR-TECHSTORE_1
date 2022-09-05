@@ -531,3 +531,7 @@ color: orange;
       margin-left: -2%;
     }
   }
+
+  span{
+    text-align: justify;
+  }

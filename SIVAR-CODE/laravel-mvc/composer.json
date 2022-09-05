@@ -16,6 +16,7 @@
         "laravel/tinker": "^2.7",
         "laravel/ui": "^3.4",
         "rezaamini-ir/laravel-easypanel": "^2.1",
+        "spatie/laravel-permission": "^5.5",
         "twbs/bootstrap": "5.2.0"
     },
     "require-dev": {

@@ -7,6 +7,7 @@ use App\Models\Product;
 use Illuminate\Support\Facades\Validator;
 use App\Providers\RouteServiceProvider;
 
+
 class ProductController extends Controller
 {
     //
@@ -14,7 +15,6 @@ class ProductController extends Controller
       // dd($request);
       try {
         DB::beginTransaction(); //Iniciar transaccion
-       
         //Validacion de Campos
         $request->validate([
         'nombre' => 'required | unique:product' ,

@@ -49,7 +49,7 @@ class CartController extends Controller
       if (isset($request->id)) {
         Cart::update($request->id, array("quantity" => -1));
       }
-      return back()->with('success', "Producto Actualizado Satisfactoriamente");
+      return back()->with('success_message', "Producto Actualizado Satisfactoriamente");
     }
 
     //Limpiar el  carrito

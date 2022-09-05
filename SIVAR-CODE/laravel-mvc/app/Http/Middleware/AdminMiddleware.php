@@ -16,6 +16,9 @@ class AdminMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
+        if (Auth::check() && Auth::user()->role=='super_admin') {
+         abort(code: 403); 
+        }
         return $next($request);
     }
 }

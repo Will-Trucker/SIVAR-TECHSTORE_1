@@ -8,8 +8,8 @@ use DB;
 use App\Models\Pago;
 use Cart;
 use App\Models\Product;
-use App\Mail\PagoMail;
-use Iluminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Validator;
+
 class PagoController extends Controller
 {
     //
@@ -20,6 +20,14 @@ class PagoController extends Controller
     public function agregar(Request $request){
 
        try{
+       
+        $request->validate([
+        'cliente' =>  'required | string | max:255', 
+        'correo' => 'required | email | max:255',
+        'tarjeta' => 'required | string | unique:pagos',
+        'caducidad' => 'required | string',
+        'cvc' => 'required | int | unique:pagos'
+       ]);
 
         DB::beginTransaction();
         $pago = new Pago;
@@ -37,7 +45,7 @@ class PagoController extends Controller
         DB::rollback(); //no ejecutar nada si falla
       }    
         
-      return redirect('home')->with('status', 'Order con Exito');  //mensaje de confirmacion
+      return redirect('home')->with('message', 'Order con Exito');  //mensaje de confirmacion
     }
 
 
