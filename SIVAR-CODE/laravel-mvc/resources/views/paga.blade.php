@@ -62,34 +62,54 @@
 @if (count(Cart::getContent()))
 
 <div class="contenedor">
-
+<center>
     <form action="EnvioPago" method="post" enctype="multipart/form-data">
        @csrf
         <div class="row">
 
             <div class="col">
 
-                <h3 class="title">Pago</h3>
+                <h1 class="title">Pagar</h1>
 
                 <div class="inputBox">
                     <img src="{{asset('img/card_img.png')}}" alt="">
                 </div>
                 <div class="inputBox">
                     <span>Nombre:</span>
-                    <input type="text" placeholder="mr. john deo" name="cliente" id="cliente" value="{{ old('cliente') }}">
-                    
+                    <input type="text" placeholder="Pablo Perez" name="cliente" id="cliente" value="{{ old('cliente') }}">
+                @error('cliente')
+                <br>
+                <div id="validationServer03Feedback" class="invalid-feedback">
+                    Por Favor Digite su Nombre Completo
+                  </div>
+                @enderror    
                 </div>
                 <div class="inputBox">
                     <span>Correo:</span>
-                    <input type="text" placeholder="mr. john deo" name="correo" id="correo">
+                    <input type="text" placeholder="cliente234@mail.com" name="correo" id="correo" value="{{ old('correo')''}}">
+                @error('correo')
+                <div id="validationServer03Feedback" class="invalid-feedback">
+                    Por favor proporcione un e-mail valido
+                  </div>
+                @enderror
                 </div>
                 <div class="inputBox">
                     <span>Numero de Tarjeta:</span>
-                    <input type="text" placeholder="1111-2222-3333-4444" name="tarjeta" id="tarjeta">
+                    <input type="text" placeholder="1813-2582-3943-4540" name="tarjeta" id="tarjeta" value="{{old('tarjeta')}}">
+                @error('tarjeta')
+                <div id="validationServer03Feedback" class="invalid-feedback">
+                    Por favor proporcione una tarjeta valida
+                  </div>
+                @enderror
                 </div>
                 <div class="inputBox">
                     <span>Mes de caducidad:</span>
-                    <input type="date" placeholder="Vencimiento" name="caducidad" id="caducidad">
+                    <input type="date" placeholder="Vencimiento" name="caducidad" id="caducidad" value="{{old('cvc')}}">
+                    @error('caducidad')
+                    <div id="validationServer03Feedback" class="invalid-feedback">
+                        Por favor proporcione su fecha de vencimiento valida
+                      </div>
+                    @enderror
                 </div>
 
                 <div class="flex">
@@ -97,13 +117,14 @@
                         <span>Codigo de Seguridad:</span>
                         <input type="number" placeholder="124" name="cvc" id="cvc">
                     </div>
-                   
+                    @error('cvc')
+                    @enderror                   
                 </div>
                 <div class="flex">
                     <div class="inputBox">
                         <span>Total a Pagar</span>
 
-                        <input type="number" {{print number_format(Cart::getTotal(),2)}}>
+                        <input type="text" value="$ {{number_format(Cart::getTotal(),2)}}" readonly>
                     </div>
         
             </div>
