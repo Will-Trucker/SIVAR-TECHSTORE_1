@@ -14,5 +14,5 @@ class Pago extends Model
    
     public $timestamps = false;
     
-    protected $fillable = ['cliente','tarjeta','caducidad','cvc', 'monto'];
+    protected $fillable = ['cliente', 'correo', 'tarjeta','caducidad','cvc', 'monto'];
 }

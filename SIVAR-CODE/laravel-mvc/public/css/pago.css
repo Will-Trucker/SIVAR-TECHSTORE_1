@@ -80,8 +80,15 @@ header {
     position: fixed;
     width: 100%;
     background: #fff;
+    margin-top: -0.2%;
   }
   
+@media(max-width:424px){
+  header{
+    margin-top: -10%;
+  }
+}
+
   .logo {
     cursor: pointer;
     transition: all 0.3s;
@@ -171,7 +178,7 @@ header {
   .cta:hover {
     background-color: var(--verde);
     color: var(--negro);
-   /*  transform: scale(1.2);*/
+    transform: scale(1.2);
   }
   
 /* iconos menu*/
@@ -277,7 +284,7 @@ header {
 .pie-pagina{
   width: 100%;
   background-color: #232f3a;
-  margin-top: -2%;
+  margin-top: 2%;
 }
 .pie-pagina .grupo-1{
   width: 100%;
@@ -411,16 +418,6 @@ color: orange;
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
-
-*{
-  font-family: 'Poppins', sans-serif;
-  margin:0; padding:0;
-  box-sizing: border-box;
-  outline: none; border:none;
-  text-transform: capitalize;
-  transition: all .2s linear;
-}
 
 .contenedor{
   display: flex;
@@ -499,40 +496,73 @@ color: orange;
   color:#fff;
   margin-top: 5px;
   cursor: pointer;
+  border: none;
 }
 
 .contenedor form .submit-btn:hover{
   background: red;
 }
 
-.goog-te-gadget-simple{
-    background-color: #314258 !important;
-    color: white !important;
-    
-    padding: 10px !important;
-    margin-top: -15px !important;
-  }
-  .goog-te-gadget-icon{
-    display: none;
-  }
-  
-  .goog-te-gadget-simple span{
-    color: white !important;
-  }
-  
-  
-  .google{
-    margin-left: 60%;
-    margin-top: -0.8%;
-  }
-  
-  @media (max-width:480px){
-    .google{
-      margin-top: 8%;
-      margin-left: -2%;
-    }
-  }
+.google{
+  margin-left: 70%;
+  margin-top: -1.6%;
+}
 
+@media (max-width:480px){
+  .google{
+    margin-top: 1%;
+    margin-left: 7%;
+  }
+}
+
+.goog-te-banner-frame{
+  display: none;
+}
+.goog-te-gadget-simple{
+  background-color: #314258 !important;
+  color: white !important;
+ border: none !important;
+  padding: 10px !important;
+}
+.goog-te-gadget-icon{
+  display: none;
+}
+
+.goog-te-gadget-simple span{
+  color: white !important;
+}
+#li-translate::marker{
+  color: #131316;
+}
+iframe.goog-te-menu-frame{
+  background-color: #131316 !important;
+  margin-left: 15px !important;
+  box-shadow: none !important;
+  border: none !important
+} 
+
+/*
+.goog-te-gadget-simple{
+  background-color: #314258 !important;
+  color: white !important;
+  
+  padding: 10px !important;
+  margin-top: -15px !important;
+}
+.goog-te-gadget-icon{
+  display: none;
+}
+
+.goog-te-gadget-simple span{
+  color: white !important;
+}
+
+
+.google{
+  margin-left: 60%;
+  margin-top: -0.8%;
+}
+*/
   span{
     text-align: justify;
   }

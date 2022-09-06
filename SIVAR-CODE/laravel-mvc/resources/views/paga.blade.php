@@ -4,34 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <title>Pagar</title>
     <link rel="preload" type="text/css" href="{{asset('css/normalize.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/normalize.css')}}">
     <link rel="icon" type="picture" href="{{asset('img/Icono.png')}}">
     <link rel="preload" type="text/css" href="{{asset('css/pago.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/pago.css')}}">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+ 
 </head>
 <body>
 <div class="navegacion"> <!-- Menu -->
     <header class="header">
        <a class="logo" href="/home"><img class="logotipo" src="{{asset('img/Asset 7.webp')}}" alt="logo"></a>
-        <nav>
-            <ul class="nav__links">
-              <li><a href="/cat" class="opciones bars-solid"><svg class="bars-solid"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="40px"><path  fill=currentcolor d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg> Catalogo</a></li>
-              <li><a href="{{ route('acerca') }}" class="opciones bars-solid"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30px" height="40px"><path fill="currentColor" d="M256 288c79.53 0 144-64.47 144-144s-64.47-144-144-144c-79.52 0-144 64.47-144 144S176.5 288 256 288zM351.1 320H160c-88.36 0-160 71.63-160 160c0 17.67 14.33 32 31.1 32H480c17.67 0 31.1-14.33 31.1-32C512 391.6 440.4 320 351.1 320z"/></svg> Conócenos</a></li>
-              <li><a href="#" class="position-relative opciones carretilla">
-              <svg class="carretilla"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentcolor" d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"/></svg> Carrito
-  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-   {{Cart::getContent()->count()}}
-    <span class="visually-hidden"></span>
-  </span>
-</a></li>
-            </ul>
-        </nav>
+       <nav>
+        <ul class="nav__links">
+          <li><a href="{{route('categorias')}}" class="opciones bars-solid"><svg class="bars-solid"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="40px"><path  fill=currentcolor d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg> Categorias</a></li>
+          <li><a href="{{route('pregunta')}}" class="opciones cotizacion"><svg class="cotizacion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30px" height="40px">><path fill="currentcolor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z"/></svg> Preguntas Frecuentes</a></li>
+          <li><a href="/store/cart-checkout" class="position-relative opciones carretilla">
+          <svg class="carretilla"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentcolor" d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"/></svg> Carrito
+<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+{{Cart::getContent()->count()}}
+<span class="visually-hidden"></span>
+</span>
+</a>
+</li>
+        </ul>
+    </nav>
         <h3 class="bienvenido">Hola {{ Auth::user()->name }} <br><br> <a  class="cta" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -58,12 +65,12 @@
 </div>
 
 </header>
-<br><br><br><br>
+<br><br><br>
 @if (count(Cart::getContent()))
 
 <div class="contenedor">
 <center>
-    <form action="EnvioPago" method="post" enctype="multipart/form-data">
+    <form action="{{url('EnvioPago')}}" method="post" enctype="multipart/form-data">
        @csrf
         <div class="row">
 
@@ -77,48 +84,66 @@
                 <div class="inputBox">
                     <span>Nombre:</span>
                     <input type="text" placeholder="Pablo Perez" name="cliente" id="cliente" value="{{ old('cliente') }}">
-                @error('cliente')
-                <br>
-                <div id="validationServer03Feedback" class="invalid-feedback">
-                    Por Favor Digite su Nombre Completo
-                  </div>
-                @enderror    
+                    @error('cliente')
+                    <br>
+                      <span role="alert" style="color: red;"> 
+                        <strong>
+                        {{ $message }} 
+                        </strong>
+                      </span>
+                    @enderror
                 </div>
                 <div class="inputBox">
                     <span>Correo:</span>
-                    <input type="text" placeholder="cliente234@mail.com" name="correo" id="correo" value="{{ old('correo')''}}">
-                @error('correo')
-                <div id="validationServer03Feedback" class="invalid-feedback">
-                    Por favor proporcione un e-mail valido
-                  </div>
-                @enderror
+                    <input type="text" placeholder="cliente234@mail.com" name="correo" id="correo" value="{{ old('correo')}}">
+                    @error('correo')
+                    <br>
+                      <span role="alert" style="color: red;"> 
+                        <strong>
+                        {{ $message }} 
+                        </strong>
+                      </span>
+                    @enderror
                 </div>
                 <div class="inputBox">
                     <span>Numero de Tarjeta:</span>
-                    <input type="text" placeholder="1813-2582-3943-4540" name="tarjeta" id="tarjeta" value="{{old('tarjeta')}}">
-                @error('tarjeta')
-                <div id="validationServer03Feedback" class="invalid-feedback">
-                    Por favor proporcione una tarjeta valida
-                  </div>
-                @enderror
+                    <input type="text" placeholder="1813-2582-3943-4540" name="tarjeta" id="tarjeta" @error('tarjeta') is-invalid @enderror controls value="{{old('tarjeta')}}">
+                    @error('tarjeta')
+                    <br>
+                      <span role="alert" style="color: red;"> 
+                        <strong>
+                        {{ $message }} 
+                        </strong>
+                      </span>
+                    @enderror
                 </div>
                 <div class="inputBox">
                     <span>Mes de caducidad:</span>
-                    <input type="date" placeholder="Vencimiento" name="caducidad" id="caducidad" value="{{old('cvc')}}">
+                    <input type="date" placeholder="Vencimiento" name="caducidad" id="caducidad" @error('caducidad') is-invalid @enderror controls value="{{old('caducidad')}}">
                     @error('caducidad')
-                    <div id="validationServer03Feedback" class="invalid-feedback">
-                        Por favor proporcione su fecha de vencimiento valida
-                      </div>
+                    <br>
+                      <span role="alert" style="color: red;"> 
+                        <strong>
+                        {{ $message }} 
+                        </strong>
+                      </span>
                     @enderror
                 </div>
 
                 <div class="flex">
                     <div class="inputBox">
                         <span>Codigo de Seguridad:</span>
-                        <input type="number" placeholder="124" name="cvc" id="cvc">
+                        <input type="number" placeholder="124" name="cvc" id="cvc" @error('cvc') is-invalid @enderror controls value="{{old('cvc')}}">
+                        @error('cvc')
+                        <br>
+                          <span role="alert" style="color: red;"> 
+                            <strong>
+                            {{ $message }} 
+                            </strong>
+                          </span>
+                        @enderror
                     </div>
-                    @error('cvc')
-                    @enderror                   
+                              
                 </div>
                 <div class="flex">
                     <div class="inputBox">
@@ -163,39 +188,47 @@
              </div>
             </div>
         </div>
+        
         <div class="grupo-2">
             <small>&copy; 2022 <b>SIVAR-TECHSTORE</b> | Todos los Derechos Reservados</small>
             <div id="google_translate_element" class="google"></div>
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
-    }
-</script>
-
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    </div>                
-        </div>
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+                }
+        </script>
+        
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+       <!--     
+            <div id="google_translate_element" class="google languaje"></div>
+            <script type="text/javascript">
+              function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+                }
+              </script>
+              <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  </div>        
+            --></div>
     </footer>
 </body>
     @else
-    <div class="container">
+    <div class="container" style="margin-top: 10%">
     <h1 class="text-center h4 pt-3 pb-3">No tienes ningún producto en el carrito</h1>  
     <br>
-    <center>
+   <!-- <center>
     <a href="/home"><button class="btn btn-info">Ir a Inicio</button></a></center>
     </div> 
     <center>
-    <div id="google_translate_element" class="google"></div>
-<script type="text/javascript">
-function googleTranslateElementInit() {
-new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
-    }
-</script>
-
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  </div>    
-    </center>
-  @endif
+    
+    <div id="google_translate_element" class="google languaje"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+        }
+      </script>
+      <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  </div>    
+    </center> -->
 </body>
+    @endif
+
 </html>
