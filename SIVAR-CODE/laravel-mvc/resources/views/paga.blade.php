@@ -22,7 +22,8 @@
  
 </head>
 <body>
-<div class="navegacion"> <!-- Menu -->
+  <main>
+  <div class="navegacion"> <!-- Menu -->
     <header class="header">
        <a class="logo" href="/home"><img class="logotipo" src="{{asset('img/Asset 7.webp')}}" alt="logo"></a>
        <nav>
@@ -210,7 +211,7 @@
               <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  </div>        
             --></div>
     </footer>
-</body>
+
     @else
     <div class="container" style="margin-top: 10%">
     <h1 class="text-center h4 pt-3 pb-3">No tienes ningún producto en el carrito</h1>  
@@ -228,7 +229,8 @@
       </script>
       <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  </div>    
     </center> -->
-</body>
     @endif
+  </body>
+  
 
 </html>
