@@ -77,11 +77,19 @@ header {
     align-items: center;
     padding: 15px 10%;
     box-shadow: 5px 10px 18px #0a0a0a;
-    position: fixed;
+    position:fixed;
     width: 100%;
     background: #fff;
+  /*  margin-top: -2.5%;*/
   }
+
   
+@media(max-width:424px){
+  header{
+    margin-top: -10%;
+  }
+}
+
   .logo {
     cursor: pointer;
     transition: all 0.3s;
@@ -133,7 +141,7 @@ header {
     font-family: var(--font);
     font-weight: 500;
     text-decoration: none;
-    text-transform: capitalize;
+    
   }
   
   .nav__links {
@@ -171,7 +179,7 @@ header {
   .cta:hover {
     background-color: var(--verde);
     color: var(--negro);
-   /*  transform: scale(1.2);*/
+    transform: scale(1.2);
   }
   
 /* iconos menu*/
@@ -221,7 +229,6 @@ header {
     align-items: center;
     justify-content: center;
     z-index: 4;
-    text-transform: capitalize;
   }
   
   .overlay a {
@@ -271,248 +278,170 @@ header {
       display: initial;
     }
   }
-  
- 
- 
-/* footer */
+
+  /* footer */
 .pie-pagina{
-  width: 100%;
-  background-color: #232f3a;
-  margin-top: 40%;
-}
-.pie-pagina .grupo-1{
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap:50px;
-  padding: 45px 0px;
-  z-index: 1;
-}
-
-.pie-pagina .grupo-1 .box figure{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pie-pagina .grupo-1 .box figure img{
-  width: 300px;
-}
-
-.pie-pagina .grupo-1 .box h2{
-  color: #fff;
-  margin-bottom: 25px;
-  font-size: 20px;
-  margin-left: 0.9rem;
-}
-.pie-pagina .grupo-1 .box p{
-  color: #efefef;
+    width: 100%;
+    background-color: #232f3a;
+    margin-top: 10%;
+  }
+  .pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+    z-index: 1;
+  }
+  
+  .pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pie-pagina .grupo-1 .box figure img{
+    width: 300px;
+  }
+  
+  .pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    margin-left: 0.9rem;
+  }
+  .pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+    margin-left: 0.9rem;
+  }
+  
+  .pie-pagina .grupo-1 .box button{
   margin-bottom: 10px;
   margin-left: 0.9rem;
-}
-
-.pie-pagina .grupo-1 .box button{
-margin-bottom: 10px;
-margin-left: 0.9rem;
-background: #314258;
-cursor: pointer;
-border: none;
-height: 2rem;
-width: 10rem;
-border-radius: 10px;
-}
-
-.pie-pagina .grupo-1 .box button a{
-  color: var(--white);
-  text-decoration: none;
-}
-
-.pie-pagina .grupo-1 .box button a:hover{
+  background: #314258;
+  cursor: pointer;
+  border: none;
+  height: 2rem;
+  width: 10rem;
+  border-radius: 10px;
+  }
+  
+  .pie-pagina .grupo-1 .box button a{
+    color: var(--white);
+    text-decoration: none;
+  }
+  
+  .pie-pagina .grupo-1 .box button a:hover{
+    color: var(--negro);
+    text-decoration: none;
+  }
+  
+  .pie-pagina .grupo-1 .box button:hover{
+  background: var(--white);
   color: var(--negro);
-  text-decoration: none;
-}
-
-.pie-pagina .grupo-1 .box button:hover{
-background: var(--white);
-color: var(--negro);
-}
-
-.pie-pagina .grupo-1 .contactos a{
-   display: inline-block; /* agrega un salto de linea */
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 2.8rem;
-  margin-right: 2px;
-  background-color: #314258;
-  text-align: center;
-  border-radius: 10%; 
-  transition: all 300ms ease; /* efecto al pasar el mouse en el boton*/
-  margin-left: 0.9rem;
-}
-
-
-
-.facebook{
-color: var(--white);
-}
-
-.facebook:hover{
-color: rgb(38, 141, 231);
-}
-
-.instagram{
-color: var(--white);
-}
-
-.instagram:hover{
-color: orangered;
-}
-
-.twitter{
-color: var(--white);
-}
-
-.twitter:hover{
-color: rgb(30, 152, 228);
-}
-
-.mail{
-color: var(--white);
-}
-
-.mail:hover{
-color: orange;
-}
-
-.pie-pagina .grupo-2{
-  background-color: #0a1a2a;
-  padding: 15px 10px;
-  text-align: center;
-  color: #fff;
-}
-.pie-pagina .grupo-2 small{
-  font-size: 15px;
-}
-
-@media screen and (max-width:800px){
-  .pie-pagina .grupo-1{
-      width: 100%;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap:30px;
-      padding: 35px 0px;
   }
   
-  .pie-pagina{
-    margin-top: 600%;
-  }
-}
-
-
-
-  /*Tarjetas*/
-
-.productos{ /*Contenedor de los productos*/
-    width: 100%;
-    max-width: 1700px;
-    height: 430px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-    margin-top: 2%;
-    background-position: cover;
-  }
-
-  .productos img{
-    width: 330px;
-    height: 220px;
-  }
-  
-  .producto{ /*tamaño del producto*/     
-     background-color: rgb(255, 255, 255);;
-     margin: 2rem;
-     padding: 2rem;
-     width: 25rem;
-     max-width: 800px;
-     display: flex;
-     flex-flow: column;
-     border-radius: 6px;
-     box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.2);
-     background-color: white;
-     cursor: pointer;
-     transition-property: box-shadow;
-     transition-duration: 0.3s;
-  }
-  
-  /*.producto{ 
-     max-width: 280px;
-     display: flex;
-     flex-flow: column;
-     border-radius: 6px;
-     box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.2);
-     background-color: white;
-     cursor: pointer;
-     transition-property: box-shadow;
-     transition-duration: 0.3s;
-  }
-  */
-  
-  .producto:hover{ /**/
-     box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.2);
-  }
-  
-  .informacion{ /*estilo de la descripcion producto*/
-     border-top: 1px solid rgb(230, 230, 230);
-     padding: 1em;
-     display: flex;
-     flex-flow: column;
-     margin-top: 0.5em;
-  }
-  
-  .precio{ /*tamaño del precio*/
-      font-size: 1.5em;
-  }
-  
-  .precio-envio{ /*color de precio de envio*/
-      color: red;
-      text-transform: uppercase;
-      font-size: 1.3rem;
-  }
-  
-  .descripcion{
-      font-weight: 300;
-      font-size: 1.5rem;
-      color: var(--negro);
-  }
-
-  .a{
+  .pie-pagina .grupo-1 .contactos a{
+     display: inline-block; /* agrega un salto de linea */
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 2.8rem;
+    margin-right: 2px;
+    background-color: #314258;
     text-align: center;
-
+    border-radius: 10%; 
+    transition: all 300ms ease; /* efecto al pasar el mouse en el boton*/
+    margin-left: 0.9rem;
   }
-
   
   
-  .producto:hover{ 
-      opacity: 1;
+  
+  .facebook{
+  color: var(--white);
   }
-
-  .title{
+  
+  .facebook:hover{
+  color: rgb(38, 141, 231);
+  }
+  
+  .instagram{
+  color: var(--white);
+  }
+  
+  .instagram:hover{
+  color: orangered;
+  }
+  
+  .twitter{
+  color: var(--white);
+  }
+  
+  .twitter:hover{
+  color: rgb(30, 152, 228);
+  }
+  
+  .mail{
+  color: var(--white);
+  }
+  
+  .mail:hover{
+  color: orange;
+  }
+  
+  .pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
     text-align: center;
-    margin-top: 3%;
+    color: #fff;
+  }
+  .pie-pagina .grupo-2 small{
+    font-size: 15px;
+  }
+  
+  @media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+    
+    .pie-pagina{
+      margin-top: 10%;
+    }
   }
 
-
+ 
+  
+  body{
+    top: 0 !important;
+}
+.google{
+    margin-left: 70%;
+    margin-top: -2.5%;
+  }
+  
+  @media (max-width:480px){
+    .google{
+      margin-top: 1%;
+      margin-left: 7%;
+    }
+  }
+  
+  .goog-te-banner-frame{
+    display: none;
+  }
   .goog-te-gadget-simple{
     background-color: #314258 !important;
     color: white !important;
-    
+   border: none !important;
     padding: 10px !important;
-    margin-top: -15px !important;
   }
   .goog-te-gadget-icon{
     display: none;
@@ -521,16 +450,25 @@ color: orange;
   .goog-te-gadget-simple span{
     color: white !important;
   }
-  
-  
-  .google{
-    margin-left: 60%;
-    margin-top: -0.8%;
+  #li-translate::marker{
+    color: #131316;
   }
-  
-  @media (max-width:480px){
-    .google{
-      margin-top: 8%;
-      margin-left: -2%;
-    }
-  }
+  iframe.goog-te-menu-frame{
+    background-color: #131316 !important;
+    margin-left: 15px !important;
+    box-shadow: none !important;
+    border: none !important
+  } 
+    
+.notificacion{
+    margin-top: 18%;
+}  
+
+.notificacion h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+i{
+    color: greenyellow;
+}

@@ -19,8 +19,6 @@ class PagoController extends Controller
     public function agregar(Request $request){
 
        try{
-  
-        DB::beginTransaction();
         $request->validate([
           'cliente' =>  'required', 
           'correo' => 'required |',
@@ -28,6 +26,7 @@ class PagoController extends Controller
           'caducidad' => 'required',
           'cvc' => 'required | int | unique:pagos'
         ]);
+        DB::beginTransaction();
         $pago = new Pago;
         $pago->cliente=$request->get('cliente');
         $pago->correo=$request->get('correo');
@@ -35,7 +34,8 @@ class PagoController extends Controller
         $pago->caducidad=$request->get('caducidad');
         $pago->cvc=$request->get('cvc');
         $pago->monto=number_format(Cart::getTotal(),2);
-      
+        
+        Cart::clear();
         $pago->save();
 
         DB::commit(); //enviar transaccion
@@ -43,10 +43,9 @@ class PagoController extends Controller
        }   catch (Exception $e ) {
         DB::rollback(); //no ejecutar nada si falla
       }    
-      Cart::clear();
-      return redirect('home')->with('message', 'Order con Exito');  //mensaje de confirmacion
+      return redirect('notificacion')->with('message', 'Order con Exito');  //mensaje de confirmacion
     }
-
+    
 
     
 }

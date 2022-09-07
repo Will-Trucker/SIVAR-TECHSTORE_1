@@ -14,6 +14,7 @@ use App\Http\Controllers\PagoController;
 use App\Http\Controllers\OfertaController;
 use App\Http\Controllers\SaleController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\MensajeController;
 //Para Modelos
 
 
@@ -64,6 +65,8 @@ Route::get('/paga', [PagoController::class, 'pagos'])->name('pagas');
 
 Route::post('EnvioPago', [PagoController::class, 'agregar']);
 
+//Notificacion de Pago Exitoso
+Route::get('/notificacion', [MensajeController::class, 'notificaciones'])->name('notificar');
 Auth::routes();
 
 //Vista Productos por Categoria y Todos

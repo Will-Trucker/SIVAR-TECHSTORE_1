@@ -28,6 +28,9 @@ html, body{
   overflow-x: hidden;
 }
 
+body{
+  top: 0 !important;
+}
 
 @media (max-width: 1080px){
   body{
