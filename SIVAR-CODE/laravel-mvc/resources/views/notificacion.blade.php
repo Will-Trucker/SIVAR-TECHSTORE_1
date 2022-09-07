@@ -67,7 +67,7 @@
     <h1><i class="fa-sharp fa-solid fa-circle-check"></i>  GRACIAS POR COMPRAR CON NOSOTROS</h1>
     <br>
     <center>
-        <a href="">
+        <a href="{{route('pagos.pdf')}}">
         <button class="btn btn-info informacion">Ver Recibo</button></a>
 
         <a href="/home"><button class="btn btn-primary home">Ir al Inicio</button></a>

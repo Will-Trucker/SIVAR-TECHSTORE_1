@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class PagoMail extends Mailable
+class TestMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -16,9 +16,10 @@ class PagoMail extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public $data;
+    public function __construct($data)
     {
-        //
+       $this->data = $data;
     }
 
     /**
@@ -28,7 +29,9 @@ class PagoMail extends Mailable
      */
     public function build()
     {
-        $cliente = "Chepe";
-        return $this->view('pagomail',['cliente'=>$cliente]);
+        return $this->from(env('tonochepe07@gmail.com'),env('MAIL_FROM_NAME'))
+                ->view('testmail')
+                ->subject('Titulo del correo')
+                ->with($this->data);
     }
 }

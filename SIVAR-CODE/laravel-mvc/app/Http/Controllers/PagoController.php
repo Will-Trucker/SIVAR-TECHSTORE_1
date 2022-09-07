@@ -8,6 +8,8 @@ use DB;
 use App\Models\Pago;
 use Cart;
 use App\Models\Product;
+use App\Mail\TestMail;
+use Mail;
 
 class PagoController extends Controller
 {
@@ -35,7 +37,10 @@ class PagoController extends Controller
         $pago->cvc=$request->get('cvc');
         $pago->monto=number_format(Cart::getTotal(),2);
         
+        $data = ['name' => 'Mauricio'];
+        Mail::to('edithww2@gmail.com')->send(new TestMail($data));
         Cart::clear();
+
         $pago->save();
 
         DB::commit(); //enviar transaccion
@@ -46,6 +51,10 @@ class PagoController extends Controller
       return redirect('notificacion')->with('message', 'Order con Exito');  //mensaje de confirmacion
     }
     
+    public function pdf(){
+      $pagos = Pago::all();
 
+      return view('pdf');
+    }
     
 }

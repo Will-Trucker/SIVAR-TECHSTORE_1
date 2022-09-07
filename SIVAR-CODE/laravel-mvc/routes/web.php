@@ -67,6 +67,10 @@ Route::post('EnvioPago', [PagoController::class, 'agregar']);
 
 //Notificacion de Pago Exitoso
 Route::get('/notificacion', [MensajeController::class, 'notificaciones'])->name('notificar');
+
+//Prueba de PDF
+Route::get('/paga/pdf', [PagoController::class, 'pdf'])->name('pagos.pdf');
+
 Auth::routes();
 
 //Vista Productos por Categoria y Todos
