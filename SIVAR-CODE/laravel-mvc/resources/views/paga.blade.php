@@ -120,7 +120,7 @@
                 </div>
                 <div class="inputBox">
                     <span>Mes de caducidad:</span>
-                    <input type="date" placeholder="Vencimiento" name="caducidad" id="caducidad" @error('caducidad') is-invalid @enderror controls value="{{old('caducidad')}}">
+                    <input type="month" placeholder="Vencimiento" name="caducidad" id="caducidad" @error('caducidad') is-invalid @enderror controls value="{{old('caducidad')}}" min="2022-09">
                     @error('caducidad')
                     <br>
                       <span role="alert" style="color: red;"> 

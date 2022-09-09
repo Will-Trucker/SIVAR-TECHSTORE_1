@@ -66,7 +66,7 @@
                                 <a href="Listado">
                                 <img src="{{asset('img/caja.png')}}" alt="" width="60%">
                                 <div class="pt-2"></div>
-                                <h5 class="card-title">Productos de la tienda</h5> </a>
+                                <h5 class="card-title" style="text-transform: capitalize">Productos de la tienda</h5> </a>
                                 <p class="card-text">En este apartado se puede agregar, quitar o modificar los productos disponibles</p>
                             </div>
                         </div>
@@ -109,5 +109,15 @@
         </div>
     </div>
 </nav>
+<center> <li id="li-translate"><div id="google_translate_element" class="google languaje"></div></li>
+
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+            }
+    </script>
+    
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+   </center>
 </body>
 </html>

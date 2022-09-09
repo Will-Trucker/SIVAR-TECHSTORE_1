@@ -22,7 +22,7 @@ class ProductController extends Controller
         'categoria' => 'required' , 
         'proveedor' => 'required' ,
         'precio' => 'required | numeric' , 
-        'archivo' => 'required'
+        'archivo' => 'required '
        ]);
 
       $prod = new Product;
@@ -50,7 +50,7 @@ class ProductController extends Controller
    }
 
    public function update(Request $request, $id){
-      
+   
       $datos=Product::find($id);
       if ($request->hasFile('archivo')){ //hace referencia al name del input file
         $imagen = $request->file('archivo');
@@ -58,10 +58,6 @@ class ProductController extends Controller
         $datos->image_path=$imagen->getClientOriginalName();
     }
 
-    $datos->nombre=$request->nombre;
-    $datos->categoria=$request->categoria;
-    $datos->proveedor=$request->proveedor;
-    $datos->precio=$request->precio;
     $datos->save();
 
     return redirect('Listado')->with('message', 'Gracias');  

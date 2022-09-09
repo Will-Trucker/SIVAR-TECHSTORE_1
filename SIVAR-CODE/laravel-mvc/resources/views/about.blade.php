@@ -89,7 +89,7 @@
             </div>
             
             <div class="card">
-                <img src="img/20210177.jpeg">
+                <img src="img/20210177.jpg">
                 <h4>William Emmanuel Mazariego Orellana</h4>
                 <br>
                 <p>CEO de la Empresa</p>

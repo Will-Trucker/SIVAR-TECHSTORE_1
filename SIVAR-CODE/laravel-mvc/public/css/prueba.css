@@ -91,3 +91,32 @@
     color: white !important;
     background-color: #064D9A;
 }
+
+
+.goog-te-banner-frame{
+    display: none;
+  }
+  .goog-te-gadget-simple{
+    background-color: #314258 !important;
+    color: white !important;
+   border: none !important;
+    padding: 10px !important;
+  }
+  .goog-te-gadget-icon{
+    display: none;
+  }
+  
+  .goog-te-gadget-simple span{
+    color: white !important;
+  }
+  #li-translate::marker{
+    color: #131316;
+  }
+  iframe.goog-te-menu-frame{
+    background-color: #131316 !important;
+    margin-left: 15px !important;
+    box-shadow: none !important;
+    border: none !important
+  } 
+
+  

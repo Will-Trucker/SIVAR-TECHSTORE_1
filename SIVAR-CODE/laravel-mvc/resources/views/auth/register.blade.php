@@ -24,7 +24,7 @@
                             <label for="name"  class="col-md-4 col-form-label text-md-end ">{{ __('') }} </label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" placeholder="Nombre Completos" class="form-control @error('name') is-invalid @enderror controls" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                <input id="name" type="text" placeholder="Nombre Completos" class="form-control @error('name') is-invalid @enderror controls" name="name" value="{{ old('name') }}" autocomplete="name" autofocus>
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -38,7 +38,7 @@
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" placeholder="Correo Electronico" type="email" class="form-control @error('email') is-invalid @enderror controls" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                <input id="email" placeholder="Correo Electronico" type="email" class="form-control @error('email') is-invalid @enderror controls" name="email" value="{{ old('email') }}" autocomplete="email">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -52,7 +52,7 @@
                             <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password" placeholder="Contraseña" type="password" class="form-control @error('password') is-invalid @enderror controls" name="password" required autocomplete="new-password">
+                                <input id="password" placeholder="Contraseña" type="password" class="form-control @error('password') is-invalid @enderror controls" name="password" autocomplete="new-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -66,7 +66,7 @@
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password-confirm" placeholder="Confirmar Contraseña" type="password" class="form-control controls" name="password_confirmation" required autocomplete="new-password">
+                                <input id="password-confirm" placeholder="Confirmar Contraseña" type="password" class="form-control controls" name="password_confirmation" autocomplete="new-password">
                             </div>
                         </div>
                         <p><input type="checkbox" id="cbox2" value="second_checkbox" checked> <label for="cbox2"><a href="#">Terminos y Condiciones</a></p>

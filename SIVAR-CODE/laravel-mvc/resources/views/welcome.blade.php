@@ -29,7 +29,7 @@
        <a class="logo" href="#"><img class="logotipo" src="{{asset('img/Asset 7.webp')}}" alt="logo"></a>
         <nav>
             <ul class="nav__links">
-              <li><a href="{{ route('register') }}" class="opciones bars-solid"><svg class="bars-solid"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="40px"><path  fill=currentcolor d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>  Categorías</a></li>
+              <li><a href="{{ route('register') }}" class="opciones bars-solid" style="text-transform: capitalize;"><svg class="bars-solid"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="40px"><path  fill=currentcolor d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>  Categorías</a></li>
               <li><a href="{{ route('login') }}" class="opciones cotizar"><svg class="cotizar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30px" height="40px"><path fill="currentColor" d="M256 288c79.53 0 144-64.47 144-144s-64.47-144-144-144c-79.52 0-144 64.47-144 144S176.5 288 256 288zM351.1 320H160c-88.36 0-160 71.63-160 160c0 17.67 14.33 32 31.1 32H480c17.67 0 31.1-14.33 31.1-32C512 391.6 440.4 320 351.1 320z"/></svg>  Iniciar Sesión</a></li>
               <li><a href="{{ route('register') }}" class="opciones carretilla" title="Cart" translate="Cart"><svg class="carretilla"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentcolor" d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"/></svg>   Carrito</a></li>
             </ul>
@@ -118,7 +118,7 @@
 <!-- categorias principales -->
 <section class="prod-Dest">
     <center><h1>CATEGORIAS DESTACADAS</h1>
-    <hr class=" border-3 opacity-75" style="background: red; width: 430px; height: 7px; border: none; margin-top: -23px;"></center>
+    <hr class=" border-3 opacity-75" style="background: red; width: 20%; height: 7px; border: none; margin-top: -23px;"></center>
 </sectio>
 <div class="body__page">
      <div class="container__card">
@@ -169,7 +169,7 @@
 <!-- Ofertas -->
 <section class="ofertas">
     <center><h1>PRODUCTOS DESTACADOS</h1>
-    <hr class=" border-3 opacity-75" style="margin-top: -1.2%"></center>
+    <hr class=" border-3 opacity-75" style="margin-top: -1.2%; width:20%"></center>
 
     
 </section>
@@ -278,12 +278,12 @@
 
             <script type="text/javascript">
             function googleTranslateElementInit() {
-                new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr, pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+                new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
                     }
             </script>
             
             <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    
+
                </div>
     </footer>
 

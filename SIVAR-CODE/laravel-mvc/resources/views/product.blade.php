@@ -132,7 +132,7 @@
                 @enderror
                 <div class="archivo">
                 <label for="archivo"><i class="fa-solid fa-file-image"></i> Agregar Imagen</label>
-                <input type="file" id="archivo" name="archivo">
+                <input type="file" id="archivo" name="archivo" value="{{old('archivo')}}">
                 @error('archivo')
                 <br>
                 <span role="alert" style="color: white;"> 

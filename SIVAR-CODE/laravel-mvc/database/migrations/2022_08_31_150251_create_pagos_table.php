@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('tarjeta');
             $table->string('caducidad');
             $table->string('cvc');
-            $table->decimal('monto')->nullable();
+            $table->string('monto')->nullable();
             $table->timestamps();
         });
     }

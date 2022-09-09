@@ -22,11 +22,22 @@
             <section class="mensaje">
                 <h2>GRACIAS POR COMPRAR CON NOSOTROS</h2>
 
-                <p>Estimado cliente su pedido esta listo, puede recogerlo en la siguiente direccion</p>
+                <p>Estimado cliente su pedido está listo, puede recogerlo en la siguiente direccion</p>
                 <span>Avenida Ruben Dario, local 123 frente a Mercado Central</span>
             </section>
             
         </div>
+
+            <li id="li-translate"><div id="google_translate_element" class="google languaje"></div></li>
+         
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+                    }
+            </script>
+            
+            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     </center>
 </body>
 </html>

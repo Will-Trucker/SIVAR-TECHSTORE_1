@@ -31,7 +31,7 @@ body{
     padding: 3px;
     margin: auto;
     width: 450px;
-    height: 670px;
+    height: 700px;
     border-radius: 10px;
     margin-top: 2%;
     border: 1px solid;
@@ -215,7 +215,7 @@ button{
     }
 
     .logo-form{
-        width: 350px;
+        width: 340px;
     }
 }
 
@@ -238,7 +238,7 @@ body{
     display: none;
   }
   .goog-te-gadget-simple{
-    background-color: #314258 !important;
+    background-color: #25272a !important;
     color: white !important;
    border: none !important;
     padding: 10px !important;

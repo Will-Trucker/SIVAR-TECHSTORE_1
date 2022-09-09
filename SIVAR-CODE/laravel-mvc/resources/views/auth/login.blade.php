@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" type="text/css" href="{{asset('css/login.css')}}">
-        <link rel="icon" href="{{asset('img/Icono.png')}}">
+        <link rel="icon" type="picture" href="{{asset('img/Icono.png')}}">
         <link rel="preload" type="text/css" href="{{asset('css/normalize.css')}}">
         <link rel="stylesheet" type="text/css" href="{{asset('css/normalize.css')}}"> 
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -31,7 +31,7 @@
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('') }}</label>
                             <div class="log-form">
                             <div class="col-md-6 campos">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror fondo" name="email" placeholder="Nombre" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror fondo" name="email" placeholder="Email" value="{{ old('email') }}" autocomplete="email" autofocus>
                             <br>
                             <br>
                                 @error('email')
@@ -46,9 +46,11 @@
                             <label for="password" class="col-md-4 col-form-label text-md-end ">{{ __('') }}</label>
 
                             <div class="col-md-6 campos">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror fondo" name="password" placeholder="Contraseña" required autocomplete="current-password">
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror fondo" name="password" placeholder="Contraseña" autocomplete="current-password">
 
                                 @error('password')
+                                <br>
+                                <br>
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
