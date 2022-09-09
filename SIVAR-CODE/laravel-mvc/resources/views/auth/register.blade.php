@@ -24,7 +24,7 @@
                             <label for="name"  class="col-md-4 col-form-label text-md-end ">{{ __('') }} </label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" placeholder="Nombre y Apellidos" class="form-control @error('name') is-invalid @enderror controls" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                <input id="name" type="text" placeholder="Nombre Completos" class="form-control @error('name') is-invalid @enderror controls" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -66,14 +66,14 @@
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password-confirm" placeholder="Cofirmar Contraseña" type="password" class="form-control controls" name="password_confirmation" required autocomplete="new-password">
+                                <input id="password-confirm" placeholder="Confirmar Contraseña" type="password" class="form-control controls" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
                         <p><input type="checkbox" id="cbox2" value="second_checkbox" checked> <label for="cbox2"><a href="#">Terminos y Condiciones</a></p>
                         <br>
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <center><button type="submit" class="btn btn-primary btn-neon" style="text-decoration:none">
+                                <center><button type="submit" class="btn btn-primary btn-neon" style="text-decoration:none; text-transform:uppercase">
                                 <span id="span1"></span>
 			                    <span id="span2"></span>
 			                    <span id="span3"></span>
@@ -84,7 +84,21 @@
                         </div>
                         <p class="regist">¿Ya tienes una cuenta? | <a class="link" href="{{route('login')}}">Iniciar Sesión</a></p>
                     </form>
+                    <br><br>
+                    <center>
+                          <li id="li-translate"><div id="google_translate_element" class="google languaje"></div></li>
+
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+                    }
+            </script>
+            
+            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                    </center>
                     </section>
+
                 </div>
             </div>
         </div>

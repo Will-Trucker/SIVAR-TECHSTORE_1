@@ -278,7 +278,7 @@ header {
 .pie-pagina{
   width: 100%;
   background-color: #232f3a;
-  margin-top: 50% ;
+  margin-top: auto ;
 }
 .pie-pagina .grupo-1{
   width: 100%;
@@ -425,33 +425,47 @@ input[type=number] {
 }
 
   
-  @media (max-width:480px){
-    .google{
-      margin-top: 8%;
-      margin-left: -2%;
-    }
-  }
+body{
+  top: 0 !important;
+}
+.google{
+  margin-left: 70%;
+  margin-top: -1.5%;
+}
 
-  .goog-te-gadget-simple{
-    background-color: #314258 !important;
-    color: white !important;
-    
-    padding: 10px !important;
-    margin-top: -15px !important;
-  }
-  .goog-te-gadget-icon{
-    display: none;
-  }
-  
-  .goog-te-gadget-simple span{
-    color: white !important;
-  }
-  
-  
+@media (max-width:480px){
   .google{
-    margin-left: 60%;
-    margin-top: -0.8%;
+    margin-top: 1%;
+    margin-left: 7%;
   }
+}
+
+.goog-te-banner-frame{
+  display: none;
+}
+.goog-te-gadget-simple{
+  background-color: #314258 !important;
+  color: white !important;
+ border: none !important;
+  padding: 10px !important;
+}
+.goog-te-gadget-icon{
+  display: none;
+}
+
+.goog-te-gadget-simple span{
+  color: white !important;
+}
+#li-translate::marker{
+  color: #131316;
+}
+iframe.goog-te-menu-frame{
+  background-color: #131316 !important;
+  margin-left: 15px !important;
+  box-shadow: none !important;
+  border: none !important
+} 
+
   
 table{
   margin-left:-20%;

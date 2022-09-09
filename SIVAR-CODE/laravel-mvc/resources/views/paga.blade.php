@@ -192,16 +192,8 @@
         
         <div class="grupo-2">
             <small>&copy; 2022 <b>SIVAR-TECHSTORE</b> | Todos los Derechos Reservados</small>
-            <div id="google_translate_element" class="google"></div>
-
-        <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
-                }
-        </script>
-        
-        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-       <!--     
+            
+                
             <div id="google_translate_element" class="google languaje"></div>
             <script type="text/javascript">
               function googleTranslateElementInit() {
@@ -209,26 +201,28 @@
                 }
               </script>
               <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  </div>        
-            --></div>
+            </div>
     </footer>
 
     @else
     <div class="container" style="margin-top: 10%">
     <h1 class="text-center h4 pt-3 pb-3">No tienes ningún producto en el carrito</h1>  
     <br>
-   <!-- <center>
+   <center>
     <a href="/home"><button class="btn btn-info">Ir a Inicio</button></a></center>
     </div> 
     <center>
-    
-    <div id="google_translate_element" class="google languaje"></div>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
-        }
-      </script>
-      <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  </div>    
-    </center> -->
+      <li id="li-translate"><div id="google_translate_element" class="google languaje"></div></li>
+
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+                    }
+            </script>
+            
+            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+       </center> 
     @endif
   </body>
   

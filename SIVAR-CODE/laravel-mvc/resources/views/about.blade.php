@@ -82,28 +82,28 @@
        <div class="container">
            
             <div class="card">
-                <img src="img/WhatsApp Image 2022-05-24 at 6.49.32 M.jpeg">
+                <img src="img/llanes.jpeg">
                 <h4>Carlos Samuel Llanes Cornejo</h4>
                 <br>
                 <p>Miembro y Diseñador de la Empresa</p>
             </div>
             
             <div class="card">
-                <img src="img/WhatsApp Image 2022-05-24 at 6.47.19 PM.jpeg">
+                <img src="img/20210177.jpeg">
                 <h4>William Emmanuel Mazariego Orellana</h4>
                 <br>
                 <p>CEO de la Empresa</p>
             </div>
             
             <div class="card">
-                <img src="img/WhatsApp Image 2022-05-24 at 6.49.32 P.jpeg">
+                <img src="img/Ostorga.jpeg">
                 <h4>Carlos David Ostorga Gálvez</h4>
                 <br>
                 <p>Miembro de la Empresa</p>
             </div>
     
             <div class="card">
-                <img src="img/WhatsApp Image 2022-05-20 at 3.33.50 PM.jpeg">
+                <img src="img/kenn.jpeg">
                 <h4>Kennard David Pineda Aguilar</h4>
                 <br>
                 <p>Miembro y Programador de la Empresa</p>
@@ -146,16 +146,16 @@
             </div>
             <div class="grupo-2">
                 <small>&copy; 2022 <b>SIVAR-TECHSTORE</b> | Todos los Derechos Reservados</small>
-                <div id="google_translate_element" class="google"></div>
+                <li id="li-translate"><div id="google_translate_element" class="google languaje"></div></li>
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-	new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
-        }
-</script>
-
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        </div>                
+                <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+                        }
+                </script>
+                
+                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>                
             </div>
         </footer>
 </body>

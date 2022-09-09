@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <title> | SIVAR-TECHSTORE</title>
+    <title translate="no"> | SIVAR-TECHSTORE</title>
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -128,7 +128,7 @@
 </main>
 <br><br>
 <!-- categorias principales -->
-<center><h1 class="cat">PRODUCTOS DESTACADOS</h1>
+<center><h1 class="cat">CATEGORIAS DESTACADAS</h1>
     <hr class=" border-3 opacity-75" style="background: red; width: 430px; height: 7px; border: none; margin-top: -23px;"></center>
 <div class="body__page">
      <div class="container__card">
@@ -163,7 +163,8 @@
         <div class="info__description">
             <center><h3>PERIFERICOS</h3></center>
              <p>Dispositivos adaptables a cualquier tipo de trabajo.</p>
-            <input type="button" value="Leer Más">
+             <a href="/todos/PERIFERICOS">
+            <input type="button" value="Leer Más"></a>
             </div>
       </div>
 
@@ -174,7 +175,7 @@
 
 <!-- Ofertas -->
 <section class="ofertas">
-    <center><h1>OFERTAS</h1>
+    <center><h1>PRODUCTOS DESTACADOS</h1>
     <hr class=" border-3 opacity-75" style="margin-top: -1.2%"></center>
 
     
@@ -192,9 +193,9 @@
 
             <div class="CartaCarrusel">
                 <div class="CartaImagen">
-<a href="{{route('detalle',$carro->id)}}">
+
                     <img src="/ofertas/{{$carro->imagen}}" class="product-thumb" alt="">
-</a>
+
                 </div>
                 <div class="SectionCarrusel-informacion">
                     <h3 class="CarruselTitulo">{{$carro->nombre}}</h3>
@@ -236,16 +237,17 @@
         </div>
         <div class="grupo-2">
             <small>&copy; 2022 <b>SIVAR-TECHSTORE</b> | Todos los Derechos Reservados</small>
-            <div id="google_translate_element" class="google">
+            <li id="li-translate"><div id="google_translate_element" class="google languaje"></div></li>
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-	new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
-        }
-</script>
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+                    }
+            </script>
+            
+            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-</div>
+           </div>
 </div>
         </div>
     </footer>

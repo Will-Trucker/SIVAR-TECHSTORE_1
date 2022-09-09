@@ -60,7 +60,7 @@
     <br>
     <br>
      <div class="container">
-        <h1 class="title">Productos Registrados</h1>
+        <h1 class="title">Usuarios Registrados</h1>
         
         <table class="table">
             <thead>

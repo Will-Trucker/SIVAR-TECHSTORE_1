@@ -59,10 +59,10 @@
     <br>
     <br>
     <br>
-    <a href="/product"><button class="btn btn-dange">Agregar</button></a>
+    
     <div class="container">
         <h1 class="title">Productos Registrados</h1>
-        
+        <center><a href="/product"><button class="btn btn-info" style="border: none;">Agregar</button></a></center>
         <table class="table">
             <thead>
                 <th>ID</th>

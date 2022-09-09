@@ -31,7 +31,7 @@ class TestMail extends Mailable
     {
         return $this->from(env('tonochepe07@gmail.com'),env('MAIL_FROM_NAME'))
                 ->view('testmail')
-                ->subject('Titulo del correo')
+                ->subject('Notificacion de Compra')
                 ->with($this->data);
     }
 }

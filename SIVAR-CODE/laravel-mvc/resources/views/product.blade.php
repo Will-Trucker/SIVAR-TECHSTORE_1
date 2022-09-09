@@ -51,7 +51,7 @@
                 @enderror
                <!-- <input type="text" name="categoria" id="categoria" class="controls" placeholder="Categoria" required> -->
                 <select name="categoria" id="categoria" class="formulario__campo controls" value="{{old('categoria')}}">
-                    <option disabled selected > SELECCIONAR LA CATEGORIA </option> <br>
+                    <option disabled selected > SELECCIONAR LA CATÉGORIA </option> <br>
                      
                     <option value="Motherboard">Motherboard</option>
                     <option value="Microprocesadores">Microprocesadores</option>
@@ -60,6 +60,9 @@
                     <option value="Almacenamiento">Almacenamiento</option>
                     <option value="Monitores">Monitores</option>
                     <option value="Case">Case</option>
+                    <option value="Perifericos">Perifericos</option>
+                    <option value="PC-BUILD">Pc-builds</option>
+                    <option value="Fuentes">Fuente de Poder</option>
                 </select> 
                 @error('categoria')
                 <br>
@@ -100,6 +103,17 @@
                      <option value="SAMSUNG">SAMSUNG</option>
                      <option value="AOC">AOC</option>
                      <option value="FRACTAL DESIGN">FRACTAL DESIGN</option>
+                     <option value="PC-COMBO">PC-COMBO</option>
+                     <option value="Crucial">Crucial</option>
+                     <option value="TOSHIBA">TOSHIBA</option>
+                     <option value="NVMe">NVMe</option>
+                     <option value="XPG">XPG</option>
+                     <option value="Thermaltake">ThermalTake</option>
+                     <option value="ONE">ONE</option>
+                     <option value="XTECH">X-TECH</option>
+                     <option value="GAMDIAS">GAMDIAS</option>
+                     <option value="SILVERSTONE">SILVERSTONE</option>
+                     <option value="Logitech">Logitech</option>
                   </select>
                   @error('proveedor')
                   <br>

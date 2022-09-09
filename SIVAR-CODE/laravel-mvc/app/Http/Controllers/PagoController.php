@@ -23,7 +23,7 @@ class PagoController extends Controller
        try{
         $request->validate([
           'cliente' =>  'required', 
-          'correo' => 'required |',
+          'correo' => 'required | email',
           'tarjeta' => 'required | unique:pagos',
           'caducidad' => 'required',
           'cvc' => 'required | int | unique:pagos'
@@ -37,8 +37,9 @@ class PagoController extends Controller
         $pago->cvc=$request->get('cvc');
         $pago->monto=number_format(Cart::getTotal(),2);
         
-        $data = ['name' => 'Mauricio'];
-        Mail::to('edithww2@gmail.com')->send(new TestMail($data));
+        $data = $pago->correo;
+       /* $data = $pago->cliente;*/
+        Mail::to($data)->send(new TestMail($data));
         Cart::clear();
 
         $pago->save();
@@ -51,10 +52,10 @@ class PagoController extends Controller
       return redirect('notificacion')->with('message', 'Order con Exito');  //mensaje de confirmacion
     }
     
-    public function pdf(){
+  /*  public function pdf(){
       $pagos = Pago::all();
 
       return view('pdf');
-    }
+    }*/
     
 }

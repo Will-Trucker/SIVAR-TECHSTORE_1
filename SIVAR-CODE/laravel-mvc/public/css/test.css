@@ -27,7 +27,8 @@ hr{
 
 a{
   text-decoration: none;
-  
+  color: black;
+  cursor: pointer;
 }
 
 html, body{
@@ -1007,7 +1008,7 @@ body{
 }
 .google{
   margin-left: 70%;
-  margin-top: -1.5%;
+  margin-top: -2.5%;
 }
 
 @media (max-width:480px){
