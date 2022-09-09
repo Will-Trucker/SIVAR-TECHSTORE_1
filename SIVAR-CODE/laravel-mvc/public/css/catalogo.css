@@ -506,13 +506,30 @@ color: orange;
     margin-top: 3%;
   }
 
-
+  
+  body{
+    top: 0 !important;
+}
+.google{
+    margin-left: 70%;
+    margin-top: -1.5%;
+  }
+  
+  @media (max-width:480px){
+    .google{
+      margin-top: 1%;
+      margin-left: 7%;
+    }
+  }
+  
+  .goog-te-banner-frame{
+    display: none;
+  }
   .goog-te-gadget-simple{
     background-color: #314258 !important;
     color: white !important;
-    
+   border: none !important;
     padding: 10px !important;
-    margin-top: -15px !important;
   }
   .goog-te-gadget-icon{
     display: none;
@@ -521,16 +538,15 @@ color: orange;
   .goog-te-gadget-simple span{
     color: white !important;
   }
-  
-  
-  .google{
-    margin-left: 60%;
-    margin-top: -0.8%;
+  #li-translate::marker{
+    color: #131316;
   }
+  iframe.goog-te-menu-frame{
+    background-color: #131316 !important;
+    margin-left: 15px !important;
+    box-shadow: none !important;
+    border: none !important
+  } 
+
+
   
-  @media (max-width:480px){
-    .google{
-      margin-top: 8%;
-      margin-left: -2%;
-    }
-  }

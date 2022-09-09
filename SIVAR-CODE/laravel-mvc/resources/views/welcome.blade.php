@@ -188,7 +188,7 @@
             <div class="CartaCarrusel">
                 <div class="CartaImagen">
 
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
+                    <img src="https://i.ebayimg.com/images/g/u58AAOSw7ZlZor1C/s-l300.jpg" class="product-thumb" alt="">
                 </div>
                 <div class="SectionCarrusel-informacion">
                     <h3 class="CarruselTitulo">AMD CPU RYZEN 5 1600 AM4</h3>
@@ -198,7 +198,7 @@
             <div class="CartaCarrusel">
                 <div class="CartaImagen">
 
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
+                    <img src="https://th.bing.com/th/id/R.dbda01a569181c52e19e0a71b1e5b7b0?rik=Uxy1G%2bhx%2bhvvfQ&pid=ImgRaw&r=0" class="product-thumb" alt="">
                 </div>
                 <div class="SectionCarrusel-informacion">
                     <h3 class="CarruselTitulo">Intel Core i5-12600K</h3>
@@ -208,7 +208,7 @@
             <div class="CartaCarrusel">
                 <div class="CartaImagen">
 
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
+                    <img src="https://th.bing.com/th/id/OIP.VtFKd5fnKd9kgYZP1jCXagHaHa?pid=ImgDet&rs=1" class="product-thumb" alt="">
                 </div>
                 <div class="SectionCarrusel-informacion">
                     <h3 class="CarruselTitulo">Kingston Fury Beast</h2>
@@ -218,7 +218,7 @@
             <div class="CartaCarrusel">
                 <div class="CartaImagen">
 
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
+                    <img src="https://th.bing.com/th/id/OIP.sIe-BDXN1u6_QXK6gly0nAHaHa?pid=ImgDet&rs=1" class="product-thumb" alt="">
                 </div>
                 <div class="SectionCarrusel-informacion">
                     <h3 class="title-carro">Corsair Dominator Platinium RGB DDR4</h3>
@@ -228,63 +228,14 @@
             <div class="CartaCarrusel">
                 <div class="CartaImagen">
 
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
+                    <img src="https://th.bing.com/th/id/R.82ceb8f5c402d368b2189303fc78607b?rik=PXsyUymPx0gXnw&pid=ImgRaw&r=0" class="product-thumb" alt="">
                 </div>
                 <div class="SectionCarrusel-informacion">
                     <h3 class="CarruselTitulo">WD My Passport - Disco Duro Portátil, 5TB</h3>
                     <span class="price">$61.99</span>
                 </div>
             </div>
-            <div class="CartaCarrusel">
-                <div class="CartaImagen">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
-                </div>
-                <div class="SectionCarrusel-informacion">
-                    <h3 class="CarruselTitulo"></h3>
-                    <span class="price">$0</span>
-                </div>
-            </div>
-            <div class="CartaCarrusel">
-                <div class="CartaImagen">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
-                </div>
-                <div class="SectionCarrusel-informacion">
-                    <h3 class="CarruselTitulo"></h3>
-                    <span class="price">$0</span>
-                </div>
-            </div>
-            <div class="CartaCarrusel">
-                <div class="CartaImagen">
-
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
-                </div>
-                <div class="SectionCarrusel-informacion">
-                    <h2 class="CarruselTitulo">producto</h2>
-                    <p class="product-short-description">descripción del prodcto...</p>
-                    <span class="price">$0</span><span class="actual-price"></span>
-                </div>
-            </div>
-            <div class="CartaCarrusel">
-                <div class="CartaImagen">
-
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
-                </div>
-                <div class="SectionCarrusel-informacion">
-                    <h2 class="CarruselTitulo">producto</h2>
-                    <p class="product-short-description">descripción del prodcto...</p>
-                    <span class="price">$0</span><span class="actual-price"></span>
-                </div>
-            </div>
-            <div class="CartaCarrusel card1">
-                <div class="CartaImagen">
-
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnowNQZ5iTYh0q-_lv5kLQluiWUy20_lHvYm1yFNfL3I5OiGceuddCYPXoi45CG-pPEA&usqp=CAU" class="product-thumb" alt="">
-                </div>
-                <div class="SectionCarrusel-informacion">
-                    <h2 class="CarruselTitulo">producto</h2>
-                    <p class="product-short-description">descripción del prodcto...</p>
-                    <span class="price">$0</span><span class="actual-price"></span>
-                </div>
+           
             </div>
         </div>
     </section>
@@ -321,17 +272,17 @@
         </div>
         <div class="grupo-2">
             <small>&copy; 2022 <b>SIVAR-TECHSTORE</b> | Todos los Derechos Reservados</small>
-       
-            <div id="google_translate_element" class="google"></div>
+            <li id="li-translate"><div id="google_translate_element" class="google languaje"></div></li>
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-	new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
-        }
-</script>
-
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        </div>
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+                    }
+            </script>
+            
+            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+               </div>
     </footer>
 
     <script src="{{asset('js/test.js')}}" type="text/javascript"></script>

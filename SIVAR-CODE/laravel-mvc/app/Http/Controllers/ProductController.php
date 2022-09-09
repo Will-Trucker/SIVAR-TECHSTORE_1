@@ -22,7 +22,7 @@ class ProductController extends Controller
         'categoria' => 'required' , 
         'proveedor' => 'required' ,
         'precio' => 'required | numeric' , 
-        'archivo' => 'required | image | mimes: jpeg, jpg, png, webp | unique:product'
+        'archivo' => 'required'
        ]);
 
       $prod = new Product;
@@ -46,7 +46,7 @@ class ProductController extends Controller
         DB::rollback(); //no ejecutar nada si falla
         
       }     
-      return view('Listado')->with('message',  '<br> Gracias');  //mensaje de confirmacion
+      return back()->with('message',  '<br> Gracias');  //mensaje de confirmacion
    }
 
    public function update(Request $request, $id){

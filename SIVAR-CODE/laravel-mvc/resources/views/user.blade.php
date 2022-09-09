@@ -68,7 +68,7 @@
                 <th>NOMBRE</th>
                 <th>EMAIL</th>
                 <th>CONTRASEÑA</th>
-                <th>FECHA DE CREACIÓNs</th>
+                <th>FECHA DE CREACIÓN</th>
                 </thead>
                     <tbody>
                     @foreach($data as $user)
@@ -77,8 +77,8 @@
                        <td>{{$user->name}}</td>
                        <td>{{$user->email}}</td>
                        <td>{{$user->password}}</td>
-                       <td>${{$user->created_at}} </td>
-                       <td>
+                       <td>{{$user->created_at}} </td>
+                    
                     </tr>
                @endforeach
             </tbody>
