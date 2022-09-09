@@ -63,7 +63,7 @@
           
             <p>Somos una empresa dedicada a vender productos relacionados al ambito tecnológico</p>
 
-            <a href="{{ route('acerca') }}" class="btn">Sobre Nosotros</a>
+            <a href="{{ route('register') }}" class="btn">Sobre Nosotros</a>
 
             <video src="{{asset('img/Fan - 8064.mp4')}}" muted autoplay loop></video>
         </div>
@@ -76,7 +76,7 @@
         <div class="content text">
             <h3>Equipos para cualquier uso</h3>
             <p>No importa el entorno que sea, todos nuestros equipos son 100% adaptables</p>
-            <a href="{{route('categorias')}}" class="btn">Ver Catalogo</a>
+            <a href="{{route('register')}}" class="btn">Ver Catalogo</a>
             <video src="{{asset('img/Video Card - 15793.mp4')}}" muted autoplay loop></video>
         </div>
         </div>
@@ -89,7 +89,7 @@
         <div class="content text">
             <h3>100% calidad garantizada</h3>
             <p>Equipos con componentes de marcas reconocidas mundialmente</p>
-            <a href="/todos" class="btn">Nuestros Productos</a>
+            <a href="{{route('register')}}" class="btn">Nuestros Productos</a>
             <video src="{{asset('img/Cpu - 18031.mp4')}}" muted autoplay loop></video>
         </div> 
         </div>
