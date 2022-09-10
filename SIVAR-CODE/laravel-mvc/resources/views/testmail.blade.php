@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preload" type="text/css" href="{{asset('css/normalize.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('css/normalize.css')}}">
-
+    <link rel="stylesheet" type="text/css" href="{{asset('css/notify.css')}}"|
 </head>
 <body>
     <center>
@@ -22,7 +22,7 @@
             <section class="mensaje">
                 <h2>GRACIAS POR COMPRAR CON NOSOTROS</h2>
 
-                <p>Estimado cliente su pedido está listo, puede recogerlo en la siguiente direccion</p>
+                <p translate="yes">Estimado cliente su pedido está listo, puede recogerlo en la siguiente direccion</p>
                 <span>Avenida Ruben Dario, local 123 frente a Mercado Central</span>
             </section>
             

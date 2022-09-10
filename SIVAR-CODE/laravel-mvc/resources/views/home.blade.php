@@ -176,7 +176,7 @@
 <!-- Ofertas -->
 <section class="ofertas">
     <center><h1>PRODUCTOS DESTACADOS</h1>
-    <hr class=" border-3 opacity-75" style="margin-top: -1.2%"></center>
+    <hr class=" border-3 opacity-75" style="margin-top: -1.2%; width:22%"></center>
 
     
 </section>

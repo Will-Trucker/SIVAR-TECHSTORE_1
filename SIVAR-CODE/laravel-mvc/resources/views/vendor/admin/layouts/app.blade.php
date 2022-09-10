@@ -88,7 +88,7 @@
                     <div class="card text-white bg-cdb mb-3" style="max-width: 22rem;">
                         <div class="card-body">
                             <a href="/user">
-                            <img src="{{asset('img/ventas.png')}}"  alt="" width="60%">
+                            <img src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/512x512/users5.png"  alt="" width="60%">
                             <div class="pt-2"></div>
                             <h5 class="card-title">Ver Usuarios</h5></a>
                             <p class="card-text">Apartado para ver Clientes Registrados</p>
