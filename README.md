@@ -1,5 +1,5 @@
 # SIVAR-TECHSTORE
-Somos una tienda e-commerce dedicada a la venta de equipos y componentes informaticos para el pueblo salvadoreño debido a la gran demanda existen para la resolucion de tareas de manera eficaz y reducir el nivel de brecha digital existente..
+Somos una tienda e-commerce dedicada a la venta de equipos y componentes informaticos para el pueblo salvadoreño debido a la gran demanda para la resolucion de tareas de manera eficaz y reducir el nivel de brecha digital existente..
 
 
 contributors: 5
