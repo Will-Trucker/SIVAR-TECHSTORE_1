@@ -72,7 +72,7 @@
 
                 <div class="item-faq">
                     <div class="question">
-                        <h3>¿Como puedes contactarnos? <span>1.</span></h3>
+                        <h3>¿Comó puedes contactarnos? <span translate="no">1.</span></h3>
                         <div class="more"><i>+</i></div>
                     </div>
                     <div class="answer">
@@ -82,7 +82,7 @@
                 <br>
                 <div class="item-faq">
                     <div class="question">
-                        <h3>¿Cuales son los metodos de pago? <span>2.</span></h3>
+                        <h3>¿Cuáles son los metodos de pago? <span translate="no">2.</span></h3>
                         <div class="more"><i>+</i></div>
                     </div>
                     <div class="answer">
@@ -92,7 +92,7 @@
                 <br>
                 <div class="item-faq">
                     <div class="question">
-                        <h3>¿En cuanto tiempo estara listo el producto? <span>3.</span></h3>
+                        <h3>¿En cuanto tiempo estará listo el producto? <span translate="no">3.</span></h3>
                         <div class="more"><i>+</i></div>
                     </div>
                     <div class="answer">
@@ -102,7 +102,7 @@
                 <br>
                 <div class="item-faq">
                     <div class="question">
-                        <h3>¿Como puedo comprar un producto? <span>4.</span></h3>
+                        <h3>¿Comó puedo comprar un producto? <span translate="no">4.</span></h3>
                         <div class="more"><i>+</i></div>
                     </div>
                     <div class="answer">
@@ -112,7 +112,7 @@
                 <br><br>
                 <div class="item-faq">
                     <div class="question">
-                        <h3>¿Como puedo registrarme/Iniciar Sesion <span>5.</span></h3>
+                        <h3>¿Comó puedo registrarme/Iniciar Sesion <span translate="no">5.</span></h3>
                         <div class="more"><i>+</i></div>
                     </div>
                     <div class="answer">

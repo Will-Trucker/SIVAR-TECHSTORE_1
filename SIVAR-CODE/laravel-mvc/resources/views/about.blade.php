@@ -63,7 +63,7 @@
     </div>
     <br><br><br><br><br>
         <br>
-        <center><h1>¿Quienes somos?</h1>
+        <center><h1 class="title">¿Quienes somos?</h1>
         <hr class=" border-3 opacity-75" style="background: red; width: 340px; height: 7px; border: none; margin-top: -8px;"></center>
         
         <div id="general">

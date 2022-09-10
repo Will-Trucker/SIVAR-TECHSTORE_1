@@ -134,7 +134,7 @@
                 <div class="flex">
                     <div class="inputBox">
                         <span>Codigo de Seguridad:</span>
-                        <input type="number" placeholder="124" name="cvc" id="cvc" @error('cvc') is-invalid @enderror controls value="{{old('cvc')}}">
+                        <input type="number" placeholder="124" name="cvc" min="0" max="999" id="cvc" @error('cvc') is-invalid @enderror controls value="{{old('cvc')}}">
                         @error('cvc')
                         <br>
                           <span role="alert" style="color: red;"> 

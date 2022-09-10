@@ -1003,6 +1003,20 @@ color: orange;
   }
 }
 
+@media (width:1024px){
+  .pie-pagina{
+    margin-top: 10%;
+  }
+
+  .SectionCarrusel{
+    margin-top: 5%;
+  }
+
+  .ofertas{
+    margin-top: 60%;
+  }
+}
+
 body{
   top: 0 !important;
 }

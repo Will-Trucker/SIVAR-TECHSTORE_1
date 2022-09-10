@@ -17,7 +17,7 @@
 <body>
     <center>
         <div class="container">
-            <img src="{{asset('img/asset-black.jpg')}}" width="200px">
+            <iframe src="https://drive.google.com/file/d/1mmSxCcTpkMQC9kmVDRbXdksBlNgPr3ta/preview" width="640" height="480" allow="autoplay"></iframe>
 
             <section class="mensaje">
                 <h2>GRACIAS POR COMPRAR CON NOSOTROS</h2>

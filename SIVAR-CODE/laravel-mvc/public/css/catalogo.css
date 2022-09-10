@@ -408,10 +408,51 @@ color: orange;
   }
   
   .pie-pagina{
-    margin-top: 950%;
+    margin-top: 900%;
   }
 }
 
+@media (width:360px){
+  .pie-pagina{
+    margin-top: 950%
+  }
+}
+
+@media (width: 1024px){
+  .pie-pagina{
+    margin-top: 150%;
+  }
+}
+
+@media (width:1180px){
+  .pie-pagina{
+    margin-top: 140%;
+  }
+}
+
+@media (width:1368px){
+  .pie-pagina{
+    margin-top: 120%;
+  }
+}
+
+@media (width:1366px){
+  .pie-pagina{
+    margin-top: 120%;
+  }
+}
+
+@media (width:1114px){
+  .pie-pagina{
+    margin-top: 140%;
+  }
+}
+
+@media (width:1280px){
+  .pie-pagina{
+    margin-top: 120%;
+  }
+}
 
 
   /*Tarjetas*/
