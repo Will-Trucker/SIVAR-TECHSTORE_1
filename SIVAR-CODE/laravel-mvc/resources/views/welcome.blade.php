@@ -200,7 +200,7 @@
             <div class="CartaCarrusel">
                 <div class="CartaImagen">
 
-                    <img src="https://th.bing.com/th/id/R.dbda01a569181c52e19e0a71b1e5b7b0?rik=Uxy1G%2bhx%2bhvvfQ&pid=ImgRaw&r=0" class="product-thumb" alt="">
+                    <img src="https://mail.zonadigitalsv.com/product/735858499040/image" class="product-thumb" alt="">
                 </div>
                 <div class="SectionCarrusel-informacion">
                     <h3 class="CarruselTitulo">Intel Core i5-12600K</h3>
@@ -210,7 +210,7 @@
             <div class="CartaCarrusel">
                 <div class="CartaImagen">
 
-                    <img src="https://th.bing.com/th/id/OIP.VtFKd5fnKd9kgYZP1jCXagHaHa?pid=ImgDet&rs=1" class="product-thumb" alt="">
+                    <img src="https://i0.wp.com/dealtargets.com/wp-content/uploads/2022/01/61nVSWwdfqL._AC_SL1500_.jpg?fit=1500%2C877&ssl=1" class="product-thumb" alt="">
                 </div>
                 <div class="SectionCarrusel-informacion">
                     <h3 class="CarruselTitulo">Kingston Fury Beast</h2>
@@ -220,7 +220,7 @@
             <div class="CartaCarrusel">
                 <div class="CartaImagen">
 
-                    <img src="https://th.bing.com/th/id/OIP.sIe-BDXN1u6_QXK6gly0nAHaHa?pid=ImgDet&rs=1" class="product-thumb" alt="">
+                    <img src="https://m.media-amazon.com/images/I/91H4pNDrHJL._AC_SL1500_.jpg" class="product-thumb" alt="">
                 </div>
                 <div class="SectionCarrusel-informacion">
                     <h3 class="title-carro">Corsair Dominator Platinium RGB DDR4</h3>
@@ -230,7 +230,7 @@
             <div class="CartaCarrusel">
                 <div class="CartaImagen">
 
-                    <img src="https://th.bing.com/th/id/R.82ceb8f5c402d368b2189303fc78607b?rik=PXsyUymPx0gXnw&pid=ImgRaw&r=0" class="product-thumb" alt="">
+                    <img src="https://cdn.cs.1worldsync.com/syndication/feeds/wd/inline-content/C4/2244F7EA61586C5A4BC96484A8EF88D466977ECE_MYPASSPORT4TB5TBBLACKHERO_w_400_hero.png" class="product-thumb" alt="">
                 </div>
                 <div class="SectionCarrusel-informacion">
                     <h3 class="CarruselTitulo">WD My Passport - Disco Duro Portátil, 5TB</h3>

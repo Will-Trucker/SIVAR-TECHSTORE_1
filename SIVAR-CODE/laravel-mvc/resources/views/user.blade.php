@@ -62,7 +62,7 @@
      <div class="container">
         <h1 class="title">Usuarios Registrados</h1>
         
-        <table class="table">
+        <table class="table" translate="no">
             <thead>
                 <th>ID</th>
                 <th>NOMBRE</th>
