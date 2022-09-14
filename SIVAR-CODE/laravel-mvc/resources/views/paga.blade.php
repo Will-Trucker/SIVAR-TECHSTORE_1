@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
- 
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 <body>
   <main>
@@ -96,7 +96,7 @@
                 </div>
                 <div class="inputBox">
                     <span>Correo:</span>
-                    <input type="text" placeholder="cliente234@mail.com" name="correo" id="correo" value="{{ old('correo')}}">
+                    <input type="email" placeholder="cliente234@mail.com" name="correo" id="correo" value="{{ old('correo')}}">
                     @error('correo')
                     <br>
                       <span role="alert" style="color: red;"> 
@@ -108,7 +108,7 @@
                 </div>
                 <div class="inputBox">
                     <span>Numero de Tarjeta:</span>
-                    <input type="text" placeholder="1813-2582-3943-4540" name="tarjeta" id="tarjeta" @error('tarjeta') is-invalid @enderror controls value="{{old('tarjeta')}}">
+                    <input class="card-number form-control" autocomplete="off" type="tel" placeholder="1813-2582-3943-4540" name="tarjeta" id="tarjeta" @error('tarjeta') is-invalid @enderror controls value="{{old('tarjeta')}}">
                     @error('tarjeta')
                     <br>
                       <span role="alert" style="color: red;"> 
@@ -120,7 +120,7 @@
                 </div>
                 <div class="inputBox">
                     <span>Mes de caducidad:</span>
-                    <input type="month" placeholder="Vencimiento" name="caducidad" id="caducidad" @error('caducidad') is-invalid @enderror controls value="{{old('caducidad')}}" min="2022-09">
+                    <input type="month" placeholder="Vencimiento" name="caducidad" id="caducidad" @error('caducidad') is-invalid @enderror controls value="{{old('caducidad')}}" min="2022-09" max="2026-12">
                     @error('caducidad')
                     <br>
                       <span role="alert" style="color: red;"> 
