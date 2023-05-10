@@ -22,7 +22,7 @@ class PagoController extends Controller
 
        try{
         $request->validate([
-          'cliente' =>  'required | alpha | regex:/^[\pL\s\-]+$/u', 
+          'cliente' =>  'required | regex:/^[\pL\s\-]+$/u', 
           'correo' => 'required | email',
           'tarjeta' => 'required | unique:pagos',
           'caducidad' => 'required',

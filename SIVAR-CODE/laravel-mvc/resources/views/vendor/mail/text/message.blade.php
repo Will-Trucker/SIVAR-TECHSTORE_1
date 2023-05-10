@@ -2,7 +2,7 @@
     {{-- Header --}}
     @slot('header')
         @component('mail::header', ['url' => config('app.url')])
-            {{ config('app.name') }}
+            {{ config('APP_NAME') }}
         @endcomponent
     @endslot
 
@@ -21,7 +21,7 @@
     {{-- Footer --}}
     @slot('footer')
         @component('mail::footer')
-            © {{ date('Y') }} {{ config('SIVAR-TECHSTORE') }}. @lang('Derechos Reservdos.')
+            © {{ date('Y') }} {{ config('APP_NAME') }}. @lang('Derechos Reservados.')
         @endcomponent
     @endslot
 @endcomponent

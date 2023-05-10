@@ -21,7 +21,7 @@ hr{
 	font-family: var(--font);
   outline: none;
   text-decoration: none;
-  
+
 
 }
 
@@ -50,7 +50,7 @@ html, body{
   color: black;
   text-overflow: initial;
   font-size: 1.3rem;
-  
+
 }
 @media (max-width:428px){
   .bienvenido{
@@ -89,7 +89,7 @@ header {
     width: 100%;
     background: #fff;
   }
-  
+
   .logo {
     cursor: pointer;
     transition: all 0.3s;
@@ -99,13 +99,13 @@ header {
     height: 100px;
     width: auto;
   }
-  
+
   @media (max-width: 480px){
     .logotipo{
       height: 90px;
     }
-     
-  
+
+
       }
 
       @media (max-width: 414px){
@@ -113,13 +113,13 @@ header {
           height: 90px;
           margin-left: -15%;
         }
-         
+
         .logo:hover{
           transform: none;
         }
-      
-        
-    
+
+
+
       }
 
   @media (max-width: 375px){
@@ -127,49 +127,49 @@ header {
       height: 80px;
       margin-left: -2rem;
     }
-     
+
     .logo:hover{
       transform: none;
     }
-  
+
   }
-  
- 
+
+
   .nav__links a,
   .cta,
   .overlay__content a {
     font-family: var(--font);
     font-weight: 500;
     text-decoration: none;
-    
+
   }
-  
+
   .nav__links {
     list-style: none;
     display: flex;
     color: var(--negro);
   }
-  
+
   .nav__links li {
     padding: 0px 20px;
   }
-  
+
   .nav__links li a {
     transition: color 0.3s ease 0s;
     font-size: 26px;
     color: var(--negro);
   }
-  
+
   .nav__links li a:hover {
     color: var(--red);
   }
-  
+
   .cta {
     padding: 5px 19px;
     background-color: var(--red);
     border: none;
     border-radius: 50px;
-    cursor: pointer;  
+    cursor: pointer;
     font-size: 22px;
     transition: all 0.3s;
     margin-left: 2rem;
@@ -177,13 +177,13 @@ header {
     margin-top: -1%;
     font-weight: 500;
   }
-  
+
   .cta:hover {
     background-color: var(--verde);
     color: var(--negro);
    /*  transform: scale(1.2);*/
   }
-  
+
 /* iconos menu*/
 .carretilla{
 
@@ -196,16 +196,16 @@ header {
 
 		width: 30px;
 		height: 40px;
-		
+
 }
 
   /* responsive nav */
-  
+
   .menu {
     display: none;
     color: currentColor;
   }
-  
+
   .overlay {
     height: 100%;
     width: 0;
@@ -219,11 +219,11 @@ header {
     color: currentColor;
     z-index: 4;
   }
-  
+
   .overlay--active {
     width: 100%;
   }
-  
+
   .overlay__content {
     display: flex;
     height: 100%;
@@ -232,7 +232,7 @@ header {
     justify-content: center;
     z-index: 4;
   }
-  
+
   .overlay a {
     padding: 15px;
     font-size: 36px;
@@ -240,7 +240,7 @@ header {
     transition: color 0.3s ease 0s;
     color: var(--white);
   }
-  
+
   .overlay a:hover,
   .overlay a:focus {
     color: var(--red);
@@ -259,7 +259,7 @@ header {
       font-weight: bold;
       font-size: 20px;
   }
-  
+
   @media screen and (max-height: 450px) {
     .overlay a {
       font-size: 20px;
@@ -270,7 +270,7 @@ header {
       right: 35px;
     }
   }
-  
+
   @media only screen and (max-width: 800px) {
     .nav__links,
     .cta {
@@ -280,9 +280,9 @@ header {
       display: initial;
     }
   }
-  
-  
-/* slider */ 
+
+
+/* slider */
 
 .text{
   text-transform: uppercase;
@@ -290,7 +290,7 @@ header {
 
 .contenedor{
   position: relative;
-  
+
 }
 
 .contenedor .slide-container .slide{
@@ -335,7 +335,7 @@ header {
   margin-top: 50px;
   font-size: 5vw;
   color: var(--white);
-  text-shadow: 0px 5px 10px rgba(0,0,0,.3); 
+  text-shadow: 0px 5px 10px rgba(0,0,0,.3);
   animation: animate .4s linear .4s backwards;
 
 }
@@ -345,7 +345,7 @@ header {
   color: var(--white);
   padding: 20px 0;
   font-weight: lighter;
-  text-shadow: 0px 5px 10px rgba(0,0,0,.3); 
+  text-shadow: 0px 5px 10px rgba(0,0,0,.3);
   max-width: 900px;
   animation: animate .4s linear .6s backwards;
   margin-top: 5px;
@@ -357,7 +357,7 @@ header {
     max-width: 300px;
     margin-top: 5px;
   }
-  
+
 }
 .contenedor .slide-container .slide .content .btn{
   display: inline-block;
@@ -419,12 +419,12 @@ header {
 }
 
 
-.contenedor #next{ 
+.contenedor #next{
  right: 0;
  z-index: 1;
 }
 
-.contenedor #prev{ 
+.contenedor #prev{
   left: 0;
   z-index: 1;
  }
@@ -461,7 +461,7 @@ header {
   .container__card{
     margin-top: 90px;
   }
-  
+
 }
 
 .card{
@@ -565,7 +565,7 @@ header {
     font-size: 1.8rem;
   }
 
- 
+
 }
 
 .c1:hover .icon{
@@ -615,7 +615,7 @@ header {
 }
 
 .ofertas h1{
-  margin-top: 25%;
+  margin-top: -5%;
 }
 
 @media (max-width:428px){
@@ -629,30 +629,30 @@ header {
   .ofertas{
    margin-top: 45%;
   }
- 
+
  }
 
  @media (max-width:390px){
   .ofertas{
    margin-top: 47%;
   }
- 
+
  }
 
 /*
- 
+
  @media (max-width:1080px){
   .ofertas{
    margin-top: 32%;
   }
- 
+
  }
  */
 .ofertas hr{
-  background: red; 
-  width: 140px; 
-  height: 7px; 
-  border: none; 
+  background: red;
+  width: 140px;
+  height: 7px;
+  border: none;
   margin-top: -1%;
 }
 
@@ -807,7 +807,7 @@ header {
   border-radius: 100%;
   z-index: 2;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  
+
 }
 
 .pre-btn {
@@ -941,7 +941,7 @@ color: var(--negro);
   margin-right: 2px;
   background-color: #314258;
   text-align: center;
-  border-radius: 10%; 
+  border-radius: 10%;
   transition: all 300ms ease; /* efecto al pasar el mouse en el boton*/
   margin-left: 0.9rem;
 }
@@ -997,7 +997,7 @@ color: orange;
       grid-gap:30px;
       padding: 35px 0px;
   }
-  
+
   .pie-pagina{
     margin-top: 10%;
   }
@@ -1056,4 +1056,4 @@ iframe.goog-te-menu-frame{
   margin-left: 15px !important;
   box-shadow: none !important;
   border: none !important
-} 
+}
