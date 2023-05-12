@@ -3,7 +3,7 @@
 :root{
 	--white: #ffffff;
     --negro: black;
-    --red: #de1313;
+    --red: #5def09;
     --verde: rgb(17, 205, 17);
     --font: 'Poppins', sans-serif;
     --grisn: #1c1c1c;
@@ -278,7 +278,7 @@ header {
 .pie-pagina{
   width: 100%;
   background-color: #232f3a;
-  margin-top: 40%;
+  margin-top: 14%;
 }
 .pie-pagina .grupo-1{
   width: 100%;

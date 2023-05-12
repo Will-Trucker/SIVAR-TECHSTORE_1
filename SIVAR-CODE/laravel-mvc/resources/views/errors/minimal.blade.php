@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="picture" href="{{asset('img/Icono.png')}}">
+        <link rel="icon" type="picture" href="{{asset('img/Gonly-bolsa.png')}}">
         <title>@yield('title')</title>
 
         <style>

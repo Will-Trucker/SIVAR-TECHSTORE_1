@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="icon" href="{{asset('img/Icono.png')}}">
+    <link rel="icon" href="{{asset('img/Gonly-bolsa.png')}}">
     <link rel="preload" type="text/css" href="{{asset('css/normalize.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('css/normalize.css')}}">
     <link rel="preload" href="{{asset('css/add_cat.css')}}" type="text/css">
@@ -20,7 +20,7 @@
 
         <form action="EnvioCat" method="post" class="form-register" enctype="multipart/form-data">
             @csrf
-                <img src="{{asset('img/Logo.jpeg')}}" width="350px" height="145px" class="logo">
+                <img src="{{asset('img/Logo1.png')}}" width="350px" height="145px" class="logo">
                 <br>
                 <h2 class="title-form">AGREGAR CATEGORIA</h2>
                 <input type="text" name="nombre" id="nombre" class="controls" placeholder="Categoria" required> 

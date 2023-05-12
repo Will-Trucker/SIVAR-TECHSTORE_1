@@ -3,7 +3,7 @@
 :root{
 	--white: #ffffff;
     --negro: black;
-    --red: #de1313;
+    --red: #15dc15;
     --verde: rgb(17, 205, 17);
     --font: 'Poppins', sans-serif;
     --grisn: #1c1c1c;
@@ -76,7 +76,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 10%;
-    box-shadow: 5px 10px 18px #0a0a0a;
+    box-shadow: 5px 10px 18px #767676;
     position: fixed;
     width: 100%;
     background: #fff;
@@ -483,7 +483,7 @@ color: orange;
      display: flex;
      flex-flow: column;
      border-radius: 6px;
-     box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.2);
+     box-shadow: 0 0 0.1em rgb(255, 0, 0);
      background-color: white;
      cursor: pointer;
      transition-property: box-shadow;

@@ -4,7 +4,7 @@
 :root{
 	--white: #ffffff;
     --negro: black;
-    --red: #de1313;
+    --red: #00ff1e;
     --verde: rgb(17, 205, 17);
     --font: 'Poppins', sans-serif;
     --grisn: #1c1c1c;
@@ -84,7 +84,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 10%;
-    box-shadow: 5px 10px 18px #0a0a0a;
+    /* box-shadow: 5px 10px 18px #0a0a0a; */
     position: fixed;
     width: 100%;
     background: #fff;
@@ -299,6 +299,7 @@ header {
   overflow: hidden;
   z-index: 1;
   width: 100%;
+  background: linear-gradient(rgba(3, 56, 0, 0.409), rgba(1, 246, 87, 0.869));
 }
 
 
@@ -326,7 +327,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-flow: column;
-  background: rgba(23, 22, 22, 0.7);
+  /* background: rgba(23, 22, 22, 0.7); */
   color: var(--white);
   text-align: center;
 }
@@ -335,7 +336,7 @@ header {
   margin-top: 50px;
   font-size: 5vw;
   color: var(--white);
-  text-shadow: 0px 5px 10px rgba(0,0,0,.3);
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   animation: animate .4s linear .4s backwards;
 
 }
@@ -433,7 +434,7 @@ header {
 
 
 .body__page{
-  height: 2rem;
+  height: 20rem;
 }
 
 @media (max-width: 480px){
@@ -446,6 +447,7 @@ header {
 
 
  .container__card{
+  display: block;
   max-width: 1200px;
   padding: 5px;
   padding-bottom: 40px;
@@ -659,6 +661,7 @@ header {
 /* PRODUCTS */
 .SectionCarrusel{
   position: relative;
+  /* top: 800px; */
   overflow: hidden;
   padding: 20px;
   width: 90%;
@@ -668,6 +671,7 @@ header {
   justify-content: center;
 }
 
+/* -------------------------------------------------------------------------------------------------------- */
 .SectionCarrusel-Contenedor{
   width: 1145px;
   display: flex;
@@ -675,7 +679,8 @@ header {
   scroll-behavior: smooth;
   height: 550px;
   margin-left: 7%;
-
+  position: relative;
+  top: 300px;
 }
 
 .SectionCarrusel-Contenedor::-webkit-scrollbar {

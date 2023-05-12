@@ -12,13 +12,13 @@
     <!-- -->
     <link rel="preload" type="text/css" href="{{asset('css/normalize.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/normalize.css')}}"> 
-    <link rel="icon" type="picture" href="{{asset('img/Icono.png')}}">
+    <link rel="icon" type="picture" href="{{asset('img/Gonly-bolsa.png')}}">
     <link rel="preload" type="text/css" href="{{asset('css/test.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/test.css')}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <title translate="no"> | SIVAR-TECHSTORE</title>
+    <title translate="no">GONLY</title>
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -26,7 +26,7 @@
     <main>
     <div class="navegacion"> <!-- Menu -->
     <header class="header">
-       <a class="logo" href="#"><img class="logotipo" src="{{asset('img/Asset 7.webp')}}" alt="logo"></a>
+       <a class="logo" href="#"><img class="logotipo" src="{{asset('img/Logo1.png')}}" alt="logo"></a>
         <nav>
             <ul class="nav__links">
               <li><a href="{{ route('register') }}" class="opciones bars-solid" style="text-transform: capitalize;"><svg class="bars-solid"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="40px"><path  fill=currentcolor d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>  Categorías</a></li>
@@ -59,17 +59,16 @@
     <div class="slide-container active">
         <div class="slide">
         <div class="content text">
-            <h3>Bienvenidos a SIVAR-TECHSTORE</h3>
+        <h3>Gonly</h3>
           
-            <p>Somos una empresa dedicada a vender productos relacionados al ambito tecnológico</p>
+          <p>Tu sitio de compras y ventas en línea</p>
 
             <a href="{{ route('register') }}" class="btn">Sobre Nosotros</a>
 
-            <video src="{{asset('img/Fan - 8064.mp4')}}" muted autoplay loop></video>
+            <!-- <video src="{{asset('img/Fan - 8064.mp4')}}" muted autoplay loop></video> -->
         </div>
         </div>
     </div>
-
 
     <div class="slide-container">
     <div class="slide">
@@ -108,18 +107,18 @@
         </div>
     </div>
   
-    <div id="next" onclick="next()"> > </div>
-    <div id="prev" onclick="prev()"> < </div>
+    <!-- <div id="next" onclick="next()"> > </div>
+    <div id="prev" onclick="prev()"> < </div> -->
 
 </div>
 </header>
 </main>
-<br><br>
-<!-- categorias principales -->
-<section class="prod-Dest">
-    <center><h1>CATEGORIAS DESTACADAS</h1>
-    <hr class=" border-3 opacity-75" style="background: red; width: 20%; height: 7px; border: none; margin-top: -23px;"></center>
-</sectio>
+<br><br><br><br><br>
+<!-- Ofertas -->
+<section class="ofertas">
+    <!-- categorias principales -->
+<center><h1 class="cat">PRODUCTOS DESTACADOS</h1>
+    <hr class=" border-3 opacity-75" style="background: red; width: 430px; height: 7px; border: none; margin-top: -23px;"></center>
 <div class="body__page">
      <div class="container__card">
       <div class="card c1">
@@ -128,12 +127,11 @@
         </div>
         
         <div class="info__description">
-            <center><h3>MONITORES</h3></center>
-             <p>Diferentes pantallas adaptables para cualquier entorno favorito.</p>
-            <a href="{{route('register')}}">
-            <input type="button" value="Leer Más">
-            </a> 
-           </div>
+            <center><h3>Tecnología</h3></center>
+             <p>Diferentes aparatos tecnológicos útiles para tu día a día</p>
+            <a href="/todos/MONITORES">         
+            <input type="button" value="Leer Más"> </a>
+            </div>
       </div>
       
       <div class="card c2">
@@ -141,11 +139,10 @@
             <i class="fa-solid fa-memory"></i>
         </div>
         <div class="info__description">
-             <center><h3>ALMACENAMIENTO</h3></center>
-             <p>Memorias de cualquier capacidad para guardar cualquier archivo.</p>
-             <a href="{{route('register')}}">
-             <input type="button" value="Leer Más">
-             </a>
+             <center><h3>Deporte</h3></center>
+             <p>Utencilios variados de deporte, banderas, prendas y mucho más</p>
+             <a href="/todos/ALMACENAMIENTO">
+            <input type="button" value="Leer Más"></a>
             </div>
       </div>
       <div class="card c3">
@@ -153,11 +150,10 @@
             <i class="fa-solid fa-keyboard"></i>
         </div>
         <div class="info__description">
-            <center><h3>PERIFERICOS</h3></center>
-             <p>Dispositivos adaptables a cualquier tipo de trabajo.</p>
-             <a href="{{route('register')}}">
-             <input type="button" value="Leer Más">
-             </a>
+            <center><h3>Oferta en teclados</h3></center>
+             <p>TODO EL MES DE MAYO - oferta en teclados, solo en Gonly</p>
+             <a href="/todos/PERIFERICOS">
+            <input type="button" value="Leer Más"></a>
             </div>
       </div>
 
@@ -165,107 +161,31 @@
      </div>
 </div>
 <!-- Fin categorias principales -->
-
-<!-- Ofertas -->
-<section class="ofertas">
-    <center><h1>PRODUCTOS DESTACADOS</h1>
-    <hr class=" border-3 opacity-75" style="margin-top: -1.2%; width:20%"></center>
-
     
 </section>
-
-
-<!-- Carrusel -->
-
-<!-- Carrusel -->
-
-<section class="SectionCarrusel">
-  <div class="BotonesCarrusel">
-        <button class="pre-btn"><img src="images/arrow.png" alt="">></button>
-        <button class="nxt-btn"><img src="images/arrow.png" alt="">></button>
-  </div>
-        <div class="SectionCarrusel-Contenedor">
-            <div class="CartaCarrusel">
-                <div class="CartaImagen">
-
-                    <img src="https://i.ebayimg.com/images/g/u58AAOSw7ZlZor1C/s-l300.jpg" class="product-thumb" alt="">
-                </div>
-                <div class="SectionCarrusel-informacion">
-           
-                    <h3 class="CarruselTitulo">  <a href="{{route('register')}}">AMD CPU RYZEN 5 1600 AM4</a></h3>
-                    <span class="price">$210.21</span>
-           
-                </div>
-            </div>
-            <div class="CartaCarrusel">
-                <div class="CartaImagen">
-
-                    <img src="https://mail.zonadigitalsv.com/product/735858499040/image" class="product-thumb" alt="">
-                </div>
-                <div class="SectionCarrusel-informacion">
-                    <h3 class="CarruselTitulo">Intel Core i5-12600K</h3>
-                    <span class="price">$215.74</span>
-                </div>
-            </div>
-            <div class="CartaCarrusel">
-                <div class="CartaImagen">
-
-                    <img src="https://i0.wp.com/dealtargets.com/wp-content/uploads/2022/01/61nVSWwdfqL._AC_SL1500_.jpg?fit=1500%2C877&ssl=1" class="product-thumb" alt="">
-                </div>
-                <div class="SectionCarrusel-informacion">
-                    <h3 class="CarruselTitulo">Kingston Fury Beast</h2>
-                    <span class="price">$254.00</span>
-                </div>
-            </div>
-            <div class="CartaCarrusel">
-                <div class="CartaImagen">
-
-                    <img src="https://m.media-amazon.com/images/I/91H4pNDrHJL._AC_SL1500_.jpg" class="product-thumb" alt="">
-                </div>
-                <div class="SectionCarrusel-informacion">
-                    <h3 class="title-carro">Corsair Dominator Platinium RGB DDR4</h3>
-                    <span class="price">$339.99</span>
-                </div>
-            </div>
-            <div class="CartaCarrusel">
-                <div class="CartaImagen">
-
-                    <img src="https://cdn.cs.1worldsync.com/syndication/feeds/wd/inline-content/C4/2244F7EA61586C5A4BC96484A8EF88D466977ECE_MYPASSPORT4TB5TBBLACKHERO_w_400_hero.png" class="product-thumb" alt="">
-                </div>
-                <div class="SectionCarrusel-informacion">
-                    <h3 class="CarruselTitulo">WD My Passport - Disco Duro Portátil, 5TB</h3>
-                    <span class="price">$61.99</span>
-                </div>
-            </div>
-           
-            </div>
-        </div>
-    </section>
-
-    <script src="{{asset('js/Carrousel.js')}}"></script>
    
 <!-- Footer -->
     <footer class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
                 <figure>
-                    <a href="">
-                        <img src="{{asset('img/Asset 7.png')}}" alt="Logo de Sivar-Techstore">
+                    <a href="#">
+                        <img src="{{asset('img/Gonly.png')}}" alt="Logo de Sivar Techstore">
                     </a>
                 </figure>
             </div>
             <div class="box">
                 <h2>SOBRE NOSOTROS</h2>
-                <p>Somos una tienda dedicada a la venta de Equipos y componentes informaticos...</p>
-                <button class="boton-us"><a href="{{route('register')}}">Más informacion</a></button>
+                <p>Gonly es una tienda que se esmera por fomentar el comercio rápido y seguro, poniendo en primer lugar a nuestros usuarios</p>
+                <button class="boton-us"><a href="{{route('acerca')}}">Más informacion</a></button>
             </div>
             <div class="box">
                 <div class="box">
-                    <h2 class="foot-title">¡Seguinos!</h2>
+                    <h2 class="foot-title">¡Síguenos!</h2>
                     <div class="contactos">
-                        <a href="https://www.facebook.com/profile.php?id=100082198156835" target="_blank" class="facebook"><svg class="red-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="23px" height="23px"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
-                        <a href="https://www.instagram.com/sivar_techstore/" target="_blank" class="instagram"><svg class="red-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="23px" height="26px"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
-                        <a href="https://twitter.com/SivarTechstore"  target="_blank" class="twitter"><svg class="red-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="23px" height="23px"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
+                        <a href="#" target="_blank" class="facebook"><svg class="red-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="23px" height="23px"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+                        <a href="#" target="_blank" class="instagram"><svg class="red-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="23px" height="26px"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                        <a href="#"  target="_blank" class="twitter"><svg class="red-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="23px" height="23px"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
                         <a href="#" class="mail"><svg class="red-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="23px" height="26px"><path fill="currentColor" d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg></a>
                     </div> 
                  </div>
@@ -273,18 +193,19 @@
             </div>
         </div>
         <div class="grupo-2">
-            <small>&copy; 2022 <b>SIVAR-TECHSTORE</b> | Todos los Derechos Reservados</small>
+            <small>&copy; 2023 <b>GONLY</b> | Todos los Derechos Reservados</small>
             <li id="li-translate"><div id="google_translate_element" class="google languaje"></div></li>
-
             <script type="text/javascript">
-            function googleTranslateElementInit() {
-                new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
-                    }
-            </script>
-            
-            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-               </div>
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,es,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+                        }
+                </script>
+                
+                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+           </div>
+</div>
+        </div>
     </footer>
 
     <script src="{{asset('js/test.js')}}" type="text/javascript"></script>

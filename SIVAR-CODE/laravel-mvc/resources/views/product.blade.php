@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="icon" href="{{asset('img/Icono.png')}}">
+    <link rel="icon" href="{{asset('img/Gonly-bolsa.png')}}">
     <link rel="preload" type="text/css" href="{{asset('css/normalize.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('css/normalize.css')}}">
     <link rel="preload" href="{{asset('css/add_product.css')}}" type="text/css">
@@ -62,7 +62,7 @@
                     <option value="Case">Case</option>
                     <option value="Perifericos">Perifericos</option>
                     <option value="PC-BUILD">Pc-builds</option>
-                    <option value="Fuentes">Fuente de Poder</option>
+                    <option value="Fuentes">Fuente de Podeeeeer</option>
                 </select> 
                 @error('categoria')
                 <br>

@@ -1,6 +1,6 @@
-
-<body>
-<meta charset="utf-8">
+<head>
+    <link rel="shortcut icon" href="{{asset('img/Gonly-bolsa.png')}}" type="image/x-icon">
+    <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="preload" type="text/css" href="{{asset('css/normalize.css')}}">
         <link rel="stylesheet" type="text/css" href="{{asset('css/normalize.css')}}"> 
@@ -8,14 +8,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{asset('css/Formulario.css')}}">
+        <title>Registrarse</title>
+        <link rel="stylesheet" href="{{asset('css/Formulario.css')}}">
+</head>
+<body>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
  
             <section class="form-register">
-                <img src="{{asset('img/logo.jpeg')}}" width="400px" height="150px" class="logo">
+                <img src="{{asset('img/Gonly.png')}}" width="400px" height="150px" class="logo">
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf

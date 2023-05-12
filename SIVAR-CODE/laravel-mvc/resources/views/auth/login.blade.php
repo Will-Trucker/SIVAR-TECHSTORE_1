@@ -1,16 +1,16 @@
-<header>
+<head>
     <title>Iniciar Sesión</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" type="text/css" href="{{asset('css/login.css')}}">
-        <link rel="icon" type="picture" href="{{asset('img/Icono.png')}}">
+        <link rel="icon" type="picture" href="{{asset('img/Gonly-bolsa.png')}}">
         <link rel="preload" type="text/css" href="{{asset('css/normalize.css')}}">
         <link rel="stylesheet" type="text/css" href="{{asset('css/normalize.css')}}"> 
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-</header>
+</head>
 <body>
 <br><br><br><br><br><br><br>
 <div class="container">
@@ -26,7 +26,7 @@
                           
                         <div class="row mb-3">
                             <br>
-                            <center> <img src="img/Logo.jpeg" alt="" height="145px" width="400px" class="logo-form"> 
+                            <center> <img src="img/Gonly.png" alt="" height="145px" width="400px" class="logo-form"> 
                             <h2>INICIO DE SESION</h2></center>
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('') }}</label>
                             <div class="log-form">

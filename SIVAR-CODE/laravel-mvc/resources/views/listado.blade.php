@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vista Productos</title>
-    <link rel="icon" href="{{asset('img/Icono.png')}}">
+    <link rel="icon" href="{{asset('img/Gonly-bolsa.png')}}">
     <link rel="preload" href="{{asset('css/normalize.css')}}" type="text/css">
     <link rel="preload" href="{{asset('css/normalize.css')}}" type="text/css">
     <link rel="preload" href="{{asset('css/listado.css')}}" type="text/css">

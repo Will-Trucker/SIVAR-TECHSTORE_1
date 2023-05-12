@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{asset('css/normalize.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/sale.css')}}" type="text/css">
     <link rel="preload" href="{{asset('css/sale.css')}}" type="text/css">
-    <link rel="icon" type="picture" href="{{asset('img/Icono.png')}}">
+    <link rel="icon" type="picture" href="{{asset('img/Gonly-bolsa.png')}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">

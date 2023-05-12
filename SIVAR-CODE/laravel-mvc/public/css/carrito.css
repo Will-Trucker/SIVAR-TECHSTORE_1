@@ -3,7 +3,7 @@
 :root{
 	--white: #ffffff;
     --negro: black;
-    --red: #de1313;
+    --red: #37df0d;
     --verde: rgb(17, 205, 17);
     --font: 'Poppins', sans-serif;
     --grisn: #1c1c1c;
@@ -408,7 +408,7 @@ input::-webkit-inner-spin-button {
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 @media screen and (max-width:800px){
