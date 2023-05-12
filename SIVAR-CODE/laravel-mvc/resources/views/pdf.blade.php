@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Recibo</title>
+    <link rel="icon" href="{{asset('img/Gonly-bolsa.png')}}">
 </head>
 <body>
     Hola soy tu pdf

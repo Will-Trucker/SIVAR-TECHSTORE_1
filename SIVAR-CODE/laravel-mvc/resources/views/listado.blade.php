@@ -20,7 +20,7 @@
         <main>
             <div class="navegacion"> <!-- Menu -->
             <header class="header">
-               <a class="logo" href="/admin"><img class="logotipo" src="{{asset('img/Asset 7.webp')}}" alt="logo"></a>
+               <a class="logo" href="/admin"><img class="logotipo" src="{{asset('img/Logo1.png')}}" alt="logo"></a>
                 <nav>
                     <ul class="nav__links">
                       <li><a href="/home" class="opciones bars-solid"><svg class="bars-solid"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="40px"><path  fill=currentcolor d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>Vista</a></li>

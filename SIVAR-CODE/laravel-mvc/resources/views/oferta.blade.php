@@ -20,7 +20,7 @@
 
         <form action="EnvioF" method="post" class="form-register" enctype="multipart/form-data">
             @csrf
-                <img src="{{asset('img/Logo.jpeg')}}" width="350px" height="145px" class="logo">
+                <img src="{{asset('img/Logo1.png')}}" width="350px" height="145px" class="logo">
                 <br>
                 <h2 class="title-form">AGREGAR CARROUSEL</h2>
                 <input type="text" name="nombre" id="nombre" class="controls" placeholder="PRODUCTO" required> 

@@ -24,7 +24,7 @@
  <div class="navegacion">
     <header class="header">
        <a class="logo" href="/home" style="outline: none;">
-        <img class="logotipo" src="{{asset('img/Asset 7.webp')}}" alt="logo">
+        <img class="logotipo" src="{{asset('img/Logo1.png')}}" alt="logo">
     </a>
         <nav>
             <ul class="nav__links">
@@ -108,13 +108,13 @@
             <div class="box">
                 <figure>
                     <a href="/home">
-                        <img src="{{asset('img/Asset 7.png')}}" alt="Logo de Sivar Techstore">
+                        <img src="{{asset('img/Logo1.png')}}" alt="Logo de Sivar Techstore">
                     </a>
                 </figure>
             </div>
             <div class="box">
                 <h2>SOBRE NOSOTROS</h2>
-                <p>Somos una tienda dedicada a la venta de Equipos y componentes informaticos...</p>
+                <p>Gonly, tienda en línea</p>
                 <button class="boton-us"><a href="{{route('acerca')}}">Más informacion</a></button>
             </div>
             <div class="box">
